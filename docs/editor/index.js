@@ -55,8 +55,6 @@ const main = async function() {
 
     // MÓDULOS DE INICIO:
     await Sistema_de_modulos.cargar_script("lib/traducciones/traducciones.js");
-    await Sistema_de_modulos.cargar_script("lib/mentemetria/mentemetria.web.js");
-    await Sistema_de_modulos.cargar_script("lib/mentemetria/mentemetria.estadisticas.js");
     await Sistema_de_modulos.cargar_script("lib/externos/externos.js");
 
     // ESTILOS:

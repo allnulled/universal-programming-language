@@ -1,3 +1,10 @@
+# 02-12-2024
+
+[x] Botón de "Exportar script" como URL.
+  [x] Con diálogo de notificación
+[x] Botón de "Copiar script"
+  [x] Con diálogo para recoger la nueva ruta
+
 # 30-11-2024
 
 Hay varios temas pendientes:

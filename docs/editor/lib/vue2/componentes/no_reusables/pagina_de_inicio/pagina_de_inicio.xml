@@ -22,21 +22,34 @@
                     </template>
                     <template v-if="nodo_actual_es_fichero">
                         <div class="icono_contextual fondo_azul"
-                            title="Volver a directorio"
+                            title="Guardar estado actual"
                             v-on:click="() => guardar_fichero_actual()">
                             Save
                         </div>
                         <div class="icono_contextual fondo_rosa"
-                            title="Volver a directorio"
+                            title="Cargar estado actual"
                             v-on:click="() => cargar_fichero_actual()">
                             Load
+                        </div>
+                    </template>
+                    <div class="icono_contextual fondo_verde"
+                        title="Copiar fichero o directorio"
+                        v-on:click="copiar_fichero">
+                        Copy
+                    </div>
+                    <template v-if="nodo_actual_es_fichero">
+                        <div class="icono_contextual fondo_verde"
+                            v-if="['/','/kernel'].indexOf(nodo_actual) === -1"
+                            title="Renombrar"
+                            v-on:click="renombrar_nodo_actual">
+                            Rename
                         </div>
                         <serie-de-iconos :contexto="this"
                             ref="serie_iconos_izquierdos"
                             :iconos-predefinidos="iconos_izquierdos"
                             identificador-de-contexto="izquierdos" />
                         <div class="icono_contextual fondo_negro letra_roja"
-                            title="Volver a directorio"
+                            title="Eliminar"
                             v-on:click="() => eliminar_fichero_actual()">
                             Delete
                         </div>
@@ -94,32 +107,32 @@
                 <div class="panel_derecho">
                     <template v-if="nodo_actual_es_fichero">
                         <div class="icono_contextual fondo_rojo"
-                            title="Volver a directorio"
+                            title="Ejecuta el código"
                             v-on:click="() => ejecutar_fichero_actual()">
                             Run
                         </div>
                         <div class="icono_contextual fondo_naranja"
-                            title="Volver a directorio"
+                            title="Compila el código"
                             v-on:click="() => compilar_fichero_actual()">
                             Compile
                         </div>
                         <div class="icono_contextual fondo_rosa"
-                            title="Volver a directorio"
+                            title="Formatea el código"
                             v-on:click="() => formatear_fichero_actual()">
                             Format
                         </div>
                         <div class="icono_contextual fondo_blanco"
-                            title="Volver a directorio"
+                            title="Incrementa tamaño de fuente"
                             v-on:click="() => incrementar_tamanio_de_fuente(1)">
                             Font++
                         </div>
                         <div class="icono_contextual fondo_blanco"
-                            title="Volver a directorio"
+                            title="Decrementa tamaño de fuente"
                             v-on:click="() => incrementar_tamanio_de_fuente(-1)">
                             Font--
                         </div>
                         <div class="icono_contextual fondo_verde"
-                            title="Volver a directorio"
+                            title="Alterna familia de fuente"
                             v-on:click="() => alternar_familia_de_fuente()">
                             Font
                         </div>
@@ -127,43 +140,44 @@
                             ref="serie_iconos_derechos"
                             :iconos-predefinidos="iconos_derechos"
                             identificador-de-contexto="derechos" />
+                        <div class="icono_contextual fondo_rojo"
+                            title="Exportar como URL"
+                            v-on:click="exportar_como_url">
+                            Export
+                        </div>
                     </template>
                     <template v-if="nodo_actual_es_directorio">
                         <div class="icono_contextual fondo_azul"
-                            title="Volver a directorio"
+                            title="Crea fichero"
                             v-on:click="crear_fichero">
                             File++
                         </div>
                         <div class="icono_contextual fondo_verde"
-                            title="Volver a directorio"
+                            title="Crea directorio"
                             v-on:click="crear_carpeta">
                             Dir++
                         </div>
                         <div class="icono_contextual fondo_rojo"
                             v-if="['/','/kernel'].indexOf(nodo_actual) === -1"
-                            title="Volver a directorio"
+                            title="Elimina directorio"
                             v-on:click="eliminar_carpeta_actual">
                             Dir--
                         </div>
                     </template>
-                    <div class="icono_contextual fondo_rosa"
-                        v-if="['/','/kernel'].indexOf(nodo_actual) === -1"
-                        title="Volver a directorio"
-                        v-on:click="renombrar_nodo_actual">
-                        Rename
-                    </div>
                 </div>
             </div>
             <div class="panel_inferior">
-                <div class="contenedor_en_panel_superior" v-if="nodo_actual_es_fichero && editor_de_codigo_posicion_cursor">
+                <div class="contenedor_en_panel_superior"
+                    v-if="nodo_actual_es_fichero && editor_de_codigo_posicion_cursor">
                     <div class="textbox_contextual contexto_inferior nowrap">
                         <b class="">
                             <span>
-                            Line: {{ editor_de_codigo_posicion_cursor.start.line }}:{{ editor_de_codigo_posicion_cursor.start.column }}-{{ editor_de_codigo_posicion_cursor.end.line }}:{{ editor_de_codigo_posicion_cursor.end.column }}
+                                Line: {{ editor_de_codigo_posicion_cursor.start.line }}:{{ editor_de_codigo_posicion_cursor.start.column
+                                }}-{{ editor_de_codigo_posicion_cursor.end.line }}:{{ editor_de_codigo_posicion_cursor.end.column }}
                             </span>
                             <span> | </span>
                             <span>
-                            Pos: {{ editor_de_codigo_posicion_cursor.start.offset }}-{{ editor_de_codigo_posicion_cursor.end.offset }}
+                                Pos: {{ editor_de_codigo_posicion_cursor.start.offset }}-{{ editor_de_codigo_posicion_cursor.end.offset }}
                             </span>
                         </b>
                     </div>

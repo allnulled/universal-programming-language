@@ -304,6 +304,53 @@ return await Sistema_de_modulos.definir_componente_vue2(
         } catch (error) {
           this.gestionar_error(error);
         }
+      },
+      async cargar_recurso_remoto() {
+        try {
+          console.log("cargar_recurso_remoto");
+          const url_parameters = new URLSearchParams(window.location.search);
+          if(url_parameters.has("recurso_directo")) {
+            const code = url_parameters.get("recurso_directo");
+            await this.$ufs.write_file("/resource.upl", code);
+            await this.abrir_nodo("/resource.upl");
+          } else if(url_parameters.has("recurso_remoto")) {
+            const recurso_remoto = url_parameters.get("recurso_remoto");
+            const response = await fetch(recurso_remoto);
+            const code = await response.text();
+            await this.$ufs.write_file("/resource.upl", code);
+            await this.abrir_nodo("/resource.upl");
+          }
+        } catch (error) {
+          this.gestionar_error(error);
+        }
+      },
+      async exportar_como_url() {
+        try {
+          console.log("exportar_como_url");
+          const params = new URLSearchParams();
+          const recurso_directo = this.nodo_actual_contenido_de_fichero;
+          params.set("recurso_directo", recurso_directo);
+          this.$dialogs.dialogo_de_notificacion_titulo = "Exportar script como URL";
+          this.$dialogs.dialogo_de_notificacion_enunciado = "https://allnulled.github.io/universal-programming-language/editor?" + params.toString();
+          await this.$dialogs.abrir("dialogo_de_exportar_script_como_url");
+        } catch (error) {
+          this.gestionar_error(error);
+        }
+      },
+      async copiar_fichero() {
+        try {
+          console.log("copiar_fichero");
+          const nueva_ruta = await this.$dialogs.pedir_texto({
+            titulo: "Copiar fichero a otra ruta",
+            pregunta: "Escribe la ruta a donde quieres copiar el fichero:"
+          });
+          if(!nueva_ruta) {
+            return;
+          }
+          await this.$ufs.write_file(nueva_ruta, this.nodo_actual_contenido_de_fichero);
+        } catch (error) {
+          this.gestionar_error(error);
+        }
       }
     },
     watch: {
@@ -332,6 +379,7 @@ return await Sistema_de_modulos.definir_componente_vue2(
         this.evento_de_redimensionar();
         await this.cargar_subnodos();
         await this.cargar_source();
+        await this.cargar_recurso_remoto();
       } catch (error) {
         this.gestionar_error(error);
       }

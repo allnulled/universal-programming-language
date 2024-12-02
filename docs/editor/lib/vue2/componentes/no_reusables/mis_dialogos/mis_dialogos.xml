@@ -14,6 +14,51 @@
             </div>
         </div>
     </dialog>
+    <dialog class="dialogo" style="max-width: 400px;" id="dialogo_de_pedir_texto" ref="dialogo_de_pedir_texto">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">{{ dialogo_de_notificacion_titulo }}</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>{{ dialogo_de_notificacion_enunciado }}</div>
+                    <input class="width_100" type="text" ref="texto_de_pedir_texto" placeholder="/admite/rutas/completas"  v-on:keypress.enter="() => responder($refs.texto_de_pedir_texto.value).cerrar()" />
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => responder($refs.texto_de_pedir_texto.value).cerrar()">Aceptar</button>
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Con este link puedes abrir automáticamente este script.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    
+    <dialog class="dialogo" style="max-width: 400px;" id="dialogo_de_exportar_script_como_url" ref="dialogo_de_exportar_script_como_url">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">{{ dialogo_de_notificacion_titulo }}</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>Para abrir este recurso puedes pegar esta URL:</div>
+                    <pre style="text-wrap:wrap; font-size:10px; margin: 0px; overflow: scroll;">{{ dialogo_de_notificacion_enunciado }}</pre>
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => { navigator.clipboard.writeText(dialogo_de_notificacion_enunciado); responder(false).cerrar(); }">Copiar enlace</button>
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Con este link puedes abrir automáticamente este script.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
     <dialog class="dialogo" style="max-width: 400px;" id="dialogo_de_confirmacion" ref="dialogo_de_confirmacion">
         <div class="window">
             <div class="title-bar">

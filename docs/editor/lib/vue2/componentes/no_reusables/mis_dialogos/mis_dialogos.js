@@ -39,6 +39,12 @@ return await Sistema_de_modulos.definir_componente_vue2(
         this.dialogo_de_notificacion_enunciado = pregunta;
         return this.abrir("dialogo_de_notificacion");
       },
+      pedir_texto(opts) {
+        const { pregunta, titulo } = opts;
+        this.dialogo_de_notificacion_titulo = titulo;
+        this.dialogo_de_notificacion_enunciado = pregunta;
+        return this.abrir("dialogo_de_pedir_texto");
+      },
       personalizado(opts) {
         const { plantilla, titulo, datos = false } = opts;
         this.dialogo_personalizado_titulo = titulo;
@@ -73,6 +79,9 @@ return await Sistema_de_modulos.definir_componente_vue2(
           throw new Error("Hay un diálogo pendiente y no se puede abrir el diálogo «" + id + "»");
         }
         const htmlDialog = this.$refs[id];
+        if(!htmlDialog) {
+          throw new Error("No se ha encontrado diálogo «" + id + "»");
+        }
         htmlDialog.showModal();
         Actualizar_valores: {
           this.dialogo = htmlDialog;
