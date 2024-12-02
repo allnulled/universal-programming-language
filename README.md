@@ -18,6 +18,7 @@ Most pretencious programming language in the world. But ambitious too.
   - [Examples](#examples)
   - [Usage](#usage)
     - [Via API](#via-api)
+      - [Example](#example)
 
 ## Requirements
 
@@ -40,6 +41,7 @@ Use `--global` or `-g` flag to install the command line binary automatically.
 
 ```
 git clone https://github.com/allnulled/universal-programming-language
+npm install
 ```
 
 ## Syntax highlighter
@@ -126,3 +128,8 @@ The global `upl` can create, then, objects that has these **dynamic** properties
 
 Right now, this is everything. The transpiler is in process yet.
 
+#### Example
+
+```js
+const ast = require("upl").parse("create{ @x }as{ 200 }");
+```
