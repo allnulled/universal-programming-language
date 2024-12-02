@@ -1,5 +1,5 @@
 const UPL_parser = (typeof window !== "undefined") ? window.UPL_parser : global.UPL_parser;
-class UPL {
+const UPL = class {
   static classes = {
     parser: UPL_parser,
     formatter: UPL_formatter,
@@ -61,4 +61,12 @@ class UPL {
   }
 }
 UPL.default = UPL;
-module.exports = UPL;
+if(typeof window !== "undefined") {
+  window.UPL = UPL;
+}
+if(typeof global !== "undefined") {
+  global.UPL = UPL;
+}
+if(typeof module !== "undefined") {
+  module.exports = UPL;
+}

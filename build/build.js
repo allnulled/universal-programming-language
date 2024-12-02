@@ -11,6 +11,7 @@ const transpiler_path = __dirname + "/../src/api/upl.transpiler.js";
 const index_api_path = __dirname + "/../src/api/index.js";
 const upl_api_path = __dirname + "/../src/upl.api.js";
 const upl_api_dist_path = __dirname + "/../dist/upl.js";
+const upl_editor_dist_path = __dirname + "/../docs/editor/lib/externos/upl/upl.js";
 
 const main = async function () {
   Unify_syntax: {
@@ -55,6 +56,7 @@ const main = async function () {
   }
   Export_files: {
     fs.copyFileSync(upl_api_path, upl_api_dist_path)
+    fs.copyFileSync(upl_api_path, upl_editor_dist_path)
   }
 };
 

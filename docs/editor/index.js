@@ -17,6 +17,7 @@ const main = async function() {
     // await Sistema_de_modulos.cargar_script("lib/externos/socket.io/socket.io.js");
     await Sistema_de_modulos.cargar_script("lib/externos/js-beautify/beautifier.min.js");
     await Sistema_de_modulos.cargar_script("lib/externos/ufs/ufs.js");
+    await Sistema_de_modulos.cargar_script("lib/externos/upl/upl.js");
     
     // LÓGICAS:
     await Sistema_de_modulos.cargar_script("lib/sistema_de_hooks/sistema_de_hooks.js");

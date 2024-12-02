@@ -3516,7 +3516,7 @@ class UPL_transpiler extends UPL_reductor {
   }
 }
 const UPL_parser = (typeof window !== "undefined") ? window.UPL_parser : global.UPL_parser;
-class UPL {
+const UPL = class {
   static classes = {
     parser: UPL_parser,
     formatter: UPL_formatter,
@@ -3531,6 +3531,8 @@ class UPL {
       return this.parse_to_ast(text, options);
     } else if(options.mode === "format") {
       return this.format(text, options);
+    } else if(options.mode === "transpile") {
+      throw new Error("Mode of parsing «transpile» is not supported through static method, as «upl» is unopinionated on interpretation. Create a transpiler instead, specifying all the known syntaxes, and use the dynamic method.");
     }
     throw new Error("Mode of parsing not identified: «" + options.mode + "»");
   }
@@ -3575,5 +3577,13 @@ class UPL {
     return transpiler.transpile(ast);
   }
 }
-
-module.exports = UPL;
+UPL.default = UPL;
+if(typeof window !== "undefined") {
+  window.UPL = UPL;
+}
+if(typeof global !== "undefined") {
+  global.UPL = UPL;
+}
+if(typeof module !== "undefined") {
+  module.exports = UPL;
+}

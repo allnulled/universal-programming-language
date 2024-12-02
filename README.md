@@ -61,6 +61,8 @@ But here you can: (this part is still in progress)
 
 - [https://allnulled.github.io/universal-programming-language/editor/](https://allnulled.github.io/universal-programming-language/editor/)
 
+**Note:** use `*.up` or `*.upl` files in order to let `Format` button to beautify `upl` source codes. It also supports `html`, `css` and `js`.
+
 # The «bla bla bla» part
 
 ## Why?

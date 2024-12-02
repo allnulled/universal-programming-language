@@ -225,6 +225,10 @@ return await Sistema_de_modulos.definir_componente_vue2(
       async formatear_fichero_actual() {
         try {
           console.log("formatear_fichero_actual");
+          if(this.nodo_actual.endsWith(".up") || this.nodo_actual.endsWith(".upl")) {
+            this.nodo_actual_contenido_de_fichero = this.$window.UPL.format(this.nodo_actual_contenido_de_fichero);
+            return;
+          }
           const options = {
             indent_size: "2",
             indent_char: " ",
