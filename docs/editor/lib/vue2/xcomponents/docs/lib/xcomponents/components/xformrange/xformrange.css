@@ -1,0 +1,10 @@
+.xformrange input[type="range"] {
+    border: none;
+}
+.xformrange .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformrange .range_input {
+    
+}

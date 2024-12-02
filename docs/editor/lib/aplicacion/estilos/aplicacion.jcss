@@ -1,0 +1,14 @@
+<%
+
+const vbz = await Sistema_de_modulos.cargar_modulo("lib/aplicacion/estilos/variables");
+const html_background_color = vbz.color_de_fondo_general;
+
+%>
+
+html {
+    
+}
+html,body {
+    padding: 0;
+    margin: 0;
+}

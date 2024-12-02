@@ -1,0 +1,185 @@
+<div>
+    <dialog class="dialogo" style="max-width: 400px;" id="dialogo_personalizado" ref="dialogo_personalizado">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">{{ dialogo_personalizado_titulo || "Diálogo personalizado" }}</div>
+            </div>
+            <template v-if="esta_dialogo_personalizado_abierto">
+                <dialogo-personalizado :contexto="contexto" :dialogos="this" />
+            </template>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Este diálogo está personalizado.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" style="max-width: 400px;" id="dialogo_de_confirmacion" ref="dialogo_de_confirmacion">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">{{ dialogo_de_confirmacion_titulo || "Confirmar" }}</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>{{ dialogo_de_confirmacion_enunciado }}</div>
+                </div>
+                <div class="window-body-foot">
+                    <button class="font_weight_bold" v-on:click="() => responder(true).cerrar()">Confirmar</button>
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Este diálogo consiste en confirmar o cancelar.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" style="max-width: 400px;" id="dialogo_de_notificacion" ref="dialogo_de_notificacion">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">{{ dialogo_de_notificacion_titulo || "Notificación" }}</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>{{ dialogo_de_notificacion_enunciado }}</div>
+                </div>
+                <div class="window-body-foot">
+                    <button class="font_weight_bold" v-on:click="() => responder(true).cerrar()">Aceptar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Este diálogo consiste en confirmar o cancelar.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" id="dialogo_de_confirmar_eliminar_fichero_actual" ref="dialogo_de_confirmar_eliminar_fichero_actual">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Eliminar fichero</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>¿Seguro que quieres eliminar el fichero actual?</div>
+                    <div class="texto_de_codigo_especial_1"><b>{{ contexto.nodo_actual }}</b></div>
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                    <button class="letra_roja font_weight_bold" v-on:click="() => responder(true).cerrar()">Eliminar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Se perderá el contenido del fichero.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" id="dialogo_de_confirmar_eliminar_directorio_actual" ref="dialogo_de_confirmar_eliminar_directorio_actual">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Eliminar directorio</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>¿Seguro que quieres eliminar el directorio actual?</div>
+                    <div class="texto_de_codigo_especial_1"><b>{{ contexto.nodo_actual }}</b></div>
+                    <template v-if="contexto.nodo_actual_subnodos.length">
+                        <div>Contiene:</div>
+                        <div>
+                            <ol>
+                                <li v-for="subnodo, subnodo_index in contexto.nodo_actual_subnodos" v-bind:key="'subnodo_de_directorio_a_eliminar_' + subnodo_index">
+                                    <span v-if="typeof subnodo.valor === 'object'">
+                                        <b>{{ subnodo.nombre }}</b>
+                                    </span>
+                                    <span v-else="">
+                                        {{ subnodo.nombre }}
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                    </template>
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                    <button class="letra_roja font_weight_bold" v-on:click="() => responder(true).cerrar()">Eliminar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>Se perderán todos los ficheros y directorios que haya dentro.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" id="dialogo_de_pedir_nombre_de_fichero" ref="dialogo_de_pedir_nombre_de_fichero">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Crear fichero</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>Escribe el nombre que quieres para el nuevo fichero:</div>
+                    <input class="width_100" type="text" ref="respuesta_1" v-on:keypress.enter="() => responder($refs.respuesta_1.value).cerrar()"/>
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => responder($refs.respuesta_1.value).cerrar()">Aceptar</button>
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>No se admiten caracteres raros, tipo / y cosas así. Lo siento.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" id="dialogo_de_pedir_nombre_de_directorio" ref="dialogo_de_pedir_nombre_de_directorio">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Crear directorio</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>Escribe el nombre que quieres para el nuevo directorio:</div>
+                    <input class="width_100" type="text" ref="respuesta_2" v-on:keypress.enter="() => responder($refs.respuesta_2.value).cerrar()"/>
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => responder($refs.respuesta_2.value).cerrar()">Aceptar</button>
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>No se admiten caracteres raros, tipo / y cosas así. Lo siento.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialogo" id="dialogo_de_renombrar_nodo_actual" ref="dialogo_de_renombrar_nodo_actual">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Renombrar {{ contexto.nodo_actual_es_directorio ? 'directorio' : 'fichero' }} actual</div>
+            </div>
+            <div class="window-body">
+                <div class="window-body-main">
+                    <div>Parece que quieres renombrar el {{ contexto.nodo_actual_es_directorio ? 'directorio' : 'fichero' }}:</div>
+                    <div class="texto_de_codigo_especial_1"><b>{{ contexto.nodo_actual }}</b></div>
+                    <div>Escribe el nombre que quieres para el {{ contexto.nodo_actual_es_directorio ? 'directorio' : 'fichero' }}:</div>
+                    <input class="width_100" type="text" ref="respuesta_3" v-on:keypress.enter="() => responder($refs.respuesta_3.value).cerrar()"/>
+                </div>
+                <div class="window-body-foot">
+                    <button class="" v-on:click="() => responder($refs.respuesta_3.value).cerrar()">Aceptar</button>
+                    <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div class="status-bar-field" style="text-align: right;">
+                    <div>No se admiten caracteres raros, tipo / y cosas así. Lo siento.</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+</div>

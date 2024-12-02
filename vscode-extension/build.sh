@@ -1,0 +1,1 @@
+vsce package --out upl-vscode-extension.vsix --allow-missing-repository --skip-license

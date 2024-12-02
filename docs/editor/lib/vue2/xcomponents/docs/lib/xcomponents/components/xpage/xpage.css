@@ -1,0 +1,26 @@
+.Component.xpage {
+    display: block;
+    text-align: center;
+}
+.Component.xpage > .title {
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 12px;
+}
+.Component.xpage > .container {
+    display: inline-block;
+    border: 1px dashed #333;
+    min-width: 100px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow: scroll;
+    resize: both;
+}
+.Component.xpage > .container > .content {
+    display: block;
+    width: 100%;
+    text-align: left;
+}

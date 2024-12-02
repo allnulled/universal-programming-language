@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Textarea Component</title>
+</head>
+<body>
+
+<div id="app">
+  <mi-textarea :placeholder="textareaPlaceholder" :on-change="v => textareaValue = v"></mi-textarea>
+  <p>El valor del textarea es:</p>
+  <pre>{{ textareaValue }}</pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="mi-textarea.js"></script>
+<script>
+  // Crear una instancia de Vue para la aplicación
+  new Vue({
+    el: '#app',
+    data: {
+      textareaPlaceholder: 'Escribe algo aquí...',
+      textareaValue: ''
+    }
+  });
+</script>
+
+</body>
+</html>

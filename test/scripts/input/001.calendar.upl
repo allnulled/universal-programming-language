@@ -1,0 +1,20 @@
+registers{
+  day{{26/11/2024}}with{
+    hour{{08:00}}with{
+      event{{Desayunar}}
+      duration{{1h}}
+      details{{Wherever}}
+    }
+  }
+}
+
+{
+  evento{ "Meditar" }
+  duracion{ "1h" }
+  detalles{ "wherever" }
+}
+  |@h1= hour{ "08:00" }with{ @ }
+  |@h2= hour{ "09:00" }with{ @ }
+  |@h3= hour{ "10:00" }with{ @ }
+  | day{ "6/11/2024" }with{ @h1 @h2 @h3 }
+  | registers{ @ }

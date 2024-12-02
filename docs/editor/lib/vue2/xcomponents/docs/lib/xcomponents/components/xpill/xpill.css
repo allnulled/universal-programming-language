@@ -1,0 +1,12 @@
+.xpill {
+    display: inline-block;
+    width: auto;
+    background-color: #444;
+    color: white;
+    border-radius: 5pt;
+    text-align: center;
+    padding: 4px;
+    margin: 1px;
+    font-size: 9px;
+    cursor: pointer;
+}

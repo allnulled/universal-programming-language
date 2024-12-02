@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Button Component</title>
+</head>
+<body>
+
+<div id="app">
+  <mi-boton :color="buttonColor" :text="buttonText" :event-receiver="this"></mi-boton>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="mi-boton.js"></script>
+<script>
+  // Crear una instancia de Vue para la aplicación
+  new Vue({
+    el: '#app',
+    data: {
+      buttonColor: 'green',
+      buttonText: 'Haz clic aquí'
+    },
+    methods: {
+      handleButtonClick: function() {
+        alert('¡Botón clickeado!');
+      }
+    },
+    mounted: function() {
+      // Escuchar el evento personalizado 'clicked' del componente
+      this.$on('clicked', this.handleButtonClick);
+    }
+  });
+</script>
+
+</body>
+</html>

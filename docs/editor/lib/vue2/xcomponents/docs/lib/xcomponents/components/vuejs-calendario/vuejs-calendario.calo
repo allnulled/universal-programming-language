@@ -1,0 +1,306 @@
+asigno window.VuejsCalendario como un componente vue2 con nombre "VuejsCalendario" con plantilla {
+  <div class="Component VuejsCalendario">
+    <div class="vuejs_calendario_contenedor">
+      <template v-if="mode === 'datetime' || mode === 'date'">
+        <div v-if="['datetime','date'].indexOf(mode) !== -1" class="chivato_de_fecha">{{ obtener_fecha_formateada(fecha_seleccionada) }}</div>
+        <div v-if="['datetime','time'].indexOf(mode) !== -1" class="chivato_de_fecha">{{ espaciar_izquierda(hora_seleccionada, 2) }}:{{ espaciar_izquierda(minuto_seleccionado, 2) }}:{{ espaciar_izquierda(segundo_seleccionado, 2) }}.{{ espaciar_izquierda(milisegundo_seleccionado, 3) }}</div>
+        <table class="tabla_de_calendario">
+          <tbody>
+            <tr>
+              <td>
+                <button class="boton_de_mover_mes" v-on:click="ir_a_mes_anterior"> ◀ </button>
+              </td>
+              <td>
+                <button class="boton_de_mover_mes" v-on:click="ir_a_mes_siguiente"> ▶ </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="tabla_de_calendario">
+          <tbody>
+            <tr v-for="semana, semana_index in celdas_del_mes_actual" v-bind:key="'semana-' + semana_index">
+              <td v-for="dia, dia_index in semana" v-bind:key="'dia-' + dia_index">
+                <span v-if="dia">
+                  <button class="boton_de_calendario" :class="{active: dia.getDate() === fecha_seleccionada.getDate()}" v-on:click="() => seleccionar_dia(dia)">{{ dia.getDate() }}</button>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </template>
+      <template v-if="mode === 'datetime' || mode === 'time'">
+        <table class="tabla_de_calendario">
+          <tbody>
+            <tr>
+              <td>
+                <button class="boton_de_calendario" v-on:click="agregar_hora"> ▲ </button>
+              </td>
+              <td>
+                <button class="boton_de_calendario" v-on:click="agregar_minuto"> ▲ </button>
+              </td>
+              <td>
+                <button class="boton_de_calendario" v-on:click="agregar_segundo"> ▲ </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td><input class="entrada_de_calendario" type="text" v-model="hora_seleccionada" /></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td><input class="entrada_de_calendario" type="text" v-model="minuto_seleccionado" /></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td><input class="entrada_de_calendario" type="text" v-model="segundo_seleccionado" /></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="boton_de_calendario" v-on:click="quitar_hora"> ▼ </button>
+              </td>
+              <td>
+                <button class="boton_de_calendario" v-on:click="quitar_minuto"> ▼ </button>
+              </td>
+              <td>
+                <button class="boton_de_calendario" v-on:click="quitar_segundo"> ▼ </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="100">
+                <input class="entrada_de_calendario" type="text" v-model="milisegundo_seleccionado" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </template>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad mode como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "datetime".
+      }.
+      propiedad initialValue como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "".
+      }.
+      propiedad onChange como {
+        propiedad type como Function.
+        propiedad default como una función.
+      }.
+    }.
+    método data donde {
+      retorno {
+        fecha_seleccionada: undefined,
+        celdas_del_mes_actual: undefined,
+        hora_seleccionada: "0",
+        minuto_seleccionado: "0",
+        segundo_seleccionado: "0",
+        milisegundo_seleccionado: "0"
+      }.
+    }.
+    propiedad methods como {
+      método ir_a_mes_anterior donde {
+        creo nueva_fecha como un nuevo Date(this.fecha_seleccionada).
+        hago nueva_fecha.setMonth(nueva_fecha.getMonth() - 1).
+        asigno this.fecha_seleccionada como nueva_fecha.
+      }.
+      método ir_a_mes_siguiente donde {
+        creo nueva_fecha como un nuevo Date(this.fecha_seleccionada).
+        hago nueva_fecha.setMonth(nueva_fecha.getMonth() + 1).
+        asigno this.fecha_seleccionada como nueva_fecha.
+      }.
+      método agregar_hora donde {
+        creo variable hora como parseInt(this.hora_seleccionada).
+        incremento hora.
+        asigno this.hora_seleccionada como hora.
+      }.
+      método agregar_minuto donde {
+        creo variable minuto como parseInt(this.minuto_seleccionado).
+        incremento minuto.
+        asigno this.minuto_seleccionado como minuto.
+      }.
+      método agregar_segundo donde {
+        creo variable segundo como parseInt(this.segundo_seleccionado).
+        incremento segundo.
+        asigno this.segundo_seleccionado como segundo.
+      }.
+      método quitar_hora donde {
+        creo variable hora como parseInt(this.hora_seleccionada).
+        decremento hora.
+        asigno this.hora_seleccionada como hora.
+      }.
+      método quitar_minuto donde {
+        creo variable minuto como parseInt(this.minuto_seleccionado).
+        decremento minuto.
+        asigno this.minuto_seleccionado como minuto.
+      }.
+      método quitar_segundo donde {
+        creo variable segundo como parseInt(this.segundo_seleccionado).
+        decremento segundo.
+        asigno this.segundo_seleccionado como segundo.
+      }.
+      método seleccionar_dia con (dia) donde {
+        asigno this.fecha_seleccionada como dia.
+      }.
+      método espaciar_izquierda con (texto, longitud, relleno o en su defecto "0") donde {
+        creo variable salida como "" + texto.
+        mientras salida.length es menor que longitud {
+          asigno salida como relleno + salida.
+        }.
+        retorno salida.
+      }.
+      método obtener_fecha_formateada con (fecha) donde {
+        si fecha es tipo indefinido retorno.
+        creo variable formato como "".
+        incremento formato en un hecho donde {
+          si fecha.getDay() es igual que 0 retorno "Domingo".
+          si fecha.getDay() es igual que 1 retorno "Lunes".
+          si fecha.getDay() es igual que 2 retorno "Martes".
+          si fecha.getDay() es igual que 3 retorno "Miércoles".
+          si fecha.getDay() es igual que 4 retorno "Jueves".
+          si fecha.getDay() es igual que 5 retorno "Viernes".
+          si fecha.getDay() es igual que 6 retorno "Sábado".
+        }.
+        incremento formato en ", ".
+        incremento formato en fecha.getDate().
+        incremento formato en " de ".
+        incremento formato en un hecho donde {
+          si fecha.getMonth() es igual que 0 retorno "Enero".
+          si fecha.getMonth() es igual que 1 retorno "Febrero".
+          si fecha.getMonth() es igual que 2 retorno "Marzo".
+          si fecha.getMonth() es igual que 3 retorno "Abril".
+          si fecha.getMonth() es igual que 4 retorno "Mayo".
+          si fecha.getMonth() es igual que 5 retorno "Junio".
+          si fecha.getMonth() es igual que 6 retorno "Julio".
+          si fecha.getMonth() es igual que 7 retorno "Agosto".
+          si fecha.getMonth() es igual que 8 retorno "Septiembre".
+          si fecha.getMonth() es igual que 9 retorno "Octubre".
+          si fecha.getMonth() es igual que 10 retorno "Noviembre".
+          si fecha.getMonth() es igual que 11 retorno "Diciembre".
+        }.
+        incremento formato en " de ".
+        incremento formato en fecha.getFullYear().
+        retorno formato.
+      }.
+      método obtener_valor donde {
+        creo variable valor como "".
+        si this.mode es igual que "datetime" o this.mode es igual que "date" {
+          incremento valor en this.espaciar_izquierda(this.fecha_seleccionada.getFullYear(), 4).
+          incremento valor en "-".
+          incremento valor en this.espaciar_izquierda(this.fecha_seleccionada.getMonth() + 1, 2).
+          incremento valor en "-".
+          incremento valor en this.espaciar_izquierda(this.fecha_seleccionada.getDate(), 2).
+        }.
+        si this.mode es igual que "datetime" {
+          incremento valor en " ".
+        }.
+        si this.mode es igual que "datetime" o this.mode es igual que "time" {
+          incremento valor en this.espaciar_izquierda(this.hora_seleccionada, 2).
+          incremento valor en ":".
+          incremento valor en this.espaciar_izquierda(this.minuto_seleccionado, 2).
+          incremento valor en ":".
+          incremento valor en this.espaciar_izquierda(this.segundo_seleccionado, 2).
+          incremento valor en ".".
+          incremento valor en this.espaciar_izquierda(this.milisegundo_seleccionado, 3).
+        }.
+        retorno valor.
+      }.
+      método obtener_fecha_a_partir_de_texto con (texto_de_fecha_original) donde {
+        creo argumentos como [].
+        creo variable texto_de_fecha como texto_de_fecha_original.
+        si this.mode es igual que "time" {
+          asigno texto_de_fecha como "2024-01-01 " + texto_de_fecha.
+        }.
+        si texto_de_fecha {
+          hago argumentos.push(texto_de_fecha).
+        }.
+        creo variable date como un nuevo Date(...incluyo argumentos).
+        si date es instancia de Date y no isNaN(date) {
+          @POR-OKAY
+        } y si no {
+          asigno date como un nuevo Date().
+        }.
+        imprimo "texto_de_fecha".
+        imprimo texto_de_fecha.
+        retorno date.
+      }.
+    }.
+    propiedad watch como {
+      método fecha_seleccionada con (nuevo_valor) donde {
+        creo dias como [].
+        creo dia_1_del_mes como un nuevo Date(nuevo_valor).
+        hago dia_1_del_mes.setDate(1).
+        hago dia_1_del_mes.setHours(0).
+        hago dia_1_del_mes.setMinutes(0).
+        hago dia_1_del_mes.setSeconds(0).
+        hago dia_1_del_mes.setMilliseconds(0).
+        creo dias_antes_de_entrar_en_el_mes como un hecho donde {
+          creo dia_de_semana como dia_1_del_mes.getDay().
+          si dia_de_semana es igual que 0 retorno 6.
+          si dia_de_semana es igual que 1 retorno 0.
+          si dia_de_semana es igual que 2 retorno 1.
+          si dia_de_semana es igual que 3 retorno 2.
+          si dia_de_semana es igual que 4 retorno 3.
+          si dia_de_semana es igual que 5 retorno 4.
+          si dia_de_semana es igual que 6 retorno 5.
+        }.
+        creo celdas_vacias_anteriores como un nuevo Array(dias_antes_de_entrar_en_el_mes).
+        creo dia_final_del_mes como un nuevo Date(nuevo_valor).
+        hago dia_final_del_mes.setMonth(dia_final_del_mes.getMonth() + 1).
+        hago dia_final_del_mes.setDate(1).
+        hago dia_final_del_mes.setDate(dia_final_del_mes.getDate() - 1).
+        creo numero_final_de_mes como dia_final_del_mes.getDate().
+        creo variable fila_actual como celdas_vacias_anteriores.
+        desde 1 hasta numero_final_de_mes + 1 {
+          creo nueva_fecha como un nuevo Date(dia_1_del_mes).
+          hago nueva_fecha.setDate(index).
+          hago fila_actual.push(nueva_fecha).
+          si nueva_fecha.getDay() es igual que 0 {
+            hago dias.push(fila_actual).
+            asigno fila_actual como [].
+          }.
+        }.
+        si fila_actual.length {
+          hago dias.push(fila_actual).
+        }.
+        asigno this.celdas_del_mes_actual como dias.
+        hago this.onChange(this.obtener_valor(), this).
+      }.
+      método hora_seleccionada con (nuevo_valor) donde {
+        hago this.onChange(this.obtener_valor(), this).
+      }.
+      método minuto_seleccionado con (nuevo_valor) donde {
+        hago this.onChange(this.obtener_valor(), this).
+      }.
+      método segundo_seleccionado con (nuevo_valor) donde {
+        hago this.onChange(this.obtener_valor(), this).
+      }.
+      método milisegundo_seleccionado con (nuevo_valor) donde {
+        hago this.onChange(this.obtener_valor(), this).
+      }.
+    }.
+    método mounted donde {
+      creo date como this.obtener_fecha_a_partir_de_texto(this.initialValue).
+      imprimo date.
+      asigno this.fecha_seleccionada como date.
+      asigno this.hora_seleccionada como date.getHours().
+      asigno this.minuto_seleccionado como date.getMinutes().
+      asigno this.segundo_seleccionado como date.getSeconds().
+      asigno this.milisegundo_seleccionado como date.getMilliseconds().
+    }.
+  }.
+}.

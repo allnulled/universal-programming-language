@@ -1,0 +1,621 @@
+{
+  "type": "Language",
+  "header": {
+    "type": "Preblock",
+    "declarations": {},
+    "script": 0,
+    "location": "0-0|1:1-1:1"
+  },
+  "body": [
+    {
+      "type": "Functional_atom",
+      "supertype": "Generative",
+      "formula": "registers{$1}",
+      "name": {
+        "type": "Function_name_by_word",
+        "id": "registers",
+        "aliased": null,
+        "script": 9,
+        "location": "0-9|1:1-1:10"
+      },
+      "parameters": {
+        "type": "Function_call_appendix_for_list_parameter",
+        "list": [
+          {
+            "type": "Functional_molecule",
+            "supertype": "Generative",
+            "formula": "day{$1}with{$2}",
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "day",
+                  "aliased": null,
+                  "script": 3,
+                  "location": "13-16|2:3-2:6"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_text_parameter",
+                  "text": "26/11/2024",
+                  "script": 14,
+                  "location": "16-30|2:6-2:20"
+                },
+                "script": 17,
+                "location": "13-30|2:3-2:20",
+                "formula": "day{$1}"
+              },
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "with",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "30-34|2:20-2:24"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_molecule",
+                      "supertype": "Generative",
+                      "formula": "hour{$1}with{$2}",
+                      "atoms": [
+                        {
+                          "type": "Functional_atom",
+                          "name": {
+                            "type": "Function_name_by_word",
+                            "id": "hour",
+                            "aliased": null,
+                            "script": 4,
+                            "location": "40-44|3:5-3:9"
+                          },
+                          "parameters": {
+                            "type": "Function_call_appendix_for_text_parameter",
+                            "text": "08:00",
+                            "script": 9,
+                            "location": "44-53|3:9-3:18"
+                          },
+                          "script": 13,
+                          "location": "40-53|3:5-3:18",
+                          "formula": "hour{$1}"
+                        },
+                        {
+                          "type": "Functional_atom",
+                          "name": {
+                            "type": "Function_name_by_word",
+                            "id": "with",
+                            "aliased": null,
+                            "script": 4,
+                            "location": "53-57|3:18-3:22"
+                          },
+                          "parameters": {
+                            "type": "Function_call_appendix_for_list_parameter",
+                            "list": [
+                              {
+                                "type": "Functional_atom",
+                                "supertype": "Generative",
+                                "formula": "event{$1}",
+                                "name": {
+                                  "type": "Function_name_by_word",
+                                  "id": "event",
+                                  "aliased": null,
+                                  "script": 5,
+                                  "location": "65-70|4:7-4:12"
+                                },
+                                "parameters": {
+                                  "type": "Function_call_appendix_for_text_parameter",
+                                  "text": "Desayunar",
+                                  "script": 13,
+                                  "location": "70-83|4:12-4:25"
+                                },
+                                "script": 18,
+                                "location": "65-83|4:7-4:25"
+                              },
+                              {
+                                "type": "Functional_atom",
+                                "supertype": "Generative",
+                                "formula": "duration{$1}",
+                                "name": {
+                                  "type": "Function_name_by_word",
+                                  "id": "duration",
+                                  "aliased": null,
+                                  "script": 8,
+                                  "location": "90-98|5:7-5:15"
+                                },
+                                "parameters": {
+                                  "type": "Function_call_appendix_for_text_parameter",
+                                  "text": "1h",
+                                  "script": 6,
+                                  "location": "98-104|5:15-5:21"
+                                },
+                                "script": 14,
+                                "location": "90-104|5:7-5:21"
+                              },
+                              {
+                                "type": "Functional_atom",
+                                "supertype": "Generative",
+                                "formula": "details{$1}",
+                                "name": {
+                                  "type": "Function_name_by_word",
+                                  "id": "details",
+                                  "aliased": null,
+                                  "script": 7,
+                                  "location": "111-118|6:7-6:14"
+                                },
+                                "parameters": {
+                                  "type": "Function_call_appendix_for_text_parameter",
+                                  "text": "Wherever",
+                                  "script": 12,
+                                  "location": "118-130|6:14-6:26"
+                                },
+                                "script": 19,
+                                "location": "111-130|6:7-6:26"
+                              }
+                            ],
+                            "script": 79,
+                            "location": "57-136|3:22-7:6"
+                          },
+                          "script": 83,
+                          "location": "53-136|3:18-7:6",
+                          "formula": "with{$1}"
+                        }
+                      ]
+                    }
+                  ],
+                  "script": 106,
+                  "location": "34-140|2:24-8:4"
+                },
+                "script": 110,
+                "location": "30-140|2:20-8:4",
+                "formula": "with{$1}"
+              }
+            ]
+          }
+        ],
+        "script": 133,
+        "location": "9-142|1:10-9:2"
+      },
+      "script": 142,
+      "location": "0-142|1:1-9:2"
+    },
+    {
+      "type": "Covalent_molecule_type",
+      "supertype": "Generative",
+      "base": {
+        "type": "Function_call_appendix_for_list_parameter",
+        "list": [
+          {
+            "type": "Functional_atom",
+            "supertype": "Generative",
+            "formula": "evento{$1}",
+            "name": {
+              "type": "Function_name_by_word",
+              "id": "evento",
+              "aliased": null,
+              "script": 6,
+              "location": "148-154|12:3-12:9"
+            },
+            "parameters": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Text",
+                  "supertype": "Generative",
+                  "contents": "Meditar",
+                  "script": 9,
+                  "location": "156-165|12:11-12:20"
+                }
+              ],
+              "script": 13,
+              "location": "154-167|12:9-12:22"
+            },
+            "script": 19,
+            "location": "148-167|12:3-12:22"
+          },
+          {
+            "type": "Functional_atom",
+            "supertype": "Generative",
+            "formula": "duracion{$1}",
+            "name": {
+              "type": "Function_name_by_word",
+              "id": "duracion",
+              "aliased": null,
+              "script": 8,
+              "location": "170-178|13:3-13:11"
+            },
+            "parameters": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Text",
+                  "supertype": "Generative",
+                  "contents": "1h",
+                  "script": 4,
+                  "location": "180-184|13:13-13:17"
+                }
+              ],
+              "script": 8,
+              "location": "178-186|13:11-13:19"
+            },
+            "script": 16,
+            "location": "170-186|13:3-13:19"
+          },
+          {
+            "type": "Functional_atom",
+            "supertype": "Generative",
+            "formula": "detalles{$1}",
+            "name": {
+              "type": "Function_name_by_word",
+              "id": "detalles",
+              "aliased": null,
+              "script": 8,
+              "location": "189-197|14:3-14:11"
+            },
+            "parameters": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Text",
+                  "supertype": "Generative",
+                  "contents": "wherever",
+                  "script": 10,
+                  "location": "199-209|14:13-14:23"
+                }
+              ],
+              "script": 14,
+              "location": "197-211|14:11-14:25"
+            },
+            "script": 22,
+            "location": "189-211|14:3-14:25"
+          }
+        ],
+        "script": 69,
+        "location": "144-213|11:1-15:2"
+      },
+      "atoms": [],
+      "script": 69,
+      "location": "144-213|11:1-15:2",
+      "extended_by": [
+        {
+          "type": "Pipe_appendix",
+          "operator": "|@h1=",
+          "pipe": {
+            "type": "Functional_molecule",
+            "supertype": "Generative",
+            "formula": "hour{$1}with{$2}",
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "hour",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "222-226|16:9-16:13"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "08:00",
+                      "script": 7,
+                      "location": "228-235|16:15-16:22"
+                    }
+                  ],
+                  "script": 11,
+                  "location": "226-237|16:13-16:24"
+                },
+                "script": 15,
+                "location": "222-237|16:9-16:24",
+                "formula": "hour{$1}"
+              },
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "with",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "237-241|16:24-16:28"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Variable",
+                      "supertype": "Generative",
+                      "name": null,
+                      "script": 1,
+                      "location": "243-244|16:30-16:31"
+                    }
+                  ],
+                  "script": 5,
+                  "location": "241-246|16:28-16:33"
+                },
+                "script": 9,
+                "location": "237-246|16:24-16:33",
+                "formula": "with{$1}"
+              }
+            ]
+          },
+          "script": 33,
+          "location": "213-246|15:2-16:33"
+        },
+        {
+          "type": "Pipe_appendix",
+          "operator": "|@h2=",
+          "pipe": {
+            "type": "Functional_molecule",
+            "supertype": "Generative",
+            "formula": "hour{$1}with{$2}",
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "hour",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "255-259|17:9-17:13"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "09:00",
+                      "script": 7,
+                      "location": "261-268|17:15-17:22"
+                    }
+                  ],
+                  "script": 11,
+                  "location": "259-270|17:13-17:24"
+                },
+                "script": 15,
+                "location": "255-270|17:9-17:24",
+                "formula": "hour{$1}"
+              },
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "with",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "270-274|17:24-17:28"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Variable",
+                      "supertype": "Generative",
+                      "name": null,
+                      "script": 1,
+                      "location": "276-277|17:30-17:31"
+                    }
+                  ],
+                  "script": 5,
+                  "location": "274-279|17:28-17:33"
+                },
+                "script": 9,
+                "location": "270-279|17:24-17:33",
+                "formula": "with{$1}"
+              }
+            ]
+          },
+          "script": 33,
+          "location": "246-279|16:33-17:33"
+        },
+        {
+          "type": "Pipe_appendix",
+          "operator": "|@h3=",
+          "pipe": {
+            "type": "Functional_molecule",
+            "supertype": "Generative",
+            "formula": "hour{$1}with{$2}",
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "hour",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "288-292|18:9-18:13"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "10:00",
+                      "script": 7,
+                      "location": "294-301|18:15-18:22"
+                    }
+                  ],
+                  "script": 11,
+                  "location": "292-303|18:13-18:24"
+                },
+                "script": 15,
+                "location": "288-303|18:9-18:24",
+                "formula": "hour{$1}"
+              },
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "with",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "303-307|18:24-18:28"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Variable",
+                      "supertype": "Generative",
+                      "name": null,
+                      "script": 1,
+                      "location": "309-310|18:30-18:31"
+                    }
+                  ],
+                  "script": 5,
+                  "location": "307-312|18:28-18:33"
+                },
+                "script": 9,
+                "location": "303-312|18:24-18:33",
+                "formula": "with{$1}"
+              }
+            ]
+          },
+          "script": 33,
+          "location": "279-312|17:33-18:33"
+        },
+        {
+          "type": "Pipe_appendix",
+          "operator": "|",
+          "pipe": {
+            "type": "Functional_molecule",
+            "supertype": "Generative",
+            "formula": "day{$1}with{$2}",
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "day",
+                  "aliased": null,
+                  "script": 3,
+                  "location": "317-320|19:5-19:8"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "6/11/2024",
+                      "script": 11,
+                      "location": "322-333|19:10-19:21"
+                    }
+                  ],
+                  "script": 15,
+                  "location": "320-335|19:8-19:23"
+                },
+                "script": 18,
+                "location": "317-335|19:5-19:23",
+                "formula": "day{$1}"
+              },
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "with",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "335-339|19:23-19:27"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Variable",
+                      "supertype": "Generative",
+                      "name": "h1",
+                      "script": 3,
+                      "location": "341-344|19:29-19:32"
+                    },
+                    {
+                      "type": "Variable",
+                      "supertype": "Generative",
+                      "name": "h2",
+                      "script": 3,
+                      "location": "345-348|19:33-19:36"
+                    },
+                    {
+                      "type": "Variable",
+                      "supertype": "Generative",
+                      "name": "h3",
+                      "script": 3,
+                      "location": "349-352|19:37-19:40"
+                    }
+                  ],
+                  "script": 15,
+                  "location": "339-354|19:27-19:42"
+                },
+                "script": 19,
+                "location": "335-354|19:23-19:42",
+                "formula": "with{$1}"
+              }
+            ]
+          },
+          "script": 42,
+          "location": "312-354|18:33-19:42"
+        },
+        {
+          "type": "Pipe_appendix",
+          "operator": "|",
+          "pipe": {
+            "type": "Functional_atom",
+            "supertype": "Generative",
+            "formula": "registers{$1}",
+            "name": {
+              "type": "Function_name_by_word",
+              "id": "registers",
+              "aliased": null,
+              "script": 9,
+              "location": "359-368|20:5-20:14"
+            },
+            "parameters": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Variable",
+                  "supertype": "Generative",
+                  "name": null,
+                  "script": 1,
+                  "location": "370-371|20:16-20:17"
+                }
+              ],
+              "script": 5,
+              "location": "368-373|20:14-20:19"
+            },
+            "script": 14,
+            "location": "359-373|20:5-20:19"
+          },
+          "script": 19,
+          "location": "354-373|19:42-20:19"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "mentions": {
+      "molecules": {
+        "hour{$1}with{$2}": "pos=1 times=4",
+        "day{$1}with{$2}": "pos=2 times=2"
+      },
+      "atoms": {
+        "with": "pos=1 times=6",
+        "hour": "pos=2 times=4",
+        "registers": "pos=3 times=2",
+        "day": "pos=4 times=2",
+        "event": "pos=5 times=1",
+        "duration": "pos=6 times=1",
+        "details": "pos=7 times=1",
+        "evento": "pos=8 times=1",
+        "duracion": "pos=9 times=1",
+        "detalles": "pos=10 times=1"
+      }
+    }
+  },
+  "seed": "registers{\n  day{{26/11/2024}}with{\n    hour{{08:00}}with{\n      event{{Desayunar}}\n      duration{{1h}}\n      details{{Wherever}}\n    }\n  }\n}\n\n{\n  evento{ \"Meditar\" }\n  duracion{ \"1h\" }\n  detalles{ \"wherever\" }\n}\n  |@h1= hour{ \"08:00\" }with{ @ }\n  |@h2= hour{ \"09:00\" }with{ @ }\n  |@h3= hour{ \"10:00\" }with{ @ }\n  | day{ \"6/11/2024\" }with{ @h1 @h2 @h3 }\n  | registers{ @ }"
+}

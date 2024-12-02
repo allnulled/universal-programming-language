@@ -1,0 +1,27 @@
+asigno xcomponents_components.xtitle como un componente vue2 con nombre "xtitle" con plantilla {
+  <div class="Component xtitle">
+    <div class="content">
+      <slot></slot>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {}.
+    método data donde {
+      retorno {}.
+    }.
+    propiedad methods como {}.
+    propiedad watch como {}.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {}.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

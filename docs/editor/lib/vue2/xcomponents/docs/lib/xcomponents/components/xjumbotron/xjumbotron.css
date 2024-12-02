@@ -1,0 +1,17 @@
+.xjumbotron {
+    min-height: 80px;
+    background-color: #666;
+    color: white;
+}
+.xjumbotron > table {
+    height: 100%;
+    width: 100%;
+    min-height: 80px;
+    text-align: center;
+}
+.xjumbotron > table > tbody {}
+.xjumbotron > table > tbody > tr {}
+.xjumbotron > table > tbody > tr > td {
+    vertical-align: middle;
+    height: 100%;
+}

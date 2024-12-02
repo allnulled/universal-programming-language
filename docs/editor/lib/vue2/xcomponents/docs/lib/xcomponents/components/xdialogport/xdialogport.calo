@@ -1,0 +1,397 @@
+asigno xcomponents_components.xdialogport como un componente vue2 con nombre "xdialogport" con plantilla {
+  <div class="Component xdialogport">
+    <div class="" v-if="dialogs && dialogs.length && !is_loading">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <xdialogcurrent :port="this" ref="current_dialog"></xdialogcurrent>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+
+    propiedad props como {}.
+
+    método data donde {
+      retorno {
+        is_loading: false,
+        dialogs: []
+      }.
+    }.
+
+    propiedad methods como {
+      método generate_html_1 con (html, title, footer) donde {
+        creo variable html_vue como "".
+        incremento html_vue en "<xwindow>".
+        incremento html_vue en " <xwindowtitle>".
+        incremento html_vue en "  " + title.
+        incremento html_vue en " </xwindowtitle>".
+        incremento html_vue en " <xwindowbody>".
+        incremento html_vue en "  <form v-on:submit='finalize_dialog'>".
+        incremento html_vue en "   <xlayout>".
+        incremento html_vue en "   " + html.
+        incremento html_vue en "   </xlayout>".
+        incremento html_vue en "  </form>".
+        incremento html_vue en " </xwindowbody>".
+        si footer {
+          incremento html_vue en " <xwindowfooter>".
+          incremento html_vue en "  <xwindowfooteritem>".
+          incremento html_vue en "   " + footer.
+          incremento html_vue en "  </xwindowfooteritem>".
+          incremento html_vue en " </xwindowfooter>".
+        }.
+        incremento html_vue en "</xwindow>".
+        retorno html_vue.
+      }.
+
+      método generate_html_2 con (html, title, footer, button_accept o en su defecto "Sí", button_reject o en su defecto "No") donde {
+        creo variable html_vue como "".
+        incremento html_vue en "<xwindow>".
+        incremento html_vue en " <xwindowtitle>".
+        incremento html_vue en "  " + title.
+        incremento html_vue en " </xwindowtitle>".
+        incremento html_vue en " <xwindowbody>".
+        incremento html_vue en "  <form v-on:submit='finalize_dialog'>".
+        incremento html_vue en "   <xlayout>".
+        incremento html_vue en "   " + html.
+        incremento html_vue en "   </xlayout>".
+        incremento html_vue en "   <div style='text-align:right;padding:4px;border-top:1px solid #CCC;'>".
+        incremento html_vue en "     <button v-on:click='finalize_dialog_accepting'>".
+        incremento html_vue en "       " + button_accept.
+        incremento html_vue en "     </button>".
+        incremento html_vue en "     <button v-on:click='finalize_dialog_rejecting'>".
+        incremento html_vue en "       " + button_reject.
+        incremento html_vue en "     </button>".
+        incremento html_vue en "   </div>".
+        incremento html_vue en "  </form>".
+        incremento html_vue en " </xwindowbody>".
+        si footer {
+          incremento html_vue en " <xwindowfooter>".
+          incremento html_vue en "  <xwindowfooteritem>".
+          incremento html_vue en "   " + footer.
+          incremento html_vue en "  </xwindowfooteritem>".
+          incremento html_vue en " </xwindowfooter>".
+        }.
+        incremento html_vue en "</xwindow>".
+        retorno html_vue.
+      }.
+
+      método generate_html_3 con (html, title, footer, button_accept o en su defecto "Sí") donde {
+        creo variable html_vue como "".
+        incremento html_vue en "<xwindow>".
+        incremento html_vue en " <xwindowtitle>".
+        incremento html_vue en "  " + title.
+        incremento html_vue en " </xwindowtitle>".
+        incremento html_vue en " <xwindowbody>".
+        incremento html_vue en "  <form v-on:submit='finalize_dialog'>".
+        incremento html_vue en "   <xlayout>".
+        incremento html_vue en "   " + html.
+        incremento html_vue en "   </xlayout>".
+        incremento html_vue en "   <div style='text-align:right;padding:4px;border-top:1px solid #CCC;'>".
+        incremento html_vue en "     <button v-on:click='finalize_dialog_accepting'>".
+        incremento html_vue en "       " + button_accept.
+        incremento html_vue en "     </button>".
+        incremento html_vue en "   </div>".
+        incremento html_vue en "  </form>".
+        incremento html_vue en " </xwindowbody>".
+        si footer {
+          incremento html_vue en " <xwindowfooter>".
+          incremento html_vue en "  <xwindowfooteritem>".
+          incremento html_vue en "   " + footer.
+          incremento html_vue en "  </xwindowfooteritem>".
+          incremento html_vue en " </xwindowfooter>".
+        }.
+        incremento html_vue en "</xwindow>".
+        retorno html_vue.
+      }.
+
+      método asíncrono reset donde {
+        asigno this.is_loading como true.
+        hago this.$forceUpdate(true).
+        hago setTimeout(una lambda donde {
+          asigno this.is_loading como false.
+          hago this.$forceUpdate(true).
+        }, 0).
+      }.
+
+      método obtener_subcomponente con () donde {
+        retorno {
+          propiedad props como {
+            propiedad port como {
+              propiedad type como Object.
+              propiedad required como true.
+            }.
+          }.
+          propiedad methods como {
+            método finalize_dialog con (evento) donde {
+              hago this.port.close_first().
+              retorno false.
+            }.
+            método finalize_dialog_accepting con (evento) donde {
+              hago this.port.close_first_accepting().
+              retorno false.
+            }.
+            método finalize_dialog_rejecting con (evento) donde {
+              hago this.port.close_first_rejecting().
+              retorno false.
+            }.
+          }.
+        }.
+      }.
+
+      método asíncrono extract_fields_from_dialog con (current_dialog) donde {
+        creo formulario como current_dialog.$el.querySelector("form").
+        creo elementos como formulario.elements.
+        creo salida como {}.
+        en proceso iterando_elementos donde desde 0 hasta elementos.length {
+          creo elemento como elementos[index].
+          creo nombre como elemento.getAttribute("name").
+          creo valor como un hecho donde {
+            si elemento.type es igual que "file" {
+              retorno elemento.files.
+            } y si no {
+              retorno elemento.value.
+            }.
+          }.
+          si nombre no es tipo texto continúo proceso iterando_elementos.
+          asigno salida[nombre] como valor.
+        }.
+        retorno salida.
+      }.
+
+      método get_template_from_dialog con (dialogo_2) donde {
+        creo variable html_vue como undefined.
+        si dialogo_2.type es igual que "form" {
+          asigno html_vue como this.generate_html_1(dialogo_2.html, dialogo_2.title, dialogo_2.footer).
+        } pero si dialogo_2.type es igual que "confirm" {
+          asigno html_vue como this.generate_html_2(dialogo_2.html, dialogo_2.title, dialogo_2.footer, dialogo_2.button_accept, dialogo_2.button_reject).
+        } pero si dialogo_2.type es igual que "inform" {
+          asigno html_vue como this.generate_html_3(dialogo_2.html, dialogo_2.title, dialogo_2.footer, dialogo_2.button_accept).
+        } y si no lanzo un nuevo Error("No se identificó el tipo de diálogo").
+        retorno html_vue.
+      }.
+
+      método asíncrono close_first donde {
+        creo dialogo como this.dialogs.shift().
+        creo tipo como dialogo.type.
+        creo datos como this.extract_fields_from_dialog(this.$refs.current_dialog).
+        hago dialogo.promise_handler.ok(datos).
+        si this.dialogs.length es igual que 0 {
+          retorno this.reset().
+        }.
+        creo dialogo_2 como this.dialogs[0].
+        creo html_vue como this.get_template_from_dialog(dialogo_2).
+        hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+        hago this.reset().
+      }.
+
+      método asíncrono close_first_returning con (datos) donde {
+        creo dialogo como this.dialogs.shift().
+        hago dialogo.promise_handler.ok(datos).
+        si this.dialogs.length es igual que 0 {
+          retorno this.reset().
+        }.
+        creo dialogo_2 como this.dialogs[0].
+        creo html_vue como this.get_template_from_dialog(dialogo_2).
+        hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+        hago this.reset().
+      }.
+
+      método asíncrono close_first_accepting donde {
+        creo dialogo como this.dialogs.shift().
+        creo tipo como dialogo.type.
+        creo datos como this.extract_fields_from_dialog(this.$refs.current_dialog).
+        hago dialogo.promise_handler.ok(true).
+        si this.dialogs.length es igual que 0 {
+          retorno this.reset().
+        }.
+        creo dialogo_2 como this.dialogs[0].
+        creo html_vue como this.get_template_from_dialog(dialogo_2).
+        hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+        hago this.reset().
+      }.
+
+      método asíncrono close_first_rejecting donde {
+        creo dialogo como this.dialogs.shift().
+        creo tipo como dialogo.type.
+        creo datos como this.extract_fields_from_dialog(this.$refs.current_dialog).
+        hago dialogo.promise_handler.ok(false).
+        si this.dialogs.length es igual que 0 {
+          retorno this.reset().
+        }.
+        creo dialogo_2 como this.dialogs[0].
+        creo html_vue como this.get_template_from_dialog(dialogo_2).
+        hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+        hago this.reset().
+      }.
+
+      método asíncrono form con (...incluyo args) donde {
+        desacoplo constantes [ html_o_todos ] a partir de args.
+        si html_o_todos es tipo texto retorno this.form_by_parameters(...incluyo args).
+        si html_o_todos es tipo objeto retorno this.form_by_parameters(html_o_todos.html, html_o_todos.title, html_o_todos.footer).
+        lanzo un nuevo Error("Parámetro no identificado en llamada a «xdialogport.form»").
+      }.
+
+      método asíncrono form_by_parameters con (html, title o en su defecto "Mensaje", footer o en su defecto false) donde {
+        creo promise_handler como {}.
+        asigno promise_handler.ok como undefined.
+        asigno promise_handler.fail como undefined.
+        asigno promise_handler.promise como una nueva Promise(una lambda con (ok2, fail2) donde {
+          asigno promise_handler.ok como ok2.
+          asigno promise_handler.fail como fail2.
+        }).
+        hago this.dialogs.push({
+          type: "form",
+          html,
+          title,
+          footer,
+          promise_handler
+        }).
+        si this.dialogs.length es igual que 1 {
+          creo dialogo_2 como this.dialogs[0].
+          creo html_vue como this.get_template_from_dialog(dialogo_2).
+          hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+          hago this.reset().
+        }.
+        hago this.$forceUpdate(true).
+        retorno promise_handler.promise.
+      }.
+
+      método asíncrono confirm con (...incluyo args) donde {
+        desacoplo constantes [ html_o_todos ] a partir de args.
+        si html_o_todos es tipo texto retorno this.confirm_by_parameters(...incluyo args).
+        si html_o_todos es tipo objeto retorno this.confirm_by_parameters(html_o_todos.html, html_o_todos.title, html_o_todos.footer, html_o_todos.button_accept, html_o_todos.button_reject).
+        lanzo un nuevo Error("Parámetro no identificado en llamada a «xdialogport.confirm»").
+      }.
+
+      método asíncrono confirm_by_parameters con (html, title o en su defecto "Mensaje", footer o en su defecto false, button_accept o en su defecto "Sí", button_reject o en su defecto "No") donde {
+        creo promise_handler como {}.
+        asigno promise_handler.ok como undefined.
+        asigno promise_handler.fail como undefined.
+        asigno promise_handler.promise como una nueva Promise(una lambda con (ok2, fail2) donde {
+          asigno promise_handler.ok como ok2.
+          asigno promise_handler.fail como fail2.
+        }).
+        hago this.dialogs.push({
+          type: "confirm",
+          html,
+          title,
+          footer,
+          button_accept,
+          button_reject,
+          promise_handler
+        }).
+        si this.dialogs.length es igual que 1 {
+          creo dialogo_2 como this.dialogs[0].
+          creo html_vue como this.get_template_from_dialog(dialogo_2).
+          hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+          hago this.reset().
+        }.
+        hago this.$forceUpdate(true).
+        retorno promise_handler.promise.
+      }.
+
+      método asíncrono inform con (...incluyo args) donde {
+        desacoplo constantes [ html_o_todos ] a partir de args.
+        si html_o_todos es tipo texto retorno this.inform_by_parameters(...incluyo args).
+        si html_o_todos es tipo objeto retorno this.inform_by_parameters(html_o_todos.html, html_o_todos.title, html_o_todos.footer, html_o_todos.button_accept).
+        lanzo un nuevo Error("Parámetro no identificado en llamada a «xdialogport.inform»").
+      }.
+
+      método asíncrono inform_by_parameters con (html, title o en su defecto "Mensaje", footer o en su defecto false, button_accept o en su defecto "Sí") donde {
+        creo promise_handler como {}.
+        asigno promise_handler.ok como undefined.
+        asigno promise_handler.fail como undefined.
+        asigno promise_handler.promise como una nueva Promise(una lambda con (ok2, fail2) donde {
+          asigno promise_handler.ok como ok2.
+          asigno promise_handler.fail como fail2.
+        }).
+        hago this.dialogs.push({
+          type: "inform",
+          html,
+          title,
+          footer,
+          button_accept,
+          promise_handler
+        }).
+        si this.dialogs.length es igual que 1 {
+          creo dialogo_2 como this.dialogs[0].
+          creo html_vue como this.get_template_from_dialog(dialogo_2).
+          hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+          hago this.reset().
+        }.
+        hago this.$forceUpdate(true).
+        retorno promise_handler.promise.
+      }.
+
+      método asíncrono error con (error) donde {
+        creo promise_handler como {}.
+        asigno promise_handler.ok como undefined.
+        asigno promise_handler.fail como undefined.
+        asigno promise_handler.promise como una nueva Promise(una lambda con (ok2, fail2) donde {
+          asigno promise_handler.ok como ok2.
+          asigno promise_handler.fail como fail2.
+        }).
+        creo variable html como "".
+        incremento html en error.message.
+        incremento html en ". ".
+        si error y error.response y error.response.data y error.response.data.error {
+          incremento html en cuando error.response entonces (error.response.data.error.name + ": " + error.response.data.error.message) si no "".
+        } y si no {
+          incremento html en "".
+        }.
+      
+        asigno html como this.escapeHtml(html).
+        asigno html como "<xlayout style='color: red;text-shadow: 0 0 2px red;'>" + html + "</xlayout>".
+        creo title como "Error de aplicación".
+        creo footer como "Hubo un error.".
+        creo button_accept como "De acuerdo".
+        hago this.dialogs.push({
+          type: "inform",
+          html,
+          title,
+          footer,
+          button_accept,
+          promise_handler
+        }).
+        si this.dialogs.length es igual que 1 {
+          creo dialogo_2 como this.dialogs[0].
+          creo html_vue como this.get_template_from_dialog(dialogo_2).
+          hago Vue.component("xdialogcurrent", { template: html_vue, ...incluyo this.obtener_subcomponente() }).
+          hago this.reset().
+        }.
+        hago this.$forceUpdate(true).
+        retorno promise_handler.promise.then(una lambda donde retorno error).
+      }.
+
+      método escapeHtml con (texto) donde {
+        retorno texto
+          .replace(una nueva RegExp(">", "g"), "&gt;")
+          .replace(una nueva RegExp("<", "g"), "&lt;").
+      }.
+
+    }.
+    propiedad watch como {}.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {
+      asigno Vue.prototype.$dialogs como this.
+      asigno Vue.prototype.$xdialogport como this.
+    }.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

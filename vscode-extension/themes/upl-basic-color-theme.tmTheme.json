@@ -1,0 +1,82 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "colors": {
+        "editor.background": "#000000",
+        "editor.foreground": "#ffffffDF",
+        "editor.selectionBackground": "#FFFFFF",
+        "tab.activeBackground": "#000000",
+        "tab.activeForeground": "#FFFF00"
+    },
+    "tokenColors": [
+        {
+            "scope": "source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#FFFFFF"
+            }
+        },
+        {
+            "scope": "pipes.source.upl",
+            "settings": {
+                "fontStyle": "underline",
+                "foreground": "#089181bf"
+            }
+        },
+        {
+            "scope": "keyword.control.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#00FF00BF"
+            }
+        },
+        {
+            "scope": "special_syntax.keyword.control.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#f14343"
+            }
+        },
+        {
+            "scope": "string.quoted.double.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#e2b811df"
+            }
+        },
+        {
+            "scope": "comments.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#404ab9"
+            }
+        },
+        {
+            "scope": "number.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#4dcfff"
+            }
+        },
+        {
+            "scope": "structure.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#841379"
+            }
+        },
+        {
+            "scope": "variable.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#902ba1"
+            }
+        },
+        {
+            "scope": "object_properties.source.upl",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ffe101"
+            }
+        }
+    ]
+}

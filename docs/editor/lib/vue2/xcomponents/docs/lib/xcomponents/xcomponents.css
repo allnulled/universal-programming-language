@@ -1,0 +1,394 @@
+.win7 .VuejsCalendario table.tabla_de_calendario {
+    width: 100%;
+}
+.win7 .VuejsCalendario button.boton_de_calendario {
+    min-width: auto;
+    width: 100%;
+    padding: 2px;
+}
+.win7 .VuejsCalendario button.boton_de_mover_mes {
+    width: 100%;
+}
+.win7 .VuejsCalendario input.entrada_de_calendario {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+}
+.win7 .VuejsCalendario .chivato_de_fecha {
+    font-size: 8px;
+    font-family: monospace;
+    text-align: center;
+}
+.win7 .VuejsCalendario .vuejs_calendario_contenedor {
+    max-width: 220px;
+    background-color: #222;
+    color: white;
+    padding: 4px;
+    border-radius: 2pt;
+    box-shadow: 0 0 4px black;
+}
+.xbiglist {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+.xbiglistitem {
+    padding: 8px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    cursor: pointer;
+}
+.xbiglistitem:hover {
+    background-color: #DDD;
+}
+.xbiglist > .xbiglistitem:first-child {
+    border-top: 1px solid #333;
+}
+.Component.xbreadcrumb {
+    padding: 8px;
+    margin: 0px;
+    background-color: #555;
+    color: white;
+    font-size: 12px;
+    font-family: 9pt Segoe UI,sans-serif;
+}
+
+.xcollapser {
+    margin-left: 12px;
+}
+.xcollapsible {}
+.xdialogport {}
+.xdialogport > div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+.xdialogport > div > table {
+    width: 100%;
+    height: 100%;
+}
+.xdialogport > div > table > tbody {}
+.xdialogport > div > table > tbody > tr {}
+.xdialogport > div > table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+}
+.xdialogport > div > table > tbody > tr > td > div {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+.xdialogport > div > table > tbody > tr > td > div > .xwindow {
+}
+.xdialogport > div > table > tbody > tr > td > div > .xwindow > .xwindowbody {
+    min-height: auto;
+    overflow: scroll;
+}
+
+.xform .form_group {
+    
+}
+.xform .form_group_label {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.xform .form_group_input {
+    background-color: #CCC;
+    box-shadow: 0 0 2px black;
+}
+.xformcheckbox .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformcheckbox .checkbox_input {
+    display: none;
+}
+.xformcheckboxes .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformcheckboxes .checkbox_input {
+    display: none;
+}
+.xformcombobox .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformcombobox .combobox_input {
+    
+}
+.xformdate {}
+.xformdate .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformdatetime {}
+.xformdatetime .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformfield .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformfield .text_input {
+    width: 100%;
+}
+.xformnumber .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformnumber .number_input {
+    
+}
+.xformrange input[type="range"] {
+    border: none;
+}
+.xformrange .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformrange .range_input {
+    
+}
+.xformselect .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformselect .select_input {
+    width: 100%;
+}
+.xformtextarea .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xformtextarea .textarea_input {
+    width: 100%;
+    resize: vertical;
+}
+.xformtime {}
+.xformtime .form_group {
+    padding: 8px;
+    padding-top: 12px;
+}
+.xjumbotron {
+    min-height: 80px;
+    background-color: #666;
+    color: white;
+}
+.xjumbotron > table {
+    height: 100%;
+    width: 100%;
+    min-height: 80px;
+    text-align: center;
+}
+.xjumbotron > table > tbody {}
+.xjumbotron > table > tbody > tr {}
+.xjumbotron > table > tbody > tr > td {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.xlayout {
+    padding: 8px;
+}
+.xlayouthorizontal {
+    display: table;
+    width: 100%;
+}
+.xlayouthorizontalitem {
+    display: table-cell;
+}
+.xlayoutnopaddingbottom {
+    padding: 8px;
+    padding-bottom: 0px;
+}
+.xlayoutnopaddingtop {
+    padding: 8px;
+    padding-top: 0px;
+}
+.xlayoutnopaddingvertical {
+    padding: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.xlayoutverticalitem {
+    
+}
+.Component.xlink {
+    color: rgb(101, 101, 255);
+    cursor: pointer;
+}
+.Component.xlink:visited {
+    color: rgb(108, 108, 254);
+}
+.Component.xlink:hover {
+    color: rgb(151, 151, 255);
+}
+
+.xlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.xlistitem {
+    
+}
+.xonscreendependant > * {
+    display: none;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .xonscreendependant > .xonscreenlg {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .xonscreendependant > .xonscreenmd {
+        display: block !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .xonscreendependant > .xonscreensm {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .xonscreendependant > .xonscreenxl {
+        display: block !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .xonscreendependant > .xonscreenxs {
+        display: block !important;
+    }
+}
+
+.Component.xpage {
+    display: block;
+    text-align: center;
+}
+.Component.xpage > .title {
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 12px;
+}
+.Component.xpage > .container {
+    display: inline-block;
+    border: 1px dashed #333;
+    min-width: 100px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow: scroll;
+    resize: both;
+}
+.Component.xpage > .container > .content {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+
+.xpill {
+    display: inline-block;
+    width: auto;
+    background-color: #444;
+    color: white;
+    border-radius: 5pt;
+    text-align: center;
+    padding: 4px;
+    margin: 1px;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+
+.xstatic {}
+.xstatic > div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+.xstatic > div > table {
+    width: 100%;
+    height: 100%;
+}
+.xstatic > div > table > tbody {}
+.xstatic > div > table > tbody > tr {}
+.xstatic > div > table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+}
+.xstatic > div > table > tbody > tr > td > div {
+    display: inline-block;
+    text-align: left;
+}
+.xsubtitle {
+    padding: 8px;
+    background-color: #444;
+    color: white;
+}
+
+
+.xtable {
+    width: 100%;
+    border-collapse: collapse;
+}
+.xtable > .xtablehead > .xtablerow > .xtableheader {
+    background-color: #111;
+    color: white;
+}
+
+.xtable > .xtablebody > .xtablerow > .xtablecell {
+    background-color: #EEE;
+    color: black;
+}
+
+
+
+
+
+.xtableviewer {
+    min-height: 100px;
+    max-height: 500px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.Component.xtitle .content {
+    padding: 8px;
+    margin: 0px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    font-family: 9pt Segoe UI,sans-serif;
+}
+
+
+
+
+.xwindowfooteritem {
+    
+}
+

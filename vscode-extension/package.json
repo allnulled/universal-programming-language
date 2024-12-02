@@ -1,0 +1,32 @@
+{
+  "name": "universal-programming-language",
+  "displayName": "Universal Programming Language",
+  "description": "Support for Universal Programming Language (UPL) syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "author": "allnulled",
+  "publisher": "allnulled",
+  "contributes": {
+    "languages": [{
+      "id": "up",
+      "aliases": ["Universal Programming Language"],
+      "extensions": ["upl", "up"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "up",
+      "scopeName": "source.upl",
+      "path": "./syntaxes/upl.tmLanguage.json"
+    }],
+    "themes": [{
+          "label": "Universal Programming Language Basic Color Theme",
+          "uiTheme": "vs-dark",
+          "path": "./themes/upl-basic-color-theme.tmTheme.json"
+      }]
+  }
+}

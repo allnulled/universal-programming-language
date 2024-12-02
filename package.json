@@ -1,0 +1,14 @@
+{
+  "name": "upl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node build/dev.js",
+    "build": "node build/build.js",
+    "test": "node test/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

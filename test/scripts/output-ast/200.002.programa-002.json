@@ -1,0 +1,1692 @@
+{
+  "type": "Language",
+  "header": {
+    "type": "Preblock",
+    "declarations": {},
+    "script": 0,
+    "location": "0-0|1:1-1:1"
+  },
+  "body": [
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "creo{$1}como{$2}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "creo",
+            "aliased": null,
+            "script": 4,
+            "location": "0-4|1:1-1:5"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Variable",
+                "supertype": "Generative",
+                "name": "usuario",
+                "script": 8,
+                "location": "6-14|1:7-1:15"
+              }
+            ],
+            "script": 12,
+            "location": "4-16|1:5-1:17"
+          },
+          "script": 16,
+          "location": "0-16|1:1-1:17",
+          "formula": "creo{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "como",
+            "aliased": null,
+            "script": 4,
+            "location": "16-20|1:17-1:21"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Object",
+                "supertype": "Generative",
+                "properties": [
+                  {
+                    "key": "nombre",
+                    "val": {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "pedir a usuario{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "pedir a usuario",
+                        "aliased": null,
+                        "script": 15,
+                        "location": "32-47|2:10-2:25"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_text_parameter",
+                        "text": " ¿Cómo te llamas? ",
+                        "script": 22,
+                        "location": "47-69|2:25-2:47"
+                      },
+                      "script": 37,
+                      "location": "32-69|2:10-2:47"
+                    }
+                  },
+                  {
+                    "key": "edad",
+                    "val": {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "pedir a usuario{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "pedir a usuario",
+                        "aliased": null,
+                        "script": 15,
+                        "location": "77-92|3:8-3:23"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_text_parameter",
+                        "text": " ¿Qué edad tienes? ",
+                        "script": 23,
+                        "location": "92-115|3:23-3:46"
+                      },
+                      "script": 38,
+                      "location": "77-115|3:8-3:46"
+                    }
+                  },
+                  {
+                    "key": "ciudad",
+                    "val": {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "pedir a usuario{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "pedir a usuario",
+                        "aliased": null,
+                        "script": 15,
+                        "location": "125-140|4:10-4:25"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_text_parameter",
+                        "text": " ¿En qué ciudad vives? ",
+                        "script": 27,
+                        "location": "140-167|4:25-4:52"
+                      },
+                      "script": 42,
+                      "location": "125-167|4:10-4:52"
+                    }
+                  }
+                ],
+                "script": 148,
+                "location": "21-169|1:22-5:2"
+              }
+            ],
+            "script": 150,
+            "location": "20-170|1:21-5:3"
+          },
+          "script": 154,
+          "location": "16-170|1:17-5:3",
+          "formula": "como{$1}"
+        }
+      ]
+    },
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "componente{$1}pinta{$2}se construye{$3}añade estilos{$4}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "componente",
+            "aliased": null,
+            "script": 10,
+            "location": "171-181|6:1-6:11"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Text",
+                "supertype": "Generative",
+                "contents": "Página de inicio",
+                "script": 18,
+                "location": "183-201|6:13-6:31"
+              }
+            ],
+            "script": 22,
+            "location": "181-203|6:11-6:33"
+          },
+          "script": 32,
+          "location": "171-203|6:1-6:33",
+          "formula": "componente{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "pinta",
+            "aliased": null,
+            "script": 5,
+            "location": "203-208|6:33-6:38"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "botones{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "botones",
+                  "aliased": null,
+                  "script": 7,
+                  "location": "212-219|7:3-7:10"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Object",
+                      "supertype": "Generative",
+                      "properties": [
+                        {
+                          "key": "class",
+                          "val": {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "superior",
+                            "script": 10,
+                            "location": "239-249|8:19-8:29"
+                          }
+                        }
+                      ],
+                      "script": 26,
+                      "location": "225-251|8:5-8:31"
+                    },
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "list{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "list",
+                        "aliased": null,
+                        "script": 4,
+                        "location": "256-260|9:5-9:9"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "Entrada",
+                            "script": 9,
+                            "location": "262-271|9:11-9:20"
+                          },
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "Sintaxis",
+                            "script": 10,
+                            "location": "272-282|9:21-9:31"
+                          },
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "Salida",
+                            "script": 8,
+                            "location": "283-291|9:32-9:40"
+                          }
+                        ],
+                        "script": 33,
+                        "location": "260-293|9:9-9:42"
+                      },
+                      "script": 37,
+                      "location": "256-293|9:5-9:42"
+                    }
+                  ],
+                  "script": 78,
+                  "location": "219-297|7:10-10:4"
+                },
+                "script": 85,
+                "location": "212-297|7:3-10:4"
+              },
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "editor de texto{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "editor de texto",
+                  "aliased": null,
+                  "script": 15,
+                  "location": "300-315|11:3-11:18"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Object",
+                      "supertype": "Generative",
+                      "properties": [
+                        {
+                          "key": "class",
+                          "val": {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "monoespaciado grande",
+                            "script": 22,
+                            "location": "335-357|12:19-12:41"
+                          }
+                        }
+                      ],
+                      "script": 38,
+                      "location": "321-359|12:5-12:43"
+                    },
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "reflejando modelo{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "reflejando modelo",
+                        "aliased": null,
+                        "script": 17,
+                        "location": "364-381|13:5-13:22"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Variable",
+                            "supertype": "Generative",
+                            "name": "texto_de_entrada",
+                            "script": 17,
+                            "location": "383-400|13:24-13:41"
+                          }
+                        ],
+                        "script": 21,
+                        "location": "381-402|13:22-13:43"
+                      },
+                      "script": 38,
+                      "location": "364-402|13:5-13:43"
+                    }
+                  ],
+                  "script": 91,
+                  "location": "315-406|11:18-14:4"
+                },
+                "script": 106,
+                "location": "300-406|11:3-14:4"
+              },
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "panel inferior{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "panel inferior",
+                  "aliased": null,
+                  "script": 14,
+                  "location": "409-423|15:3-15:17"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "información sobre{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "información sobre",
+                        "aliased": null,
+                        "script": 17,
+                        "location": "429-446|16:5-16:22"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Variable",
+                            "supertype": "Generative",
+                            "name": "cursor",
+                            "script": 7,
+                            "location": "448-455|16:24-16:31"
+                          }
+                        ],
+                        "script": 11,
+                        "location": "446-457|16:22-16:33"
+                      },
+                      "script": 28,
+                      "location": "429-457|16:5-16:33"
+                    },
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "botones{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "botones",
+                        "aliased": null,
+                        "script": 7,
+                        "location": "462-469|17:5-17:12"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Object",
+                            "supertype": "Generative",
+                            "properties": [
+                              {
+                                "key": "class",
+                                "val": {
+                                  "type": "Text",
+                                  "supertype": "Generative",
+                                  "contents": "inferior",
+                                  "script": 10,
+                                  "location": "491-501|18:21-18:31"
+                                }
+                              }
+                            ],
+                            "script": 26,
+                            "location": "477-503|18:7-18:33"
+                          },
+                          {
+                            "type": "Functional_atom",
+                            "supertype": "Generative",
+                            "formula": "list{$1}",
+                            "name": {
+                              "type": "Function_name_by_word",
+                              "id": "list",
+                              "aliased": null,
+                              "script": 4,
+                              "location": "510-514|19:7-19:11"
+                            },
+                            "parameters": {
+                              "type": "Function_call_appendix_for_list_parameter",
+                              "list": [
+                                {
+                                  "type": "Text",
+                                  "supertype": "Generative",
+                                  "contents": "Formatear",
+                                  "script": 11,
+                                  "location": "516-527|19:13-19:24"
+                                },
+                                {
+                                  "type": "Text",
+                                  "supertype": "Generative",
+                                  "contents": "Guardar",
+                                  "script": 9,
+                                  "location": "528-537|19:25-19:34"
+                                }
+                              ],
+                              "script": 25,
+                              "location": "514-539|19:11-19:36"
+                            },
+                            "script": 29,
+                            "location": "510-539|19:7-19:36"
+                          }
+                        ],
+                        "script": 76,
+                        "location": "469-545|17:12-20:6"
+                      },
+                      "script": 83,
+                      "location": "462-545|17:5-20:6"
+                    }
+                  ],
+                  "script": 126,
+                  "location": "423-549|15:17-21:4"
+                },
+                "script": 140,
+                "location": "409-549|15:3-21:4"
+              }
+            ],
+            "script": 343,
+            "location": "208-551|6:38-22:2"
+          },
+          "script": 348,
+          "location": "203-551|6:33-22:2",
+          "formula": "pinta{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "se construye",
+            "aliased": null,
+            "script": 12,
+            "location": "551-563|22:2-22:14"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "retorno{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "retorno",
+                  "aliased": null,
+                  "script": 7,
+                  "location": "567-574|23:3-23:10"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Object",
+                      "supertype": "Generative",
+                      "properties": [
+                        {
+                          "key": "name",
+                          "val": {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "Nombre del componente",
+                            "script": 23,
+                            "location": "586-609|24:10-24:33"
+                          }
+                        },
+                        {
+                          "key": "props",
+                          "val": {
+                            "type": "Object",
+                            "supertype": "Generative",
+                            "properties": [],
+                            "script": 9,
+                            "location": "620-629|25:11-25:20"
+                          }
+                        },
+                        {
+                          "key": "data",
+                          "val": {
+                            "type": "Functional_atom",
+                            "supertype": "Generative",
+                            "formula": "función donde{$1}",
+                            "name": {
+                              "type": "Function_name_by_word",
+                              "id": "función donde",
+                              "aliased": null,
+                              "script": 13,
+                              "location": "639-652|26:10-26:23"
+                            },
+                            "parameters": {
+                              "type": "Function_call_appendix_for_list_parameter",
+                              "list": [
+                                {
+                                  "type": "Functional_atom",
+                                  "supertype": "Generative",
+                                  "formula": "retorno{$1}",
+                                  "name": {
+                                    "type": "Function_name_by_word",
+                                    "id": "retorno",
+                                    "aliased": null,
+                                    "script": 7,
+                                    "location": "660-667|27:7-27:14"
+                                  },
+                                  "parameters": {
+                                    "type": "Function_call_appendix_for_list_parameter",
+                                    "list": [
+                                      {
+                                        "type": "Object",
+                                        "supertype": "Generative",
+                                        "properties": [
+                                          {
+                                            "key": "texto_de_entrada",
+                                            "val": {
+                                              "type": "Text",
+                                              "supertype": "Generative",
+                                              "contents": "hola upl!",
+                                              "script": 11,
+                                              "location": "712-723|29:28-29:39"
+                                            }
+                                          }
+                                        ],
+                                        "script": 56,
+                                        "location": "677-733|28:9-30:10"
+                                      }
+                                    ],
+                                    "script": 74,
+                                    "location": "667-741|27:14-31:8"
+                                  },
+                                  "script": 81,
+                                  "location": "660-741|27:7-31:8"
+                                }
+                              ],
+                              "script": 95,
+                              "location": "652-747|26:23-32:6"
+                            },
+                            "script": 108,
+                            "location": "639-747|26:10-32:6"
+                          }
+                        },
+                        {
+                          "key": "methods",
+                          "val": {
+                            "type": "Object",
+                            "supertype": "Generative",
+                            "properties": [
+                              {
+                                "key": "cargar_datos",
+                                "val": {
+                                  "type": "Functional_atom",
+                                  "supertype": "Generative",
+                                  "formula": "función donde{$1}",
+                                  "name": {
+                                    "type": "Function_name_by_word",
+                                    "id": "función donde",
+                                    "aliased": null,
+                                    "script": 13,
+                                    "location": "787-800|34:20-34:33"
+                                  },
+                                  "parameters": {
+                                    "type": "Function_call_appendix_for_list_parameter",
+                                    "list": [
+                                      {
+                                        "type": "Functional_atom",
+                                        "supertype": "Generative",
+                                        "formula": "retorno{$1}",
+                                        "name": {
+                                          "type": "Function_name_by_word",
+                                          "id": "retorno",
+                                          "aliased": null,
+                                          "script": 7,
+                                          "location": "802-809|34:35-34:42"
+                                        },
+                                        "parameters": {
+                                          "type": "Function_call_appendix_for_list_parameter",
+                                          "list": [
+                                            {
+                                              "type": "Object",
+                                              "supertype": "Generative",
+                                              "properties": [],
+                                              "script": 9,
+                                              "location": "811-820|34:44-34:53"
+                                            }
+                                          ],
+                                          "script": 13,
+                                          "location": "809-822|34:42-34:55"
+                                        },
+                                        "script": 20,
+                                        "location": "802-822|34:35-34:55"
+                                      }
+                                    ],
+                                    "script": 24,
+                                    "location": "800-824|34:33-34:57"
+                                  },
+                                  "script": 37,
+                                  "location": "787-824|34:20-34:57"
+                                }
+                              }
+                            ],
+                            "script": 70,
+                            "location": "760-830|33:13-35:6"
+                          }
+                        }
+                      ],
+                      "script": 259,
+                      "location": "575-834|23:11-36:4"
+                    }
+                  ],
+                  "script": 261,
+                  "location": "574-835|23:10-36:5"
+                },
+                "script": 268,
+                "location": "567-835|23:3-36:5"
+              }
+            ],
+            "script": 274,
+            "location": "563-837|22:14-37:2"
+          },
+          "script": 286,
+          "location": "551-837|22:2-37:2",
+          "formula": "se construye{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "añade estilos",
+            "aliased": null,
+            "script": 13,
+            "location": "837-850|37:2-37:15"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_molecule",
+                "supertype": "Generative",
+                "formula": "regla css para{$1}con{$2}",
+                "atoms": [
+                  {
+                    "type": "Functional_atom",
+                    "name": {
+                      "type": "Function_name_by_word",
+                      "id": "regla css para",
+                      "aliased": null,
+                      "script": 14,
+                      "location": "854-868|38:3-38:17"
+                    },
+                    "parameters": {
+                      "type": "Function_call_appendix_for_text_parameter",
+                      "text": " html ",
+                      "script": 10,
+                      "location": "868-878|38:17-38:27"
+                    },
+                    "script": 24,
+                    "location": "854-878|38:3-38:27",
+                    "formula": "regla css para{$1}"
+                  },
+                  {
+                    "type": "Functional_atom",
+                    "name": {
+                      "type": "Function_name_by_word",
+                      "id": "con",
+                      "aliased": null,
+                      "script": 3,
+                      "location": "878-881|38:27-38:30"
+                    },
+                    "parameters": {
+                      "type": "Function_call_appendix_for_list_parameter",
+                      "list": [
+                        {
+                          "type": "Functional_molecule",
+                          "supertype": "Generative",
+                          "formula": "estilos{$1}que cumplan con{$2}",
+                          "atoms": [
+                            {
+                              "type": "Functional_atom",
+                              "name": {
+                                "type": "Function_name_by_word",
+                                "id": "estilos",
+                                "aliased": null,
+                                "script": 7,
+                                "location": "887-894|39:5-39:12"
+                              },
+                              "parameters": {
+                                "type": "Function_call_appendix_for_list_parameter",
+                                "list": [
+                                  {
+                                    "type": "Variable",
+                                    "supertype": "Generative",
+                                    "name": "suaves",
+                                    "script": 7,
+                                    "location": "896-903|39:14-39:21"
+                                  }
+                                ],
+                                "script": 11,
+                                "location": "894-905|39:12-39:23"
+                              },
+                              "script": 18,
+                              "location": "887-905|39:5-39:23",
+                              "formula": "estilos{$1}"
+                            },
+                            {
+                              "type": "Functional_atom",
+                              "name": {
+                                "type": "Function_name_by_word",
+                                "id": "que cumplan con",
+                                "aliased": null,
+                                "script": 15,
+                                "location": "905-920|39:23-39:38"
+                              },
+                              "parameters": {
+                                "type": "Function_call_appendix_for_list_parameter",
+                                "list": [
+                                  {
+                                    "type": "Functional_atom",
+                                    "supertype": "Generative",
+                                    "formula": "color de fondo{$1}",
+                                    "name": {
+                                      "type": "Function_name_by_word",
+                                      "id": "color de fondo",
+                                      "aliased": null,
+                                      "script": 14,
+                                      "location": "922-936|39:40-39:54"
+                                    },
+                                    "parameters": {
+                                      "type": "Function_call_appendix_for_text_parameter",
+                                      "text": " negro ",
+                                      "script": 11,
+                                      "location": "936-947|39:54-39:65"
+                                    },
+                                    "script": 25,
+                                    "location": "922-947|39:40-39:65"
+                                  }
+                                ],
+                                "script": 29,
+                                "location": "920-949|39:38-39:67"
+                              },
+                              "script": 44,
+                              "location": "905-949|39:23-39:67",
+                              "formula": "que cumplan con{$1}"
+                            }
+                          ]
+                        }
+                      ],
+                      "script": 72,
+                      "location": "881-953|38:30-40:4"
+                    },
+                    "script": 75,
+                    "location": "878-953|38:27-40:4",
+                    "formula": "con{$1}"
+                  }
+                ]
+              },
+              {
+                "type": "Functional_molecule",
+                "supertype": "Generative",
+                "formula": "regla css para{$1}con{$2}",
+                "atoms": [
+                  {
+                    "type": "Functional_atom",
+                    "name": {
+                      "type": "Function_name_by_word",
+                      "id": "regla css para",
+                      "aliased": null,
+                      "script": 14,
+                      "location": "956-970|41:3-41:17"
+                    },
+                    "parameters": {
+                      "type": "Function_call_appendix_for_text_parameter",
+                      "text": " button.superior ",
+                      "script": 21,
+                      "location": "970-991|41:17-41:38"
+                    },
+                    "script": 35,
+                    "location": "956-991|41:3-41:38",
+                    "formula": "regla css para{$1}"
+                  },
+                  {
+                    "type": "Functional_atom",
+                    "name": {
+                      "type": "Function_name_by_word",
+                      "id": "con",
+                      "aliased": null,
+                      "script": 3,
+                      "location": "991-994|41:38-41:41"
+                    },
+                    "parameters": {
+                      "type": "Function_call_appendix_for_list_parameter",
+                      "list": [
+                        {
+                          "type": "Functional_molecule",
+                          "supertype": "Generative",
+                          "formula": "estilos{$1}que cumplan con{$2}",
+                          "atoms": [
+                            {
+                              "type": "Functional_atom",
+                              "name": {
+                                "type": "Function_name_by_word",
+                                "id": "estilos",
+                                "aliased": null,
+                                "script": 7,
+                                "location": "1000-1007|42:5-42:12"
+                              },
+                              "parameters": {
+                                "type": "Function_call_appendix_for_list_parameter",
+                                "list": [
+                                  {
+                                    "type": "Variable",
+                                    "supertype": "Generative",
+                                    "name": "impactantes",
+                                    "script": 12,
+                                    "location": "1009-1021|42:14-42:26"
+                                  },
+                                  {
+                                    "type": "Variable",
+                                    "supertype": "Generative",
+                                    "name": "sencillos",
+                                    "script": 10,
+                                    "location": "1022-1032|42:27-42:37"
+                                  },
+                                  {
+                                    "type": "Variable",
+                                    "supertype": "Generative",
+                                    "name": "relacionados",
+                                    "script": 13,
+                                    "location": "1033-1046|42:38-42:51"
+                                  }
+                                ],
+                                "script": 41,
+                                "location": "1007-1048|42:12-42:53"
+                              },
+                              "script": 48,
+                              "location": "1000-1048|42:5-42:53",
+                              "formula": "estilos{$1}"
+                            },
+                            {
+                              "type": "Functional_atom",
+                              "name": {
+                                "type": "Function_name_by_word",
+                                "id": "que cumplan con",
+                                "aliased": null,
+                                "script": 15,
+                                "location": "1048-1063|42:53-42:68"
+                              },
+                              "parameters": {
+                                "type": "Function_call_appendix_for_list_parameter",
+                                "list": [
+                                  {
+                                    "type": "Functional_atom",
+                                    "supertype": "Generative",
+                                    "formula": "color de fondo{$1}",
+                                    "name": {
+                                      "type": "Function_name_by_word",
+                                      "id": "color de fondo",
+                                      "aliased": null,
+                                      "script": 14,
+                                      "location": "1071-1085|43:7-43:21"
+                                    },
+                                    "parameters": {
+                                      "type": "Function_call_appendix_for_text_parameter",
+                                      "text": " blanco ",
+                                      "script": 12,
+                                      "location": "1085-1097|43:21-43:33"
+                                    },
+                                    "script": 26,
+                                    "location": "1071-1097|43:7-43:33"
+                                  },
+                                  {
+                                    "type": "Functional_atom",
+                                    "supertype": "Generative",
+                                    "formula": "color de letra{$1}",
+                                    "name": {
+                                      "type": "Function_name_by_word",
+                                      "id": "color de letra",
+                                      "aliased": null,
+                                      "script": 14,
+                                      "location": "1104-1118|44:7-44:21"
+                                    },
+                                    "parameters": {
+                                      "type": "Function_call_appendix_for_text_parameter",
+                                      "text": " rojo ",
+                                      "script": 10,
+                                      "location": "1118-1128|44:21-44:31"
+                                    },
+                                    "script": 24,
+                                    "location": "1104-1128|44:7-44:31"
+                                  }
+                                ],
+                                "script": 71,
+                                "location": "1063-1134|42:68-45:6"
+                              },
+                              "script": 86,
+                              "location": "1048-1134|42:53-45:6",
+                              "formula": "que cumplan con{$1}"
+                            }
+                          ]
+                        }
+                      ],
+                      "script": 144,
+                      "location": "994-1138|41:41-46:4"
+                    },
+                    "script": 147,
+                    "location": "991-1138|41:38-46:4",
+                    "formula": "con{$1}"
+                  }
+                ]
+              }
+            ],
+            "script": 290,
+            "location": "850-1140|37:15-47:2"
+          },
+          "script": 303,
+          "location": "837-1140|37:2-47:2",
+          "formula": "añade estilos{$1}"
+        }
+      ]
+    },
+    {
+      "type": "Functional_atom",
+      "supertype": "Generative",
+      "formula": "nuevo usuario con{$1}",
+      "name": {
+        "type": "Function_name_by_word",
+        "id": "nuevo usuario con",
+        "aliased": null,
+        "script": 17,
+        "location": "1141-1158|48:1-48:18"
+      },
+      "parameters": {
+        "type": "Function_call_appendix_for_list_parameter",
+        "list": [
+          {
+            "type": "Covalent_molecule_type",
+            "supertype": "Generative",
+            "base": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Functional_atom",
+                  "supertype": "Generative",
+                  "formula": "Carlos{$1}",
+                  "name": {
+                    "type": "Function_name_by_word",
+                    "id": "Carlos",
+                    "aliased": null,
+                    "script": 6,
+                    "location": "1163-1169|49:4-49:10"
+                  },
+                  "parameters": null,
+                  "script": 6,
+                  "location": "1163-1169|49:4-49:10"
+                }
+              ],
+              "script": 8,
+              "location": "1162-1170|49:3-49:11"
+            },
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "como",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "1170-1174|49:11-49:15"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "nombre{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "nombre",
+                        "aliased": null,
+                        "script": 6,
+                        "location": "1175-1181|49:16-49:22"
+                      },
+                      "parameters": null,
+                      "script": 6,
+                      "location": "1175-1181|49:16-49:22"
+                    }
+                  ],
+                  "script": 8,
+                  "location": "1174-1182|49:15-49:23"
+                },
+                "script": 12,
+                "location": "1170-1182|49:11-49:23"
+              }
+            ],
+            "script": 20,
+            "location": "1162-1182|49:3-49:23"
+          },
+          {
+            "type": "Covalent_molecule_type",
+            "supertype": "Generative",
+            "base": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Functional_atom",
+                  "supertype": "Generative",
+                  "formula": "Jimeno Hernández{$1}",
+                  "name": {
+                    "type": "Function_name_by_word",
+                    "id": "Jimeno Hernández",
+                    "aliased": null,
+                    "script": 16,
+                    "location": "1186-1202|50:4-50:20"
+                  },
+                  "parameters": null,
+                  "script": 16,
+                  "location": "1186-1202|50:4-50:20"
+                }
+              ],
+              "script": 18,
+              "location": "1185-1203|50:3-50:21"
+            },
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "como",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "1203-1207|50:21-50:25"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "apellidos{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "apellidos",
+                        "aliased": null,
+                        "script": 9,
+                        "location": "1208-1217|50:26-50:35"
+                      },
+                      "parameters": null,
+                      "script": 9,
+                      "location": "1208-1217|50:26-50:35"
+                    }
+                  ],
+                  "script": 11,
+                  "location": "1207-1218|50:25-50:36"
+                },
+                "script": 15,
+                "location": "1203-1218|50:21-50:36"
+              }
+            ],
+            "script": 33,
+            "location": "1185-1218|50:3-50:36"
+          },
+          {
+            "type": "Covalent_molecule_type",
+            "supertype": "Generative",
+            "base": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Number",
+                  "supertype": "Generative",
+                  "value": 34,
+                  "script": 2,
+                  "location": "1222-1224|51:4-51:6"
+                }
+              ],
+              "script": 4,
+              "location": "1221-1225|51:3-51:7"
+            },
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "como",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "1225-1229|51:7-51:11"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "edad{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "edad",
+                        "aliased": null,
+                        "script": 4,
+                        "location": "1230-1234|51:12-51:16"
+                      },
+                      "parameters": null,
+                      "script": 4,
+                      "location": "1230-1234|51:12-51:16"
+                    }
+                  ],
+                  "script": 6,
+                  "location": "1229-1235|51:11-51:17"
+                },
+                "script": 10,
+                "location": "1225-1235|51:7-51:17"
+              }
+            ],
+            "script": 14,
+            "location": "1221-1235|51:3-51:17"
+          },
+          {
+            "type": "Covalent_molecule_type",
+            "supertype": "Generative",
+            "base": {
+              "type": "Function_call_appendix_for_list_parameter",
+              "list": [
+                {
+                  "type": "Functional_atom",
+                  "supertype": "Generative",
+                  "formula": "Bonastre{$1}",
+                  "name": {
+                    "type": "Function_name_by_word",
+                    "id": "Bonastre",
+                    "aliased": null,
+                    "script": 8,
+                    "location": "1239-1247|52:4-52:12"
+                  },
+                  "parameters": null,
+                  "script": 8,
+                  "location": "1239-1247|52:4-52:12"
+                }
+              ],
+              "script": 10,
+              "location": "1238-1248|52:3-52:13"
+            },
+            "atoms": [
+              {
+                "type": "Functional_atom",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "como",
+                  "aliased": null,
+                  "script": 4,
+                  "location": "1248-1252|52:13-52:17"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "municipio{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "municipio",
+                        "aliased": null,
+                        "script": 9,
+                        "location": "1253-1262|52:18-52:27"
+                      },
+                      "parameters": null,
+                      "script": 9,
+                      "location": "1253-1262|52:18-52:27"
+                    }
+                  ],
+                  "script": 11,
+                  "location": "1252-1263|52:17-52:28"
+                },
+                "script": 15,
+                "location": "1248-1263|52:13-52:28"
+              }
+            ],
+            "script": 25,
+            "location": "1238-1263|52:3-52:28"
+          }
+        ],
+        "script": 107,
+        "location": "1158-1265|48:18-53:2"
+      },
+      "script": 124,
+      "location": "1141-1265|48:1-53:2"
+    },
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "creo{$1}como{$2}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "creo",
+            "aliased": null,
+            "script": 4,
+            "location": "1268-1272|56:1-56:5"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "usuario{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "usuario",
+                  "aliased": null,
+                  "script": 7,
+                  "location": "1273-1280|56:6-56:13"
+                },
+                "parameters": null,
+                "script": 7,
+                "location": "1273-1280|56:6-56:13"
+              }
+            ],
+            "script": 9,
+            "location": "1272-1281|56:5-56:14"
+          },
+          "script": 13,
+          "location": "1268-1281|56:1-56:14",
+          "formula": "creo{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "como",
+            "aliased": null,
+            "script": 4,
+            "location": "1281-1285|56:14-56:18"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "objeto{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "objeto",
+                  "aliased": null,
+                  "script": 6,
+                  "location": "1286-1292|56:19-56:25"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_empty_parameter",
+                  "script": 1,
+                  "location": "1292-1293|56:25-56:26"
+                },
+                "script": 7,
+                "location": "1286-1293|56:19-56:26"
+              }
+            ],
+            "script": 9,
+            "location": "1285-1294|56:18-56:27"
+          },
+          "script": 13,
+          "location": "1281-1294|56:14-56:27",
+          "formula": "como{$1}"
+        }
+      ]
+    },
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "pongo{$1}en{$2}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "pongo",
+            "aliased": null,
+            "script": 5,
+            "location": "1295-1300|57:1-57:6"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "entrada de texto{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "entrada de texto",
+                  "aliased": null,
+                  "script": 16,
+                  "location": "1301-1317|57:7-57:23"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "Cómo te llamas?",
+                      "script": 17,
+                      "location": "1318-1335|57:24-57:41"
+                    }
+                  ],
+                  "script": 19,
+                  "location": "1317-1336|57:23-57:42"
+                },
+                "script": 35,
+                "location": "1301-1336|57:7-57:42"
+              }
+            ],
+            "script": 37,
+            "location": "1300-1337|57:6-57:43"
+          },
+          "script": 42,
+          "location": "1295-1337|57:1-57:43",
+          "formula": "pongo{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "en",
+            "aliased": null,
+            "script": 2,
+            "location": "1337-1339|57:43-57:45"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "usuario{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "usuario",
+                  "aliased": null,
+                  "script": 7,
+                  "location": "1340-1347|57:46-57:53"
+                },
+                "parameters": null,
+                "script": 7,
+                "location": "1340-1347|57:46-57:53",
+                "extended_by": [
+                  {
+                    "type": "Access_by_dot_appendix",
+                    "access": "nombre",
+                    "script": 7,
+                    "location": "1347-1354|57:53-57:60"
+                  }
+                ]
+              }
+            ],
+            "script": 16,
+            "location": "1339-1355|57:45-57:61"
+          },
+          "script": 18,
+          "location": "1337-1355|57:43-57:61",
+          "formula": "en{$1}"
+        }
+      ]
+    },
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "pongo{$1}en{$2}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "pongo",
+            "aliased": null,
+            "script": 5,
+            "location": "1356-1361|58:1-58:6"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "entrada de número{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "entrada de número",
+                  "aliased": null,
+                  "script": 17,
+                  "location": "1362-1379|58:7-58:24"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "Qué edad tienes?",
+                      "script": 18,
+                      "location": "1380-1398|58:25-58:43"
+                    }
+                  ],
+                  "script": 20,
+                  "location": "1379-1399|58:24-58:44"
+                },
+                "script": 37,
+                "location": "1362-1399|58:7-58:44"
+              }
+            ],
+            "script": 39,
+            "location": "1361-1400|58:6-58:45"
+          },
+          "script": 44,
+          "location": "1356-1400|58:1-58:45",
+          "formula": "pongo{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "en",
+            "aliased": null,
+            "script": 2,
+            "location": "1400-1402|58:45-58:47"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "usuario{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "usuario",
+                  "aliased": null,
+                  "script": 7,
+                  "location": "1403-1410|58:48-58:55"
+                },
+                "parameters": null,
+                "script": 7,
+                "location": "1403-1410|58:48-58:55",
+                "extended_by": [
+                  {
+                    "type": "Access_by_dot_appendix",
+                    "access": "nombre",
+                    "script": 7,
+                    "location": "1410-1417|58:55-58:62"
+                  }
+                ]
+              }
+            ],
+            "script": 16,
+            "location": "1402-1418|58:47-58:63"
+          },
+          "script": 18,
+          "location": "1400-1418|58:45-58:63",
+          "formula": "en{$1}"
+        }
+      ]
+    },
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "pongo{$1}en{$2}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "pongo",
+            "aliased": null,
+            "script": 5,
+            "location": "1419-1424|59:1-59:6"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "entrada de opción{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "entrada de opción",
+                  "aliased": null,
+                  "script": 17,
+                  "location": "1425-1442|59:7-59:24"
+                },
+                "parameters": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "Qué prefieres?",
+                      "script": 16,
+                      "location": "1443-1459|59:25-59:41"
+                    },
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "list{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "list",
+                        "aliased": null,
+                        "script": 4,
+                        "location": "1460-1464|59:42-59:46"
+                      },
+                      "parameters": {
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "música",
+                            "script": 8,
+                            "location": "1465-1473|59:47-59:55"
+                          },
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "tecnología",
+                            "script": 12,
+                            "location": "1474-1486|59:56-59:68"
+                          },
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "drogas",
+                            "script": 8,
+                            "location": "1487-1495|59:69-59:77"
+                          }
+                        ],
+                        "script": 32,
+                        "location": "1464-1496|59:46-59:78"
+                      },
+                      "script": 36,
+                      "location": "1460-1496|59:42-59:78"
+                    }
+                  ],
+                  "script": 55,
+                  "location": "1442-1497|59:24-59:79"
+                },
+                "script": 72,
+                "location": "1425-1497|59:7-59:79"
+              }
+            ],
+            "script": 74,
+            "location": "1424-1498|59:6-59:80"
+          },
+          "script": 79,
+          "location": "1419-1498|59:1-59:80",
+          "formula": "pongo{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "en",
+            "aliased": null,
+            "script": 2,
+            "location": "1498-1500|59:80-59:82"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Functional_atom",
+                "supertype": "Generative",
+                "formula": "usuario{$1}",
+                "name": {
+                  "type": "Function_name_by_word",
+                  "id": "usuario",
+                  "aliased": null,
+                  "script": 7,
+                  "location": "1501-1508|59:83-59:90"
+                },
+                "parameters": null,
+                "script": 7,
+                "location": "1501-1508|59:83-59:90",
+                "extended_by": [
+                  {
+                    "type": "Access_by_dot_appendix",
+                    "access": "preferencia",
+                    "script": 12,
+                    "location": "1508-1520|59:90-59:102"
+                  }
+                ]
+              }
+            ],
+            "script": 21,
+            "location": "1500-1521|59:82-59:103"
+          },
+          "script": 23,
+          "location": "1498-1521|59:80-59:103",
+          "formula": "en{$1}"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "mentions": {
+      "molecules": {
+        "pongo{$1}en{$2}": "pos=1 times=3",
+        "creo{$1}como{$2}": "pos=2 times=2",
+        "estilos{$1}que cumplan con{$2}": "pos=3 times=2",
+        "regla css para{$1}con{$2}": "pos=4 times=2",
+        "componente{$1}pinta{$2}se construye{$3}añade estilos{$4}": "pos=5 times=1"
+      },
+      "atoms": {
+        "como": "pos=1 times=6",
+        "usuario": "pos=2 times=4",
+        "pedir a usuario": "pos=3 times=3",
+        "list": "pos=4 times=3",
+        "retorno": "pos=5 times=3",
+        "pongo": "pos=6 times=3",
+        "en": "pos=7 times=3",
+        "creo": "pos=8 times=2",
+        "botones": "pos=9 times=2",
+        "función donde": "pos=10 times=2",
+        "regla css para": "pos=11 times=2",
+        "con": "pos=12 times=2",
+        "estilos": "pos=13 times=2",
+        "que cumplan con": "pos=14 times=2",
+        "color de fondo": "pos=15 times=2",
+        "componente": "pos=16 times=1",
+        "pinta": "pos=17 times=1",
+        "editor de texto": "pos=18 times=1",
+        "reflejando modelo": "pos=19 times=1",
+        "panel inferior": "pos=20 times=1",
+        "información sobre": "pos=21 times=1",
+        "se construye": "pos=22 times=1",
+        "añade estilos": "pos=23 times=1",
+        "color de letra": "pos=24 times=1",
+        "nuevo usuario con": "pos=25 times=1",
+        "Carlos": "pos=26 times=1",
+        "nombre": "pos=27 times=1",
+        "Jimeno Hernández": "pos=28 times=1",
+        "apellidos": "pos=29 times=1",
+        "edad": "pos=30 times=1",
+        "Bonastre": "pos=31 times=1",
+        "municipio": "pos=32 times=1",
+        "objeto": "pos=33 times=1",
+        "entrada de texto": "pos=34 times=1",
+        "entrada de número": "pos=35 times=1",
+        "entrada de opción": "pos=36 times=1"
+      }
+    }
+  },
+  "seed": "creo{ @usuario }como{[\n  nombre=pedir a usuario{{ ¿Cómo te llamas? }}\n  edad=pedir a usuario{{ ¿Qué edad tienes? }}\n  ciudad=pedir a usuario{{ ¿En qué ciudad vives? }}\n]}\ncomponente{ \"Página de inicio\" }pinta{\n  botones{\n    object{ class=\"superior\" }\n    list{ \"Entrada\" \"Sintaxis\" \"Salida\" }\n  }\n  editor de texto{\n    object{ class=\"monoespaciado grande\" }\n    reflejando modelo{ @texto_de_entrada }\n  }\n  panel inferior{\n    información sobre{ @cursor }\n    botones{\n      object{ class=\"inferior\" }\n      list{ \"Formatear\" \"Guardar\" }\n    }\n  }\n}se construye{\n  retorno{[\n    name=\"Nombre del componente\"\n    props=object{ }\n    data=función donde{\n      retorno{\n        object{\n          texto_de_entrada=\"hola upl!\"\n        }\n      }\n    }\n    methods=object{\n      cargar_datos=función donde{ retorno{ object{ } } }\n    }\n  ]}\n}añade estilos{\n  regla css para{{ html }}con{\n    estilos{ @suaves }que cumplan con{ color de fondo{{ negro }} }\n  }\n  regla css para{{ button.superior }}con{\n    estilos{ @impactantes @sencillos @relacionados }que cumplan con{\n      color de fondo{{ blanco }}\n      color de letra{{ rojo }}\n    }\n  }\n}\nnuevo usuario con{\n  {Carlos}como{nombre}\n  {Jimeno Hernández}como{apellidos}\n  {34}como{edad}\n  {Bonastre}como{municipio}\n}\n\n\ncreo{usuario}como{objeto!}\npongo{entrada de texto{\"Cómo te llamas?\"}}en{usuario.nombre}\npongo{entrada de número{\"Qué edad tienes?\"}}en{usuario.nombre}\npongo{entrada de opción{\"Qué prefieres?\" list{\"música\" \"tecnología\" \"drogas\"}}}en{usuario.preferencia}\n\n\n"
+}

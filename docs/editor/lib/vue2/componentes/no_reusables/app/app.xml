@@ -1,0 +1,5 @@
+<div id="app">
+    <div id="capa_global_solo_maximo">
+        <pagina-de-inicio></pagina-de-inicio>
+    </div>
+</div>

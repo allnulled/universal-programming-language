@@ -1,0 +1,61 @@
+asigno xcomponents_components.xtablayout como un componente vue2 con nombre "xtablayout" con plantilla {
+  <section role="tabs" class="Component xtablayout tabs">
+    <menu role="tablist" :aria-label="customId">
+      <button role="tab"
+        :aria-controls="customId + '-' + tab_index"
+        :aria-selected="selected_tab === tab_index ? 'true' : 'false'"
+        v-for="tab, tab_index in tabs"
+        v-bind:key="'xtablayout-' + customId + '-tab-' + tab_index"
+        v-on:click="() => select_tab(tab_index)">
+          {{ tab }}
+      </button>
+    </menu>
+    <slot></slot>
+  </section>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad customId como {
+        propiedad type como String.
+        propiedad required como un texto aleatorio de 10 caracteres.
+      }.
+      propiedad tabs como {
+        propiedad type como Array.
+        propiedad required como true.
+      }.
+    }.
+    método data donde {
+      retorno {
+        selected_tab: 0
+      }.
+    }.
+    propiedad methods como {
+      método select_tab con (tab_index) donde {
+        asigno this.selected_tab como tab_index.
+        hago this.$forceUpdate(true).
+      }.
+    }.
+    propiedad watch como {
+      método selected_tab con (nuevo_valor) donde {
+        creo all_articles como this.$el.querySelectorAll("article").
+        desde 0 hasta all_articles.length {
+          creo article como all_articles[index].
+          asigno article.style.display como "none".
+        }.
+        creo selected_article como all_articles[nuevo_valor].
+        asigno selected_article.style.display como "block".
+      }.
+    }.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {}.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

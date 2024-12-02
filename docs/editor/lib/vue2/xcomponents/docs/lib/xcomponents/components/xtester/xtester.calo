@@ -1,0 +1,34 @@
+asigno xcomponents_components.xtester como un componente vue2 con nombre "xtester" con plantilla {
+  <div class="Component xtester">
+    <slot></slot>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad root como {
+        type: Object,
+        required: true
+      }.
+    }.
+    método data donde {
+      retorno {
+        data: {}
+      }.
+    }.
+    propiedad methods como {}.
+    propiedad watch como {}.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {
+      asigno window.xtesterr como this.
+    }.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

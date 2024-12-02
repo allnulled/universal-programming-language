@@ -1,0 +1,80 @@
+asigno xcomponents_components.xformdate como un componente vue2 con nombre "xformdate" con plantilla {
+  <div class="Component xformdate">
+    <div class="form_group">
+      <div class="form_group_label">
+        <slot></slot>
+      </div>
+      <div style="position: relative; background-color: #222; color: white;">
+        <xtable style="width:100%;">
+          <xtablebody>
+            <xtablerow>
+              <xtablecell>
+                <button style="min-width: auto;" v-on:click="() => esta_mostrando_calendario = !esta_mostrando_calendario">🗓</button>
+              </xtablecell>
+              <xtablecell style="white-space: nowrap; width:100%;">
+                <input type="text" v-model="value" style="text-align: left; width: 100%;" disabled="true" />
+              </xtablecell>
+            </xtablerow>
+            <xtablerow v-if="esta_mostrando_calendario">
+              <xtablecell colspan="100" style="max-width: 220px;">
+                <VuejsCalendario mode="date" :initial-value="value" :on-change="v => value = v"></VuejsCalendario>
+              </xtablecell>
+            </xtablerow>
+          </xtablebody>
+        </xtable>
+      </div>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad initialValue como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "".
+      }.
+      propiedad onChange como {
+        propiedad type como Function.
+        propiedad default como una función.
+      }.
+      propiedad placeholder como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "".
+      }.
+      propiedad min como {
+        propiedad type como Number.
+        propiedad default como una función donde retorno 0.
+      }.
+      propiedad max como {
+        propiedad type como Number.
+        propiedad default como una función donde retorno 100.
+      }.
+      propiedad step como {
+        propiedad type como Number.
+        propiedad default como una función donde retorno 10.
+      }.
+    }.
+    método data donde {
+      retorno {
+        esta_mostrando_calendario: false,
+        value: this.initialValue
+      }.
+    }.
+    propiedad methods como {}.
+    propiedad watch como {
+      método value con (nuevo_valor) donde {
+        hago this.onChange(nuevo_valor, this).
+      }.
+    }.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {}.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

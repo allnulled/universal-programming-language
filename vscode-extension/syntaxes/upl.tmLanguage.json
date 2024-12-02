@@ -1,0 +1,176 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "upl",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings_as_unique_parameter"
+		},
+		{
+			"include": "#texts"
+		},
+		{
+			"include": "#pipes"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#objects"
+		},
+		{
+			"include": "#variables2"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comments.source.upl",
+			"begin": "([A-Za-z0-9_$]+(\\/[A-Za-z0-9_$]+)*\\/)?comment\\{\\{",
+			"end": "\\}\\}",
+			"patterns": [
+				{
+					"name": "constant.character.escape.source.upl",
+					"match": "\\\\}"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "structure.source.upl",
+					"match": "(list|object)"
+				},
+				{
+					"name": "special_syntax.keyword.control.source.upl",
+					"match": "(\\#)[A-Za-z0-9_$]+(\\/[A-Za-z0-9_$]+)*(=)?"
+				},
+				{
+					"name": "object_properties.source.upl",
+					"match": "(\\#)[A-Za-z0-9_$]+(\\/[A-Za-z0-9_$]+)*=[A-Za-z0-9_$]+(\\/[A-Za-z0-9_$]+)*"
+				},
+				{
+					"name": "keyword.control.source.upl",
+					"match": "[A-Za-zÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÂÊÎÔÛâêîôûñ·ç'\\-_$]+(\\/[A-Za-z0-9ÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÂÊÎÔÛâêîôûñ·ç'\\-_$]+)*"
+				}
+			]
+		},
+		"objects": {
+			"patterns": [
+				{
+					"name": "object_properties.source.upl",
+					"match": "[A-Za-z_$]+[A-Za-z0-9_$]* *= *"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.source.upl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.source.upl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"strings_as_unique_parameter": {
+			"name": "string.quoted.double.source.upl",
+			"begin": "\\{\\{",
+			"end": "\\}\\}",
+			"patterns": [
+				{
+					"name": "constant.character.escape.source.upl",
+					"match": "\\\\}\\}"
+				}
+			]
+		},
+		"texts": {
+			"name": "string.quoted.double.source.upl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.source.upl",
+					"match": "\\\""
+				}
+			]
+		},
+		"pipes": {
+			"name": "pipes.source.upl",
+			"begin": "\\|\\[",
+			"end": "\\]",
+			"patterns": [
+				{
+					"name": "pipes.escape.source.upl",
+					"match": "\\["
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "number.source.upl",
+					"match": "[0-9]+(\\.[0-9]+)?"
+				}
+			]
+		},
+		"variables2": {
+			"patterns": [
+				{
+					"name": "variable.source.upl",
+					"match": "(((@|\\]|\\.)[A-Za-z_$][A-Za-z0-9_$]*)(\\.[A-Za-z_$][A-Za-z0-9_$]*)*|@)"
+				}
+			]
+		},
+		"variables": {
+			"name": "",
+			"begin": "((@|\\])[A-Za-z_$][A-Za-z0-9_$]*)(\\.[A-Za-z_$][A-Za-z0-9_$]*)*\\[",
+			"end": "\\]",
+			"beginCaptures": {
+				"0": {
+					"name": "variable.source.upl"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "variable.source.upl"
+				}
+			},
+			"patterns": [
+				{
+					"include": "#comments"
+				},
+				{
+					"include": "#texts"
+				},
+				{
+					"include": "#numbers"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#variables"
+				},
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#objects"
+				}
+			]
+		}
+	},
+	"scopeName": "source.upl"
+}

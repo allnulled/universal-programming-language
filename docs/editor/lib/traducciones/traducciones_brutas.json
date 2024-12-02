@@ -1,0 +1,26 @@
+[
+  {
+    "es": "Hola",
+    "en": "Hello",
+    "ca": "Hola",
+    "fr": "Bonjour",
+    "it": "Ciao",
+    "de": "Hallo"
+  },
+  {
+    "es": "Bienvenido al starter-front-oldschool",
+    "en": "Welcome to the Starter-Front-Oldschool",
+    "ca": "Benvingut a l’entrada-Front-Oldschool",
+    "fr": "Bienvenue dans le starter-front-oldschool",
+    "it": "Benvenuti nella scuola di partenza.",
+    "de": "Willkommen in der Starter-Front-Old-Schule"
+  },
+  {
+    "es": "Construído con la colaboración de",
+    "en": "Built with the collaboration of",
+    "ca": "Construït amb la col·laboració de",
+    "fr": "Construit avec la collaboration de",
+    "it": "Costruito con la collaborazione di",
+    "de": "Gebaut mit der Zusammenarbeit von"
+  }
+]

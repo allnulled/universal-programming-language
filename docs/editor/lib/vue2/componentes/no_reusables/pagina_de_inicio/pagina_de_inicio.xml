@@ -1,0 +1,174 @@
+<div>
+    <mis-dialogos :contexto="this" />
+    <div class="contenedor_de_panel_fijo">
+        <div class="panel_fijo">
+            <div class="panel_superior">
+                <div class="contenedor_en_panel_superior">
+                    <div class="textbox_contextual nowrap">
+                        <b class="">
+                            {{ nodo_actual }}
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="disposicion_horizontal">
+                <div class="panel_izquierdo">
+                    <template v-if="nodo_actual !== '/'">
+                        <div class="icono_contextual fondo_blanco"
+                            title="Volver a directorio"
+                            v-on:click="() => subir_de_directorio()">
+                            Back
+                        </div>
+                    </template>
+                    <template v-if="nodo_actual_es_fichero">
+                        <div class="icono_contextual fondo_azul"
+                            title="Volver a directorio"
+                            v-on:click="() => guardar_fichero_actual()">
+                            Save
+                        </div>
+                        <div class="icono_contextual fondo_rosa"
+                            title="Volver a directorio"
+                            v-on:click="() => cargar_fichero_actual()">
+                            Load
+                        </div>
+                        <serie-de-iconos :contexto="this"
+                            ref="serie_iconos_izquierdos"
+                            :iconos-predefinidos="iconos_izquierdos"
+                            identificador-de-contexto="izquierdos" />
+                        <div class="icono_contextual fondo_negro letra_roja"
+                            title="Volver a directorio"
+                            v-on:click="() => eliminar_fichero_actual()">
+                            Delete
+                        </div>
+                    </template>
+                </div>
+                <div class="panel_medio"
+                    style="flex: 100;">
+                    <div class="panel_central">
+                        <div class="contenedor_de_editor_de_codigo"
+                            ref="panel_medio">
+                            <template v-if="!nodo_actual_es_directorio">
+                                <template v-if="typeof nodo_actual_contenido_de_fichero === 'string'">
+                                    <textarea class="editor_de_codigo"
+                                        ref="editor_de_codigo"
+                                        spellcheck="false"
+                                        v-on:focus="actualizar_posicion_de_cursor"
+                                        v-on:click="actualizar_posicion_de_cursor"
+                                        v-on:keyup="actualizar_posicion_de_cursor"
+                                        v-on:keydown.ctrl.s.prevent="guardar_fichero_actual"
+                                        v-on:input="actualizar_posicion_de_cursor"
+                                        v-model="nodo_actual_contenido_de_fichero">
+                                    </textarea>
+                                </template>
+                            </template>
+                            <template v-else-if="nodo_actual_es_directorio">
+                                <div class="contenedor_de_lista_de_nodos">
+                                    <ul class="no_list lista_de_nodos"
+                                        style="padding: 2px 4px;">
+                                        <template v-if="nodo_actual_subnodos && nodo_actual_subnodos.length">
+                                            <li v-for="subnodo, subnodo_index in nodo_actual_subnodos"
+                                                v-bind:key="'nodo_' + nodo_actual + '_subnodo-' + subnodo_index">
+                                                <button v-if="typeof subnodo.valor === 'object'"
+                                                    class="nowrap width_100 text_align_left"
+                                                    v-on:click="() => abrir_nodo(subnodo.nombre)">
+                                                    <b>{{ subnodo.nombre }}</b>
+                                                </button>
+                                                <button v-else=""
+                                                    class="nowrap width_100 text_align_left"
+                                                    v-on:click="() => abrir_nodo(subnodo.nombre)">
+                                                    {{ subnodo.nombre }}
+                                                </button>
+                                            </li>
+                                        </template>
+                                        <template v-else>
+                                            <li>
+                                                <span class="font_size_small">No hay ficheros ni directorios aquí.</span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel_derecho">
+                    <template v-if="nodo_actual_es_fichero">
+                        <div class="icono_contextual fondo_rojo"
+                            title="Volver a directorio"
+                            v-on:click="() => ejecutar_fichero_actual()">
+                            Run
+                        </div>
+                        <div class="icono_contextual fondo_naranja"
+                            title="Volver a directorio"
+                            v-on:click="() => compilar_fichero_actual()">
+                            Compile
+                        </div>
+                        <div class="icono_contextual fondo_rosa"
+                            title="Volver a directorio"
+                            v-on:click="() => formatear_fichero_actual()">
+                            Format
+                        </div>
+                        <div class="icono_contextual fondo_blanco"
+                            title="Volver a directorio"
+                            v-on:click="() => incrementar_tamanio_de_fuente(1)">
+                            Font++
+                        </div>
+                        <div class="icono_contextual fondo_blanco"
+                            title="Volver a directorio"
+                            v-on:click="() => incrementar_tamanio_de_fuente(-1)">
+                            Font--
+                        </div>
+                        <div class="icono_contextual fondo_verde"
+                            title="Volver a directorio"
+                            v-on:click="() => alternar_familia_de_fuente()">
+                            Font
+                        </div>
+                        <serie-de-iconos :contexto="this"
+                            ref="serie_iconos_derechos"
+                            :iconos-predefinidos="iconos_derechos"
+                            identificador-de-contexto="derechos" />
+                    </template>
+                    <template v-if="nodo_actual_es_directorio">
+                        <div class="icono_contextual fondo_azul"
+                            title="Volver a directorio"
+                            v-on:click="crear_fichero">
+                            File++
+                        </div>
+                        <div class="icono_contextual fondo_verde"
+                            title="Volver a directorio"
+                            v-on:click="crear_carpeta">
+                            Dir++
+                        </div>
+                        <div class="icono_contextual fondo_rojo"
+                            v-if="['/','/kernel'].indexOf(nodo_actual) === -1"
+                            title="Volver a directorio"
+                            v-on:click="eliminar_carpeta_actual">
+                            Dir--
+                        </div>
+                    </template>
+                    <div class="icono_contextual fondo_rosa"
+                        v-if="['/','/kernel'].indexOf(nodo_actual) === -1"
+                        title="Volver a directorio"
+                        v-on:click="renombrar_nodo_actual">
+                        Rename
+                    </div>
+                </div>
+            </div>
+            <div class="panel_inferior">
+                <div class="contenedor_en_panel_superior" v-if="nodo_actual_es_fichero && editor_de_codigo_posicion_cursor">
+                    <div class="textbox_contextual contexto_inferior nowrap">
+                        <b class="">
+                            <span>
+                            Line: {{ editor_de_codigo_posicion_cursor.start.line }}:{{ editor_de_codigo_posicion_cursor.start.column }}-{{ editor_de_codigo_posicion_cursor.end.line }}:{{ editor_de_codigo_posicion_cursor.end.column }}
+                            </span>
+                            <span> | </span>
+                            <span>
+                            Pos: {{ editor_de_codigo_posicion_cursor.start.offset }}-{{ editor_de_codigo_posicion_cursor.end.offset }}
+                            </span>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

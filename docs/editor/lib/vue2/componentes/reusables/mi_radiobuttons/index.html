@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Radio Buttons Component</title>
+</head>
+<body>
+
+<div id="app">
+  <mi-radiobuttons :options="options" name="grupo1"></mi-radiobuttons>
+  <div v-if="selectedOption !== ''">
+    <h2>Contenido del Option seleccionado:</h2>
+    <p>{{ selectedOptionContent }}</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="mi-radiobuttons.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      options: [
+        { id: 1, label: 'Opción 1', content: 'Contenido de la Opción 1' },
+        { id: 2, label: 'Opción 2', content: 'Contenido de la Opción 2' },
+        { id: 3, label: 'Opción 3', content: 'Contenido de la Opción 3' }
+      ],
+      selectedOption: '',
+      selectedOptionContent: ''
+    },
+    methods: {
+      handleOptionChange(option) {
+        this.selectedOption = option.label;
+        this.selectedOptionContent = option.content;
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

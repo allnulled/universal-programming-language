@@ -1,0 +1,34 @@
+html {
+    
+}
+#app {
+    padding: 2px;
+    text-align: center;
+    padding-top: 12px;
+}
+* {
+    box-sizing: border-box;
+}
+#capa_global_solo_maximo {
+    display: inline-block;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 4pt;
+    overflow: hidden;
+    padding: 0px;
+}
+#capa_global {
+    display: inline-block;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    background-color: #DEDEDE;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    padding: 8px;
+    padding-top: 0px;
+    /*
+    border-bottom: 1px solid #333;
+    */
+
+}

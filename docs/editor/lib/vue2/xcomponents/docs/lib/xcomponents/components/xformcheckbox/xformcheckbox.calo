@@ -1,0 +1,63 @@
+asigno xcomponents_components.xformcheckbox como un componente vue2 con nombre "xformcheckbox" con plantilla {
+  <div class="Component xformcheckbox">
+    <div class="form_group">
+      <div class="form_group_label">
+        <slot></slot>
+      </div>
+      <div>
+        <input class="checkbox_input" type="checkbox" v-model="value" :id="customId" />
+        <label :for="customId">
+          <span v-if="value">{{ messageOnSelected }}</span>
+          <span v-else="">{{ messageOnUnselected }}</span>
+        </label>
+      </div>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad customId como {
+        propiedad type como String.
+        propiedad default como una función donde retorno un texto aleatorio de 10 caracteres.
+      }.
+      propiedad initialValue como {
+        propiedad type como Boolean.
+        propiedad default como una función donde retorno false.
+      }.
+      propiedad onChange como {
+        propiedad type como Function.
+        propiedad default como una función.
+      }.
+      propiedad messageOnSelected como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "Yes".
+      }.
+      propiedad messageOnUnselected como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "No".
+      }.
+    }.
+    método data donde {
+      retorno {
+        value: this.initialValue
+      }.
+    }.
+    propiedad methods como {}.
+    propiedad watch como {
+      método value con (nuevo_valor) donde {
+        hago this.onChange(nuevo_valor, this).
+      }.
+    }.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {}.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

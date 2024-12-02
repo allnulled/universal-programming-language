@@ -1,0 +1,40 @@
+{
+    "name": "@allnulled/xcomponents",
+    "version": "1.0.0",
+    "description": "An easy-to-use Vue.js (v2) user-interface components kit. Includes binary to rapidly fill dependencies.",
+    "main": "src/xcomponents.bin.js",
+    "bin": {
+        "xcomponents": "src/xcomponents.bin.js"
+    },
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "dev": "npx nodemon -e 'js,css' -w 'docs/lib/xcomponents/components' -x 'npm run build'",
+        "build": "npm run build-api && npm run build-ui && npm run build-css",
+        "build-css": "node dev/build-css.js",
+        "build-api": "npx browserify docs/lib/xcomponents/components/api.js --outfile docs/lib/xcomponents/xcomponents.js",
+        "build-ui": "cp docs/index.1.html docs/index.html",
+        "serve": "npx http-server -c-1 docs -o index.1.html"
+    },
+    "keywords": [],
+    "author": "allnulled",
+    "license": "WTFPL",
+    "devDependencies": {
+        "fs-extra": "^11.2.0"
+    },
+    "dependencies": {
+        "graceful-fs": "^4.2.11",
+        "jsonfile": "^6.1.0",
+        "universalify": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/allnulled/xcomponents.git"
+    },
+    "bugs": {
+        "url": "https://github.com/allnulled/xcomponents/issues"
+    },
+    "homepage": "https://github.com/allnulled/xcomponents#readme",
+    "uuid_commit": 1
+}

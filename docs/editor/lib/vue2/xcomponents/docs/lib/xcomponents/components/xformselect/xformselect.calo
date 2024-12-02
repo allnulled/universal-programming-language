@@ -1,0 +1,57 @@
+asigno xcomponents_components.xformselect como un componente vue2 con nombre "xformselect" con plantilla {
+  <div class="Component xformselect">
+    <div class="form_group">
+      <div class="form_group_label">
+        <slot></slot>
+      </div>
+      <select class="select_input" v-model="value">
+        <option v-for="option, option_index in options" v-bind:key="'xformselect-' + customId + '-option-' + option_index" :value="option">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad customId como {
+        propiedad type como String.
+        propiedad default como una función donde retorno un texto aleatorio de 10 caracteres.
+      }.
+      propiedad initialValue como {
+        propiedad type como String.
+        propiedad default como una función donde retorno "".
+      }.
+      propiedad onChange como {
+        propiedad type como Function.
+        propiedad default como una función.
+      }.
+      propiedad options como {
+        propiedad type como Array.
+        propiedad required como true.
+      }.
+    }.
+    método data donde {
+      retorno {
+        value: this.initialValue
+      }.
+    }.
+    propiedad methods como {}.
+    propiedad watch como {
+      método value con (nuevo_valor) donde {
+        hago this.onChange(nuevo_valor, this).
+      }.
+    }.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {}.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

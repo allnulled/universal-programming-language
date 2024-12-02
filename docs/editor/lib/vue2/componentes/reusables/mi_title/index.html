@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Title Component</title>
+</head>
+<body>
+
+<div id="app">
+  <mi-title>{{ tituloTexto }}</mi-title>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="mi-title.js"></script>
+<script>
+  // Crear una instancia de Vue para la aplicación
+  new Vue({
+    el: '#app',
+    data: {
+      tituloTexto: 'Título Principal'
+    }
+  });
+</script>
+
+</body>
+</html>

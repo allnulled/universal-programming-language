@@ -1,0 +1,76 @@
+defino{@a}como{fenómeno{llueve! llover!}}
+defino{@b}como{fenómeno{se moja! mojarse!}}
+
+comment{{ Operadores de frecuencia estrictos: }}
+
+si{llueve}entonces{siempre{se moja}}
+si{se moja}entonces{nunca{llueve}}
+si{se moja}entonces{un{ 10 | porciento }de las veces{ llueve }}
+
+si{llueve}entonces{ siempre{se moja} }
+si{llueve}entonces{ nunca{se moja} }
+
+si{llover}entonces{siempre{mojarse}}
+si{no{llover}}entonces{nunca{mojarse}}
+si{llover}entonces{un{10|porciento}de las veces{mojarse}}
+
+comment{{ Operadores de frecuencia vagos: }}
+
+si{se moja}a veces{llueve}
+si{llueve}muchas veces{se moja}
+si{se moja}pocas veces{llueve}
+si{llueve}suele{mojarse}
+si{se moja}no suele{llover}
+
+comment{{ Operadores de agrupación: }}
+
+{se moja}y{se escucha}
+{se moja @levemente}y{se escucha @intensamente}
+
+comment{{ Operadores de separación inclusiva: }}
+
+{se moja}o{se escucha}
+{se moja @levemente}o{se escucha @intensamente}
+
+comment{{ Operadores de separación exclusiva: }}
+
+o{se moja}o{se escucha}pero no{todos}a la vez!
+o{se moja @levemente}o{se escucha @intensamente}pero no{todos}a la vez!
+o{@a}o{@b}o{@c}pero no{ ni{@a}y{@c} ni{@a}y{@b} ni{@b}y{@c} }a la vez!
+
+
+comment{{ Operadores de intensidad y modo: }}
+
+si{llueve}entonces{ {se moja @levemente}pero{se escucha @intensamente} }
+si{llueve}entonces{se moja @intensamente}
+si{llueve}entonces{se moja @constantemente}
+si{llueve}entonces{se moja @constantemente}
+
+comment{{ Operadores de asignación: }}
+
+ocurre{llover}
+no ocurre{mojarse}
+
+comment{{ Operadores de pregunta: }}
+
+dime qué ocurre con{mojarse}
+dime por qué ocurre{mojarse}
+
+
+comment{{
+Teoría:
+
+Los «operadores de frecuencia» son un aspecto de las «operaciones de causalidad», una «relación» entre el «causal» y el «consecuencial».
+
+Los «operadores de frecuencia» permiten a las «operaciones de causalidad» una ampliación de rango expresable.
+
+Los «operadores de frecuencia estrictos» son los que se incluyen en este aoar
+
+La correlación entre estos operadores y la lógica clásica sería la siguiente:
+
+
+Operadores de frecuencia:
+    - siempre
+    - a veces
+    - nunca
+}}

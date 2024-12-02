@@ -1,0 +1,11 @@
+<div>
+    <template v-for="icono, icono_index in serie">
+        <template v-if="(typeof icono.condition !== 'function') || icono.condition(contexto, this)">
+            <div class="icono_contextual"
+                :class="icono.class"
+                :title="icono.title"
+                v-on:click="() => icono.event(contexto)"
+                v-bind:key="'icono_' + identificador_de_contexto + '_' + icono_index"> {{ icono.label }} </div>
+        </template>
+    </template>
+</div>

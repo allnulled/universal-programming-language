@@ -1,0 +1,12 @@
+.mi-boton {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Calibri;
+    border-radius: 2pt;
+    box-shadow: 0 0 8px blue;
+    width: 100%;
+}
+.mi-boton:hover {
+    background-color: #AAF !important;
+}

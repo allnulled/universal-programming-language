@@ -1,0 +1,14 @@
+.xbiglistitem {
+    padding: 8px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    cursor: pointer;
+}
+.xbiglistitem:hover {
+    background-color: #DDD;
+}
+.xbiglist > .xbiglistitem:first-child {
+    border-top: 1px solid #333;
+}

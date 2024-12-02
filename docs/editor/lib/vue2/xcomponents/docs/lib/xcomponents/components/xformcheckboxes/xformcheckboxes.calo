@@ -1,0 +1,69 @@
+asigno xcomponents_components.xformcheckboxes como un componente vue2 con nombre "xformcheckboxes" con plantilla {
+  <div class="Component xformcheckboxes">
+    <div class="form_group">
+      <div class="form_group_label">
+        <slot></slot>
+      </div>
+      <div>
+        <div v-for="option, option_index in options" v-bind:key="'xformcheckboxes-' + customId + '-option-' + option_index">
+          <div v-on:click="() => select_value(option)">
+            <input class="checkbox_input" type="checkbox" :checked="value.indexOf(option) !== -1" />
+            <label>{{ option }}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+} con lógica {
+  retorno {
+    propiedad props como {
+      propiedad customId como {
+        propiedad type como String.
+        propiedad default como una función donde retorno un texto aleatorio de 10 caracteres.
+      }.
+      propiedad initialValue como {
+        propiedad type como Array.
+        propiedad default como una función donde retorno [].
+      }.
+      propiedad onChange como {
+        propiedad type como Function.
+        propiedad default como una función.
+      }.
+      propiedad options como {
+        propiedad type como Array.
+        propiedad default como una función donde retorno ["Yes", "No", "Maybe"].
+      }.
+    }.
+    método data donde {
+      retorno {
+        value: this.initialValue
+      }.
+    }.
+    propiedad methods como {
+      método select_value con (option) donde {
+        creo posicion como this.value.indexOf(option).
+        si posicion no es igual que 0 - 1 {
+          hago this.value.splice(posicion, 1).
+        } y si no {
+          hago this.value.push(option).
+        }.
+      }.
+    }.
+    propiedad watch como {
+      método value con (nuevo_valor) donde {
+        hago this.onChange(nuevo_valor, this).
+      }.
+    }.
+    propiedad computed como {}.
+    método beforeCreate donde {}.
+    método created donde {}.
+    método beforeMount donde {}.
+    método mounted donde {}.
+    método beforeUpdate donde {}.
+    método updated donde {}.
+    método beforeUnmount donde {}.
+    método unmounted donde {}.
+    método activated donde {}.
+    método deactivated donde {}.
+  }.
+}.

@@ -1,0 +1,174 @@
+# Example of formula for:
+# (7+9*5)/2
+
+
+comment{
+  Esto es un comentario y puedes escribir lo que quieras
+  Puedes usar varias líneas.
+  Y puedes escapar el carácter de cerrar así: \}
+  Y debajo puedes seguir
+}
+
+
+
+
+
+
+
+
+
+
+create{@user object{name=text{admin} password=text{admin}}}
+
+
+create{@function_types}/as{list{
+  comment{ This structure is usefull for something }
+  sync/function{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  async/function{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  sync/lambda{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  async/lambda{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  sync/fact{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  async/fact{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  async/promise{}/that{}/catch/finally{}
+  comment{ This structure is usefull for something }
+  async/serie{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  async/parallel{}/that{}/catch{}/finally{}
+  comment{ This structure is usefull for something }
+  async/race{}/that{}/catch{}/finally{}
+}
+
+create{@function_exotic_types}/as{list{
+  sync/function{
+    defaults{@arg1 text{default}}
+    defaults{@value number{200}}
+  }/that{
+
+  }
+}}
+
+create{@fact_shortcut}/as{!{
+  return{sum{number{1} number{10}}}
+}}
+
+function{boolean{1}}/that{print{text{This is a sync function}}}/catch{}/finally{}
+async/function{boolean{1}}/that{print{text{This is an sync function}}}/catch{}/finally{}
+fact{boolean{1}}/that{print{text{This is a sync fact}}}/catch{}/finally{}
+async/fact{boolean{1}}/that{print{text{This is an sync fact}}}/catch{}/finally{}
+
+
+if{equals{@user.name text{admin}}}/then{
+    print{text{Hello, admin. How are you?}}
+    print{text{This is only if you are admin}}
+}/else/if{equals{@user.name text{tester}}}/then{
+    print{text{Hello, tester. How are you?}}
+}/else/if{equals{@user.name text{tester}}}/then{
+    print{text{Hello, tester. How are you?}}
+}/otherwise{
+    print{text{Hello, tester. How are you?}}
+}
+
+print{text{Hi!}} print{text{Hi!}} print{text{Hi!}} 
+
+print{obj{
+  nombre=text{Carlos}
+  apellidos=text{Jimeno Hernández}
+}}
+
+
+create{@parser}/as{pegjs/generate{
+  Language = Sentence
+}}
+
+if{@var1}/then{print{text{Hi 1!}}}/else/if{@var2}/then{print{text{Hi 2!}}}/otherwise{print{@var3}}
+if{@var1}/call{@var2}/else/if{@var3}/call{@var4}/otherwise/call{@var5}
+unless{@var1}/call{@var2}/else/unless{@var3}/then{print{text{Hi!}}}/otherwise/call{}
+if{@var1}/call{@var2}/else/unless{@var3}
+
+for{@@@}/do{.}
+for{@@@}/call{@}
+create{@}/as{@}
+create/variable{@}/as{@}
+set{@}/to{@}
+expect{@}/otherwise{.}
+expect{@}/otherwise/call{@}
+delete{@}
+try{.}/catch{.}/finally{.}
+try/call{@}/catch/call{@}/finally/call{@}
+extract{@...}/from{@}
+from{@}/to{@}/do{.}
+from{@}/to{@}/call{@}
+import{@...}/from{@}/as{@}/otherwise{.}
+import{@...}/from{@}/as{@}/otherwise/call{@}
+while{@}/do{.}
+while{@}/call{@}
+until{@}/do{.}
+until{@}/call{@}
+throw{@}
+throw/error{@}
+throw/error/class{@@}
+block{.}
+block/call{@}
+process{@}/then{.}
+process{@}/from{...}
+process{@}/if{...}
+break/process{@?}
+continue/process{@?}
+return{@?}
+switch{@}/case{@}/then{.}/default/then{.}
+switch{@}/case{@}/call{@}/default/call{@}
+
+for{@list @key @value}/do{print{concat{@key text{: } @value}}}
+for{@list @key @value}/call{@some.function}
+create/variable{@var1}/as{@var2}
+create{@var1}/as{@var2}
+set{@var1}/to{@var2}
+expect{equals{@var1 @var2}}/otherwise{@some.function.called.automatically.with{ @item, @index, @list }}
+expect{@var}/equals{@var2}/otherwise{@some.function.called.automatically.with{ @item, @index, @list }}
+delete{@var}
+try{}/catch{}/finally{}
+extract{@var1 @var2 @var3}/from{@var4}
+from{@var1}/to{@var2}/do{}
+import{@var1}/from{@var2}
+while{@var1}/do{}
+throw{@var1}
+throw/error{@message}
+throw/error/class{@name @message}
+block{ @function }
+block{}
+process{}
+process{@name}/do{}
+break/process{}
+break/process{@name}
+continue/process{}
+continue/process{@name}
+return{}
+switch{@var1}/case{number{1}}/then{
+  return{number{1}}
+}/case{number{1}}/then{
+  return{number{1}}
+}/case{number{1}}/then{
+  return{number{1}}
+}/case{number{1}}/then{
+  return{number{1}}
+}/default/then{
+  return{number{1}}
+}
+
+create{@salute}/as{function{@arg1 @arg2 @arg3}/can{
+  print{text{Hello!}}
+}}
+create{@salute}/as{async/function{@arg1 @arg2 @arg3}/can{
+  print{text{Hello!}}
+}}
+create{@salutation}/as{@salute{text{My friend!}}}
+
+
+fs/write/file/sync{text{package.json} jsonify{object{age=number{100} created_at=date{}}}}
+ajax{@var.tambien.permite[text{acceso}].privado.concatenado}.algo{}.ritmo{}.acceso.a[text{datos}][text{privados}].del.universo

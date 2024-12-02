@@ -1,0 +1,24 @@
+.xstatic {}
+.xstatic > div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+.xstatic > div > table {
+    width: 100%;
+    height: 100%;
+}
+.xstatic > div > table > tbody {}
+.xstatic > div > table > tbody > tr {}
+.xstatic > div > table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+}
+.xstatic > div > table > tbody > tr > td > div {
+    display: inline-block;
+    text-align: left;
+}

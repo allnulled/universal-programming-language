@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker con Vue.js v2</title>
+    <style>
+        .datepicker {
+            font-family: Arial, sans-serif;
+        }
+
+        .datepicker input {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .datepicker .calendar {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 9999;
+        }
+
+        .datepicker .calendar.open {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="datepicker">
+        <mi-datepicker></mi-datepicker>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="mi-datepicker.js"></script>
+    <script>
+        // Crear una instancia de Vue para la aplicación
+        new Vue({
+            el: '#app',
+            data: {}
+        });
+    </script>
+</body>
+
+</html>

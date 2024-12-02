@@ -1,0 +1,29 @@
+.win7 .VuejsCalendario table.tabla_de_calendario {
+    width: 100%;
+}
+.win7 .VuejsCalendario button.boton_de_calendario {
+    min-width: auto;
+    width: 100%;
+    padding: 2px;
+}
+.win7 .VuejsCalendario button.boton_de_mover_mes {
+    width: 100%;
+}
+.win7 .VuejsCalendario input.entrada_de_calendario {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+}
+.win7 .VuejsCalendario .chivato_de_fecha {
+    font-size: 8px;
+    font-family: monospace;
+    text-align: center;
+}
+.win7 .VuejsCalendario .vuejs_calendario_contenedor {
+    max-width: 220px;
+    background-color: #222;
+    color: white;
+    padding: 4px;
+    border-radius: 2pt;
+    box-shadow: 0 0 4px black;
+}

@@ -1,0 +1,10 @@
+.Component.xlink {
+    color: rgb(101, 101, 255);
+    cursor: pointer;
+}
+.Component.xlink:visited {
+    color: rgb(108, 108, 254);
+}
+.Component.xlink:hover {
+    color: rgb(151, 151, 255);
+}
