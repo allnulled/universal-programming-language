@@ -12,6 +12,7 @@ Most pretencious programming language in the world. But ambitious too.
     - [Using git](#using-git)
   - [Syntax highlighter](#syntax-highlighter)
   - [Syntax examples](#syntax-examples)
+  - [Online editor](#online-editor)
 - [The «bla bla bla» part](#the-bla-bla-bla-part)
   - [Why?](#why)
   - [How?](#how)
@@ -51,6 +52,14 @@ Install your syntax highlighter for Visual Studio Code from `vsix` file directly
 ## Syntax examples
 
 ![sample-1](./docs/upl.sample.001.png)
+
+## Online editor
+
+Online editor has no syntax highlight in order to keep compatibility with mobile phone browsers (at least, the mine does not work well with CodeMirror and others, so out).
+
+But here you can: (this part is still in progress)
+
+- [https://allnulled.github.io/universal-programming-language/editor/](https://allnulled.github.io/universal-programming-language/editor/)
 
 # The «bla bla bla» part
 
@@ -130,6 +139,19 @@ Right now, this is everything. The transpiler is in process yet.
 
 #### Example
 
+To get the AST or format code, you can:
+
 ```js
-const ast = require("upl").parse("create{ @x }as{ 200 }");
+const upl = require("upl");
+const ast = upl.parse("create{ @x }as{ 200 }");
+const code = upl.format("create{ @x }as{ 200 }");
 ```
+
+To get a transpiler, the API is still in progress, but:
+
+```js
+const upl = require("upl");
+const transpiler = upl.createTranspiler([{ ... }, { ... }, { ... }]); // { ... } are the syntaxes objects
+const output = transpiler.transpile("create{ @x }as{ 200 }");
+```
+
