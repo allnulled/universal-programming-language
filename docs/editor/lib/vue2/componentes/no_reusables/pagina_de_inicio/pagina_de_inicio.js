@@ -225,8 +225,33 @@ return await Sistema_de_modulos.definir_componente_vue2(
       async formatear_fichero_actual() {
         try {
           console.log("formatear_fichero_actual");
-          // @TODO...
-        } catch (error) {
+          const options = {
+            indent_size: "2",
+            indent_char: " ",
+            max_preserve_newlines: "5",
+            preserve_newlines: true,
+            keep_array_indentation: false,
+            break_chained_methods: false,
+            indent_scripts: "normal",
+            brace_style: "collapse",
+            space_before_conditional: true,
+            unescape_strings: false,
+            jslint_happy: false,
+            end_with_newline: false,
+            wrap_line_length: "0",
+            indent_inner_html: false,
+            comma_first: false,
+            e4x: false,
+            indent_empty_lines: false
+          };
+          if(this.nodo_actual.endsWith(".js")) {
+            this.nodo_actual_contenido_de_fichero = this.$window.beautifier.js(this.nodo_actual_contenido_de_fichero, options);
+          } else if(this.nodo_actual.endsWith(".html")) {
+            this.nodo_actual_contenido_de_fichero = this.$window.beautifier.html(this.nodo_actual_contenido_de_fichero, options);
+          } else if(this.nodo_actual.endsWith(".css")) {
+            this.nodo_actual_contenido_de_fichero = this.$window.beautifier.css(this.nodo_actual_contenido_de_fichero, options);
+          }
+          } catch (error) {
           this.gestionar_error(error, true);
         }
       },

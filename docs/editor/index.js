@@ -15,6 +15,7 @@ const main = async function() {
     // await Sistema_de_modulos.cargar_script("lib/externos/jquery-ui/jquery-ui.js");
     // await Sistema_de_modulos.cargar_script("lib/externos/ejs/ejs.js");
     // await Sistema_de_modulos.cargar_script("lib/externos/socket.io/socket.io.js");
+    await Sistema_de_modulos.cargar_script("lib/externos/js-beautify/beautifier.min.js");
     await Sistema_de_modulos.cargar_script("lib/externos/ufs/ufs.js");
     
     // LÓGICAS:

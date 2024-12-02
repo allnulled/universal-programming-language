@@ -5,6 +5,7 @@
     border: none !important;
     background-color: transparent;
     text-align: left;
+    max-width: 450px;
 }
 .dialogo > .window {
     display: flex;
