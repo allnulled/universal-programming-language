@@ -6,6 +6,7 @@ Most pretencious programming language in the world. But ambitious too.
 
 - [Universal Programming Language](#universal-programming-language)
   - [Index](#index)
+  - [Online editor](#online-editor)
   - [Requirements](#requirements)
   - [Installation](#installation)
     - [Using npm](#using-npm)
@@ -13,7 +14,6 @@ Most pretencious programming language in the world. But ambitious too.
   - [Syntax highlighter](#syntax-highlighter)
   - [Syntax examples](#syntax-examples)
   - [Syntax fastly explained](#syntax-fastly-explained)
-  - [Online editor](#online-editor)
 - [The «bla bla bla» part](#the-bla-bla-bla-part)
   - [Why?](#why)
   - [How?](#how)
@@ -21,6 +21,15 @@ Most pretencious programming language in the world. But ambitious too.
   - [Usage](#usage)
     - [Via API](#via-api)
       - [Example](#example)
+
+## Online editor
+
+- [https://allnulled.github.io/universal-programming-language/editor/](https://allnulled.github.io/universal-programming-language/editor/)
+
+**Note:** use `*.up` or `*.upl` files in order to let `Format` button to beautify `upl` source codes. It also supports `html`, `css` and `js`.
+
+**Note 2:** Online editor has no syntax highlight in order to keep compatibility with mobile phone browsers (at least, the mine does not work well with CodeMirror and others, so out).
+
 
 ## Requirements
 
@@ -100,17 +109,6 @@ Then you have piping:
   - `@whatever |@chainable.varname expression{ @ }`
 - **Pipe type 6:**
   - `@whatever |@chainable.varname= expression{ @ }`
-
-
-## Online editor
-
-Online editor has no syntax highlight in order to keep compatibility with mobile phone browsers (at least, the mine does not work well with CodeMirror and others, so out).
-
-But here you can: (this part is still in progress)
-
-- [https://allnulled.github.io/universal-programming-language/editor/](https://allnulled.github.io/universal-programming-language/editor/)
-
-**Note:** use `*.up` or `*.upl` files in order to let `Format` button to beautify `upl` source codes. It also supports `html`, `css` and `js`.
 
 # The «bla bla bla» part
 
