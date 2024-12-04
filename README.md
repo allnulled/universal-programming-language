@@ -38,6 +38,7 @@ npm install @allnulled/universal-programming-language
 
 Use `--global` or `-g` flag to install the command line binary automatically.
 
+**Note:** I am not uploading this project to NPM yet. You can use git.
 
 ### Using git
 
