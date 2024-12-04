@@ -6,9 +6,6 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#strings_as_unique_parameter"
-		},
-		{
 			"include": "#texts"
 		},
 		{
@@ -81,17 +78,6 @@
 				{
 					"name": "constant.character.escape.source.upl",
 					"match": "\\\\."
-				}
-			]
-		},
-		"strings_as_unique_parameter": {
-			"name": "string.quoted.double.source.upl",
-			"begin": "\\{\\{",
-			"end": "\\}\\}",
-			"patterns": [
-				{
-					"name": "constant.character.escape.source.upl",
-					"match": "\\\\}\\}"
 				}
 			]
 		},

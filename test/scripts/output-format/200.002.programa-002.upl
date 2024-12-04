@@ -2,23 +2,36 @@ creo{ @usuario }como{
   object{
     nombre=pedir a usuario{ "¿Cómo te llamas?" }
     edad=pedir a usuario{ "¿Qué edad tienes?" }
-    ciudad=pedir a usuario{ "¿En qué ciudad vives?" }
+    ciudad=pedir a usuario{
+      "¿En qué ciudad vives?"
+    }
   }
 }
 componente{ "Página de inicio" }pinta{
   botones{
     object{ class="superior" }
-    list{ "Entrada" "Sintaxis" "Salida" }
+    list{
+      "Entrada"
+      "Sintaxis"
+      "Salida"
+    }
   }
   editor de texto{
-    object{ class="monoespaciado grande" }
+    object{
+      class="monoespaciado grande"
+    }
     reflejando modelo{ @texto_de_entrada }
   }
   panel inferior{
     información sobre{ @cursor }
     botones{
-      object{ class="inferior" }
-      list{ "Formatear" "Guardar" }
+      object{
+        class="inferior"
+      }
+      list{
+        "Formatear"
+        "Guardar"
+      }
     }
   }
 }se construye{
@@ -34,33 +47,49 @@ componente{ "Página de inicio" }pinta{
         }
       }
       methods=object{
-        cargar_datos=función donde{ retorno{ object{ } } }
+        cargar_datos=función donde{
+          retorno{ object{ } }
+        }
       }
     }
   }
 }añade estilos{
   regla css para{ "html" }con{
-    estilos{ @suaves }que cumplan con{ color de fondo{ "negro }" } }
+    estilos{ @suaves }que cumplan con{
+      color de fondo{ "negro }" }
+    }
   }
   regla css para{ "button.superior" }con{
-    estilos{ @impactantes @sencillos @relacionados }que cumplan con{
-      color de fondo{ undefined }
-      color de letra{ undefined }
+    estilos{
+      @impactantes
+      @sencillos
+      @relacionados
+    }que cumplan con{
+      color de fondo{ { blanco } }
+      color de letra{ { rojo } }
     }
   }
 }
 nuevo usuario con{
-  undefined
-  undefined
-  undefined
-  undefined
+  { Carlos }como{ nombre }
+  { Jimeno Hernández }como{ apellidos }
+  { 34 }como{ edad }
+  { Bonastre }como{ municipio }
 }
 creo{ usuario }como{ objeto! }
-pongo{ entrada de texto{ "Cómo te llamas?" } }en{ usuario.nombre }
-pongo{ entrada de número{ "Qué edad tienes?" } }en{ usuario.nombre }
+pongo{
+  entrada de texto{ "Cómo te llamas?" }
+}en{ usuario.nombre }
+pongo{
+  entrada de número{ "Qué edad tienes?" }
+}en{ usuario.nombre }
 pongo{
   entrada de opción{
     "Qué prefieres?"
-    list{ "música" "tecnología" "drogas" }
+    list{
+      "música"
+      "tecnología"
+      "drogas"
+    }
   }
 }en{ usuario.preferencia }

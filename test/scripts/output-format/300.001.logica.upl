@@ -2,26 +2,34 @@ defino{ @a }como{ fenómeno{ llueve! llover! } }
 defino{ @b }como{ fenómeno{ se moja! mojarse! } }
 si{ llueve }entonces{ siempre{ se moja } }
 si{ se moja }entonces{ nunca{ llueve } }
-si{ se moja }entonces{ un{ 10 | porciento }de las veces{ llueve } }
+si{ se moja }entonces{
+  un{ 10 | porciento }de las veces{ llueve }
+}
 si{ llueve }entonces{ siempre{ se moja } }
 si{ llueve }entonces{ nunca{ se moja } }
 si{ llover }entonces{ siempre{ mojarse } }
 si{ no{ llover } }entonces{ nunca{ mojarse } }
-si{ llover }entonces{ un{ 10 | porciento }de las veces{ mojarse } }
+si{ llover }entonces{
+  un{ 10 | porciento }de las veces{ mojarse }
+}
 si{ se moja }a veces{ llueve }
 si{ llueve }muchas veces{ se moja }
 si{ se moja }pocas veces{ llueve }
 si{ llueve }suele{ mojarse }
 si{ se moja }no suele{ llover }
-undefined
-undefined
-undefined
-undefined
+{ se moja }y{ se escucha }
+{ se moja @levemente }y{ se escucha @intensamente }
+{ se moja }o{ se escucha }
+{ se moja @levemente }o{ se escucha @intensamente }
 o{ se moja }o{ se escucha }pero no{ todos }a la vez!
 o{ se moja @levemente }o{ se escucha @intensamente }pero no{ todos }a la vez!
-o{ @a }o{ @b }o{ @c }pero no{ ni{ @a }y{ @c } ni{ @a }y{ @b } ni{ @b }y{ @c } }a la vez!
+o{ @a }o{ @b }o{ @c }pero no{
+  ni{ @a }y{ @c }
+  ni{ @a }y{ @b }
+  ni{ @b }y{ @c }
+}a la vez!
 si{ llueve }entonces{
-  undefined
+  { se moja @levemente }pero{ se escucha @intensamente }
 }
 si{ llueve }entonces{ se moja @intensamente }
 si{ llueve }entonces{ se moja @constantemente }

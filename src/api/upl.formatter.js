@@ -1,7 +1,7 @@
 class UPL_formatter extends UPL_reductor {
   constructor(...args) {
     super(...args);
-    this.max_expression_chars = 50;
+    this.max_expression_chars = 30;
     this.tab_char = "  ";
     this.tab_cursor = 0;
   }
@@ -254,8 +254,8 @@ class UPL_formatter extends UPL_reductor {
     this.tab(-1);
     return code;
   }
-  format_Covalent_molecule_type(ast, indexes, asb) {
-    this.trace("format_Covalent_molecule_type");
+  format_Covalent_molecule(ast, indexes, asb) {
+    this.trace("format_Covalent_molecule");
     let code = "";
     code += this.format_recursively(ast, [].concat(indexes).concat(["base"]), asb.base);
     code += this.format_recursively(ast, [].concat(indexes).concat(["atoms"]), asb.atoms, "").join("");

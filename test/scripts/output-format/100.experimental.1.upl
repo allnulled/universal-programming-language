@@ -1,18 +1,26 @@
-observo que{ undefined }no cesan!
-observo que{ undefined }van bajando!
-cuando{ undefined }cae entonces pasan{ undefined }
+observo que{ { las voces } }no cesan!
+observo que{ { los porrillos } }van bajando!
+cuando{ { la noche } }cae entonces pasan{ { cosas } }
 pero entonces puedo escribir asi tambien!
 bienvenidos a la estraña historia!
 file{ "main.java" }contains{
   class{ "main" }with{
     type{ "String" "message" }as{ "Hello, %!" }
     type{ "String" "name" }as{ undefined! }
-    method{ "public static void" "main" }can{
+    method{
+      "public static void"
+      "main"
+    }can{
       print{
         @this.name
-          |[render one]= undefined
+          |[render one]= { @this.message @ }
       }
-      print{ render one{ @this.name @this.message } }
+      print{
+        render one{
+          @this.name
+          @this.message
+        }
+      }
     }
   }
 }
@@ -24,23 +32,32 @@ return{
 }
 function!can{
   @arguments[0]
-    |[math sum]= undefined
-    |[math substract]= undefined
-    |[math divide]= undefined
+    |[math sum]= { @ 200 }
+    |[math substract]= { @ 100 }
+    |[math divide]= { @ 5 }
     |[return] @
 }
-si{ te fijas! }ocurre que{ ellos{ no{ se pronuncian! } } }
+si{ te fijas! }ocurre que{
+  ellos{ no{ se pronuncian! } }
+}
 qué{ podríamos hacer! }igualmente!
-el{ @universo }explora{ caminos de{ @inteligencia }y de{ @estupidez } }
+el{ @universo }explora{
+  caminos de{ @inteligencia }y de{ @estupidez }
+}
 tú{ eres el{ @universo } }así que tú{ decides! }
 it is{ such a beauty! }that{ i get{ stucked! } }
 write{ your own fucking{ @code } }the way you fucking{ want! }
-it is{ incredible! hard to explain! }
+it is{
+  incredible!
+  hard to explain!
+}
 it is{
   incredible!
   awesome!
   hard to explain!
   fucking{ @crazy }because{
-    you never thought{ you could write code this way! }
+    you never thought{
+      you could write code this way!
+    }
   }
 }
