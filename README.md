@@ -83,7 +83,7 @@ You have higher-level expressions:
   - `comment{{ This is a comment }}`
 - **Function shortcut (only in the header of the script):**
   - `#func shortcut=real function name`
-  - `#func shortcut usage{ "same as functions" }
+  - `#func shortcut usage{ "same as functions" }`
 
 Then you have piping:
 
