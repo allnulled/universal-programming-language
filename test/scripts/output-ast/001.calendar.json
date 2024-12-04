@@ -4,7 +4,7 @@
     "type": "Preblock",
     "declarations": {},
     "script": 0,
-    "location": "0-0|1:1-1:1"
+    "location": "1:1-1:1|0-0"
   },
   "body": [
     {
@@ -16,7 +16,7 @@
         "id": "registers",
         "aliased": null,
         "script": 9,
-        "location": "0-9|1:1-1:10"
+        "location": "1:1-1:10|0-9"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -33,16 +33,24 @@
                   "id": "day",
                   "aliased": null,
                   "script": 3,
-                  "location": "13-16|2:3-2:6"
+                  "location": "2:3-2:6|13-16"
                 },
                 "parameters": {
-                  "type": "Function_call_appendix_for_text_parameter",
-                  "text": "26/11/2024",
-                  "script": 14,
-                  "location": "16-30|2:6-2:20"
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Text",
+                      "supertype": "Generative",
+                      "contents": "26/11/2024",
+                      "script": 12,
+                      "location": "2:8-2:20|18-30"
+                    }
+                  ],
+                  "script": 16,
+                  "location": "2:6-2:22|16-32"
                 },
-                "script": 17,
-                "location": "13-30|2:3-2:20",
+                "script": 19,
+                "location": "2:3-2:22|13-32",
                 "formula": "day{$1}"
               },
               {
@@ -52,7 +60,7 @@
                   "id": "with",
                   "aliased": null,
                   "script": 4,
-                  "location": "30-34|2:20-2:24"
+                  "location": "2:22-2:26|32-36"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -69,16 +77,24 @@
                             "id": "hour",
                             "aliased": null,
                             "script": 4,
-                            "location": "40-44|3:5-3:9"
+                            "location": "3:5-3:9|42-46"
                           },
                           "parameters": {
-                            "type": "Function_call_appendix_for_text_parameter",
-                            "text": "08:00",
-                            "script": 9,
-                            "location": "44-53|3:9-3:18"
+                            "type": "Function_call_appendix_for_list_parameter",
+                            "list": [
+                              {
+                                "type": "Text",
+                                "supertype": "Generative",
+                                "contents": "08:00",
+                                "script": 7,
+                                "location": "3:11-3:18|48-55"
+                              }
+                            ],
+                            "script": 11,
+                            "location": "3:9-3:20|46-57"
                           },
-                          "script": 13,
-                          "location": "40-53|3:5-3:18",
+                          "script": 15,
+                          "location": "3:5-3:20|42-57",
                           "formula": "hour{$1}"
                         },
                         {
@@ -88,7 +104,7 @@
                             "id": "with",
                             "aliased": null,
                             "script": 4,
-                            "location": "53-57|3:18-3:22"
+                            "location": "3:20-3:24|57-61"
                           },
                           "parameters": {
                             "type": "Function_call_appendix_for_list_parameter",
@@ -102,16 +118,24 @@
                                   "id": "event",
                                   "aliased": null,
                                   "script": 5,
-                                  "location": "65-70|4:7-4:12"
+                                  "location": "4:7-4:12|69-74"
                                 },
                                 "parameters": {
-                                  "type": "Function_call_appendix_for_text_parameter",
-                                  "text": "Desayunar",
-                                  "script": 13,
-                                  "location": "70-83|4:12-4:25"
+                                  "type": "Function_call_appendix_for_list_parameter",
+                                  "list": [
+                                    {
+                                      "type": "Text",
+                                      "supertype": "Generative",
+                                      "contents": "Desayunar",
+                                      "script": 11,
+                                      "location": "4:14-4:25|76-87"
+                                    }
+                                  ],
+                                  "script": 15,
+                                  "location": "4:12-4:27|74-89"
                                 },
-                                "script": 18,
-                                "location": "65-83|4:7-4:25"
+                                "script": 20,
+                                "location": "4:7-4:27|69-89"
                               },
                               {
                                 "type": "Functional_atom",
@@ -122,16 +146,24 @@
                                   "id": "duration",
                                   "aliased": null,
                                   "script": 8,
-                                  "location": "90-98|5:7-5:15"
+                                  "location": "5:7-5:15|96-104"
                                 },
                                 "parameters": {
-                                  "type": "Function_call_appendix_for_text_parameter",
-                                  "text": "1h",
-                                  "script": 6,
-                                  "location": "98-104|5:15-5:21"
+                                  "type": "Function_call_appendix_for_list_parameter",
+                                  "list": [
+                                    {
+                                      "type": "Text",
+                                      "supertype": "Generative",
+                                      "contents": "1h",
+                                      "script": 4,
+                                      "location": "5:17-5:21|106-110"
+                                    }
+                                  ],
+                                  "script": 8,
+                                  "location": "5:15-5:23|104-112"
                                 },
-                                "script": 14,
-                                "location": "90-104|5:7-5:21"
+                                "script": 16,
+                                "location": "5:7-5:23|96-112"
                               },
                               {
                                 "type": "Functional_atom",
@@ -142,46 +174,58 @@
                                   "id": "details",
                                   "aliased": null,
                                   "script": 7,
-                                  "location": "111-118|6:7-6:14"
+                                  "location": "6:7-6:14|119-126"
                                 },
                                 "parameters": {
-                                  "type": "Function_call_appendix_for_text_parameter",
-                                  "text": "Wherever",
-                                  "script": 12,
-                                  "location": "118-130|6:14-6:26"
+                                  "type": "Function_call_appendix_for_list_parameter",
+                                  "list": [
+                                    {
+                                      "type": "Text",
+                                      "supertype": "Generative",
+                                      "contents": "Wherever",
+                                      "script": 10,
+                                      "location": "6:16-6:26|128-138"
+                                    }
+                                  ],
+                                  "script": 14,
+                                  "location": "6:14-6:28|126-140"
                                 },
-                                "script": 19,
-                                "location": "111-130|6:7-6:26"
+                                "script": 21,
+                                "location": "6:7-6:28|119-140"
                               }
                             ],
-                            "script": 79,
-                            "location": "57-136|3:22-7:6"
+                            "script": 85,
+                            "location": "3:24-7:6|61-146"
                           },
-                          "script": 83,
-                          "location": "53-136|3:18-7:6",
+                          "script": 89,
+                          "location": "3:20-7:6|57-146",
                           "formula": "with{$1}"
                         }
-                      ]
+                      ],
+                      "script": 104,
+                      "location": "3:5-7:6|42-146"
                     }
                   ],
-                  "script": 106,
-                  "location": "34-140|2:24-8:4"
+                  "script": 114,
+                  "location": "2:26-8:4|36-150"
                 },
-                "script": 110,
-                "location": "30-140|2:20-8:4",
+                "script": 118,
+                "location": "2:22-8:4|32-150",
                 "formula": "with{$1}"
               }
-            ]
+            ],
+            "script": 137,
+            "location": "2:3-8:4|13-150"
           }
         ],
-        "script": 133,
-        "location": "9-142|1:10-9:2"
+        "script": 143,
+        "location": "1:10-9:2|9-152"
       },
-      "script": 142,
-      "location": "0-142|1:1-9:2"
+      "script": 152,
+      "location": "1:1-9:2|0-152"
     },
     {
-      "type": "Covalent_molecule_type",
+      "type": "Covalent_molecule",
       "supertype": "Generative",
       "base": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -195,7 +239,7 @@
               "id": "evento",
               "aliased": null,
               "script": 6,
-              "location": "148-154|12:3-12:9"
+              "location": "12:3-12:9|158-164"
             },
             "parameters": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -205,14 +249,14 @@
                   "supertype": "Generative",
                   "contents": "Meditar",
                   "script": 9,
-                  "location": "156-165|12:11-12:20"
+                  "location": "12:11-12:20|166-175"
                 }
               ],
               "script": 13,
-              "location": "154-167|12:9-12:22"
+              "location": "12:9-12:22|164-177"
             },
             "script": 19,
-            "location": "148-167|12:3-12:22"
+            "location": "12:3-12:22|158-177"
           },
           {
             "type": "Functional_atom",
@@ -223,7 +267,7 @@
               "id": "duracion",
               "aliased": null,
               "script": 8,
-              "location": "170-178|13:3-13:11"
+              "location": "13:3-13:11|180-188"
             },
             "parameters": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -233,14 +277,14 @@
                   "supertype": "Generative",
                   "contents": "1h",
                   "script": 4,
-                  "location": "180-184|13:13-13:17"
+                  "location": "13:13-13:17|190-194"
                 }
               ],
               "script": 8,
-              "location": "178-186|13:11-13:19"
+              "location": "13:11-13:19|188-196"
             },
             "script": 16,
-            "location": "170-186|13:3-13:19"
+            "location": "13:3-13:19|180-196"
           },
           {
             "type": "Functional_atom",
@@ -251,7 +295,7 @@
               "id": "detalles",
               "aliased": null,
               "script": 8,
-              "location": "189-197|14:3-14:11"
+              "location": "14:3-14:11|199-207"
             },
             "parameters": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -261,22 +305,22 @@
                   "supertype": "Generative",
                   "contents": "wherever",
                   "script": 10,
-                  "location": "199-209|14:13-14:23"
+                  "location": "14:13-14:23|209-219"
                 }
               ],
               "script": 14,
-              "location": "197-211|14:11-14:25"
+              "location": "14:11-14:25|207-221"
             },
             "script": 22,
-            "location": "189-211|14:3-14:25"
+            "location": "14:3-14:25|199-221"
           }
         ],
         "script": 69,
-        "location": "144-213|11:1-15:2"
+        "location": "11:1-15:2|154-223"
       },
       "atoms": [],
       "script": 69,
-      "location": "144-213|11:1-15:2",
+      "location": "11:1-15:2|154-223",
       "extended_by": [
         {
           "type": "Pipe_appendix",
@@ -293,7 +337,7 @@
                   "id": "hour",
                   "aliased": null,
                   "script": 4,
-                  "location": "222-226|16:9-16:13"
+                  "location": "16:9-16:13|232-236"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -303,14 +347,14 @@
                       "supertype": "Generative",
                       "contents": "08:00",
                       "script": 7,
-                      "location": "228-235|16:15-16:22"
+                      "location": "16:15-16:22|238-245"
                     }
                   ],
                   "script": 11,
-                  "location": "226-237|16:13-16:24"
+                  "location": "16:13-16:24|236-247"
                 },
                 "script": 15,
-                "location": "222-237|16:9-16:24",
+                "location": "16:9-16:24|232-247",
                 "formula": "hour{$1}"
               },
               {
@@ -320,7 +364,7 @@
                   "id": "with",
                   "aliased": null,
                   "script": 4,
-                  "location": "237-241|16:24-16:28"
+                  "location": "16:24-16:28|247-251"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -330,20 +374,22 @@
                       "supertype": "Generative",
                       "name": null,
                       "script": 1,
-                      "location": "243-244|16:30-16:31"
+                      "location": "16:30-16:31|253-254"
                     }
                   ],
                   "script": 5,
-                  "location": "241-246|16:28-16:33"
+                  "location": "16:28-16:33|251-256"
                 },
                 "script": 9,
-                "location": "237-246|16:24-16:33",
+                "location": "16:24-16:33|247-256",
                 "formula": "with{$1}"
               }
-            ]
+            ],
+            "script": 24,
+            "location": "16:9-16:33|232-256"
           },
           "script": 33,
-          "location": "213-246|15:2-16:33"
+          "location": "15:2-16:33|223-256"
         },
         {
           "type": "Pipe_appendix",
@@ -360,7 +406,7 @@
                   "id": "hour",
                   "aliased": null,
                   "script": 4,
-                  "location": "255-259|17:9-17:13"
+                  "location": "17:9-17:13|265-269"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -370,14 +416,14 @@
                       "supertype": "Generative",
                       "contents": "09:00",
                       "script": 7,
-                      "location": "261-268|17:15-17:22"
+                      "location": "17:15-17:22|271-278"
                     }
                   ],
                   "script": 11,
-                  "location": "259-270|17:13-17:24"
+                  "location": "17:13-17:24|269-280"
                 },
                 "script": 15,
-                "location": "255-270|17:9-17:24",
+                "location": "17:9-17:24|265-280",
                 "formula": "hour{$1}"
               },
               {
@@ -387,7 +433,7 @@
                   "id": "with",
                   "aliased": null,
                   "script": 4,
-                  "location": "270-274|17:24-17:28"
+                  "location": "17:24-17:28|280-284"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -397,20 +443,22 @@
                       "supertype": "Generative",
                       "name": null,
                       "script": 1,
-                      "location": "276-277|17:30-17:31"
+                      "location": "17:30-17:31|286-287"
                     }
                   ],
                   "script": 5,
-                  "location": "274-279|17:28-17:33"
+                  "location": "17:28-17:33|284-289"
                 },
                 "script": 9,
-                "location": "270-279|17:24-17:33",
+                "location": "17:24-17:33|280-289",
                 "formula": "with{$1}"
               }
-            ]
+            ],
+            "script": 24,
+            "location": "17:9-17:33|265-289"
           },
           "script": 33,
-          "location": "246-279|16:33-17:33"
+          "location": "16:33-17:33|256-289"
         },
         {
           "type": "Pipe_appendix",
@@ -427,7 +475,7 @@
                   "id": "hour",
                   "aliased": null,
                   "script": 4,
-                  "location": "288-292|18:9-18:13"
+                  "location": "18:9-18:13|298-302"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -437,14 +485,14 @@
                       "supertype": "Generative",
                       "contents": "10:00",
                       "script": 7,
-                      "location": "294-301|18:15-18:22"
+                      "location": "18:15-18:22|304-311"
                     }
                   ],
                   "script": 11,
-                  "location": "292-303|18:13-18:24"
+                  "location": "18:13-18:24|302-313"
                 },
                 "script": 15,
-                "location": "288-303|18:9-18:24",
+                "location": "18:9-18:24|298-313",
                 "formula": "hour{$1}"
               },
               {
@@ -454,7 +502,7 @@
                   "id": "with",
                   "aliased": null,
                   "script": 4,
-                  "location": "303-307|18:24-18:28"
+                  "location": "18:24-18:28|313-317"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -464,20 +512,22 @@
                       "supertype": "Generative",
                       "name": null,
                       "script": 1,
-                      "location": "309-310|18:30-18:31"
+                      "location": "18:30-18:31|319-320"
                     }
                   ],
                   "script": 5,
-                  "location": "307-312|18:28-18:33"
+                  "location": "18:28-18:33|317-322"
                 },
                 "script": 9,
-                "location": "303-312|18:24-18:33",
+                "location": "18:24-18:33|313-322",
                 "formula": "with{$1}"
               }
-            ]
+            ],
+            "script": 24,
+            "location": "18:9-18:33|298-322"
           },
           "script": 33,
-          "location": "279-312|17:33-18:33"
+          "location": "17:33-18:33|289-322"
         },
         {
           "type": "Pipe_appendix",
@@ -494,7 +544,7 @@
                   "id": "day",
                   "aliased": null,
                   "script": 3,
-                  "location": "317-320|19:5-19:8"
+                  "location": "19:5-19:8|327-330"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -504,14 +554,14 @@
                       "supertype": "Generative",
                       "contents": "6/11/2024",
                       "script": 11,
-                      "location": "322-333|19:10-19:21"
+                      "location": "19:10-19:21|332-343"
                     }
                   ],
                   "script": 15,
-                  "location": "320-335|19:8-19:23"
+                  "location": "19:8-19:23|330-345"
                 },
                 "script": 18,
-                "location": "317-335|19:5-19:23",
+                "location": "19:5-19:23|327-345",
                 "formula": "day{$1}"
               },
               {
@@ -521,7 +571,7 @@
                   "id": "with",
                   "aliased": null,
                   "script": 4,
-                  "location": "335-339|19:23-19:27"
+                  "location": "19:23-19:27|345-349"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -531,34 +581,36 @@
                       "supertype": "Generative",
                       "name": "h1",
                       "script": 3,
-                      "location": "341-344|19:29-19:32"
+                      "location": "19:29-19:32|351-354"
                     },
                     {
                       "type": "Variable",
                       "supertype": "Generative",
                       "name": "h2",
                       "script": 3,
-                      "location": "345-348|19:33-19:36"
+                      "location": "19:33-19:36|355-358"
                     },
                     {
                       "type": "Variable",
                       "supertype": "Generative",
                       "name": "h3",
                       "script": 3,
-                      "location": "349-352|19:37-19:40"
+                      "location": "19:37-19:40|359-362"
                     }
                   ],
                   "script": 15,
-                  "location": "339-354|19:27-19:42"
+                  "location": "19:27-19:42|349-364"
                 },
                 "script": 19,
-                "location": "335-354|19:23-19:42",
+                "location": "19:23-19:42|345-364",
                 "formula": "with{$1}"
               }
-            ]
+            ],
+            "script": 37,
+            "location": "19:5-19:42|327-364"
           },
           "script": 42,
-          "location": "312-354|18:33-19:42"
+          "location": "18:33-19:42|322-364"
         },
         {
           "type": "Pipe_appendix",
@@ -572,7 +624,7 @@
               "id": "registers",
               "aliased": null,
               "script": 9,
-              "location": "359-368|20:5-20:14"
+              "location": "20:5-20:14|369-378"
             },
             "parameters": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -582,17 +634,17 @@
                   "supertype": "Generative",
                   "name": null,
                   "script": 1,
-                  "location": "370-371|20:16-20:17"
+                  "location": "20:16-20:17|380-381"
                 }
               ],
               "script": 5,
-              "location": "368-373|20:14-20:19"
+              "location": "20:14-20:19|378-383"
             },
             "script": 14,
-            "location": "359-373|20:5-20:19"
+            "location": "20:5-20:19|369-383"
           },
           "script": 19,
-          "location": "354-373|19:42-20:19"
+          "location": "19:42-20:19|364-383"
         }
       ]
     }
@@ -617,5 +669,5 @@
       }
     }
   },
-  "seed": "registers{\n  day{{26/11/2024}}with{\n    hour{{08:00}}with{\n      event{{Desayunar}}\n      duration{{1h}}\n      details{{Wherever}}\n    }\n  }\n}\n\n{\n  evento{ \"Meditar\" }\n  duracion{ \"1h\" }\n  detalles{ \"wherever\" }\n}\n  |@h1= hour{ \"08:00\" }with{ @ }\n  |@h2= hour{ \"09:00\" }with{ @ }\n  |@h3= hour{ \"10:00\" }with{ @ }\n  | day{ \"6/11/2024\" }with{ @h1 @h2 @h3 }\n  | registers{ @ }"
+  "seed": "registers{\n  day{ \"26/11/2024\" }with{\n    hour{ \"08:00\" }with{\n      event{ \"Desayunar\" }\n      duration{ \"1h\" }\n      details{ \"Wherever\" }\n    }\n  }\n}\n\n{\n  evento{ \"Meditar\" }\n  duracion{ \"1h\" }\n  detalles{ \"wherever\" }\n}\n  |@h1= hour{ \"08:00\" }with{ @ }\n  |@h2= hour{ \"09:00\" }with{ @ }\n  |@h3= hour{ \"10:00\" }with{ @ }\n  | day{ \"6/11/2024\" }with{ @h1 @h2 @h3 }\n  | registers{ @ }"
 }

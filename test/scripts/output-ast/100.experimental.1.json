@@ -4,7 +4,7 @@
     "type": "Preblock",
     "declarations": {},
     "script": 0,
-    "location": "0-0|1:1-1:1"
+    "location": "1:1-1:1|0-0"
   },
   "body": [
     {
@@ -19,16 +19,46 @@
             "id": "observo que",
             "aliased": null,
             "script": 11,
-            "location": "0-11|1:1-1:12"
+            "location": "1:1-1:12|0-11"
           },
           "parameters": {
-            "type": "Function_call_appendix_for_text_parameter",
-            "text": " las voces ",
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Covalent_molecule",
+                "supertype": "Generative",
+                "base": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "las voces{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "las voces",
+                        "aliased": null,
+                        "script": 9,
+                        "location": "1:15-1:24|14-23"
+                      },
+                      "parameters": null,
+                      "script": 9,
+                      "location": "1:15-1:24|14-23"
+                    }
+                  ],
+                  "script": 13,
+                  "location": "1:13-1:26|12-25"
+                },
+                "atoms": [],
+                "script": 13,
+                "location": "1:13-1:26|12-25"
+              }
+            ],
             "script": 15,
-            "location": "11-26|1:12-1:27"
+            "location": "1:12-1:27|11-26"
           },
           "script": 26,
-          "location": "0-26|1:1-1:27",
+          "location": "1:1-1:27|0-26",
           "formula": "observo que{$1}"
         },
         {
@@ -38,18 +68,20 @@
             "id": "no cesan",
             "aliased": null,
             "script": 8,
-            "location": "26-34|1:27-1:35"
+            "location": "1:27-1:35|26-34"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "34-35|1:35-1:36"
+            "location": "1:35-1:36|34-35"
           },
           "script": 9,
-          "location": "26-35|1:27-1:36",
+          "location": "1:27-1:36|26-35",
           "formula": "no cesan{$1}"
         }
-      ]
+      ],
+      "script": 35,
+      "location": "1:1-1:36|0-35"
     },
     {
       "type": "Functional_molecule",
@@ -63,16 +95,46 @@
             "id": "observo que",
             "aliased": null,
             "script": 11,
-            "location": "36-47|2:1-2:12"
+            "location": "2:1-2:12|36-47"
           },
           "parameters": {
-            "type": "Function_call_appendix_for_text_parameter",
-            "text": " los porrillos ",
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Covalent_molecule",
+                "supertype": "Generative",
+                "base": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "los porrillos{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "los porrillos",
+                        "aliased": null,
+                        "script": 13,
+                        "location": "2:15-2:28|50-63"
+                      },
+                      "parameters": null,
+                      "script": 13,
+                      "location": "2:15-2:28|50-63"
+                    }
+                  ],
+                  "script": 17,
+                  "location": "2:13-2:30|48-65"
+                },
+                "atoms": [],
+                "script": 17,
+                "location": "2:13-2:30|48-65"
+              }
+            ],
             "script": 19,
-            "location": "47-66|2:12-2:31"
+            "location": "2:12-2:31|47-66"
           },
           "script": 30,
-          "location": "36-66|2:1-2:31",
+          "location": "2:1-2:31|36-66",
           "formula": "observo que{$1}"
         },
         {
@@ -82,18 +144,20 @@
             "id": "van bajando",
             "aliased": null,
             "script": 11,
-            "location": "66-77|2:31-2:42"
+            "location": "2:31-2:42|66-77"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "77-78|2:42-2:43"
+            "location": "2:42-2:43|77-78"
           },
           "script": 12,
-          "location": "66-78|2:31-2:43",
+          "location": "2:31-2:43|66-78",
           "formula": "van bajando{$1}"
         }
-      ]
+      ],
+      "script": 42,
+      "location": "2:1-2:43|36-78"
     },
     {
       "type": "Functional_molecule",
@@ -107,16 +171,46 @@
             "id": "cuando",
             "aliased": null,
             "script": 6,
-            "location": "79-85|3:1-3:7"
+            "location": "3:1-3:7|79-85"
           },
           "parameters": {
-            "type": "Function_call_appendix_for_text_parameter",
-            "text": " la noche ",
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Covalent_molecule",
+                "supertype": "Generative",
+                "base": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "la noche{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "la noche",
+                        "aliased": null,
+                        "script": 8,
+                        "location": "3:10-3:18|88-96"
+                      },
+                      "parameters": null,
+                      "script": 8,
+                      "location": "3:10-3:18|88-96"
+                    }
+                  ],
+                  "script": 12,
+                  "location": "3:8-3:20|86-98"
+                },
+                "atoms": [],
+                "script": 12,
+                "location": "3:8-3:20|86-98"
+              }
+            ],
             "script": 14,
-            "location": "85-99|3:7-3:21"
+            "location": "3:7-3:21|85-99"
           },
           "script": 20,
-          "location": "79-99|3:1-3:21",
+          "location": "3:1-3:21|79-99",
           "formula": "cuando{$1}"
         },
         {
@@ -126,19 +220,51 @@
             "id": "cae entonces pasan",
             "aliased": null,
             "script": 18,
-            "location": "99-117|3:21-3:39"
+            "location": "3:21-3:39|99-117"
           },
           "parameters": {
-            "type": "Function_call_appendix_for_text_parameter",
-            "text": " cosas ",
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Covalent_molecule",
+                "supertype": "Generative",
+                "base": {
+                  "type": "Function_call_appendix_for_list_parameter",
+                  "list": [
+                    {
+                      "type": "Functional_atom",
+                      "supertype": "Generative",
+                      "formula": "cosas{$1}",
+                      "name": {
+                        "type": "Function_name_by_word",
+                        "id": "cosas",
+                        "aliased": null,
+                        "script": 5,
+                        "location": "3:42-3:47|120-125"
+                      },
+                      "parameters": null,
+                      "script": 5,
+                      "location": "3:42-3:47|120-125"
+                    }
+                  ],
+                  "script": 9,
+                  "location": "3:40-3:49|118-127"
+                },
+                "atoms": [],
+                "script": 9,
+                "location": "3:40-3:49|118-127"
+              }
+            ],
             "script": 11,
-            "location": "117-128|3:39-3:50"
+            "location": "3:39-3:50|117-128"
           },
           "script": 29,
-          "location": "99-128|3:21-3:50",
+          "location": "3:21-3:50|99-128",
           "formula": "cae entonces pasan{$1}"
         }
-      ]
+      ],
+      "script": 49,
+      "location": "3:1-3:50|79-128"
     },
     {
       "type": "Functional_atom",
@@ -149,15 +275,15 @@
         "id": "pero entonces puedo escribir asi tambien",
         "aliased": null,
         "script": 40,
-        "location": "129-169|4:1-4:41"
+        "location": "4:1-4:41|129-169"
       },
       "parameters": {
         "type": "Function_call_appendix_for_empty_parameter",
         "script": 1,
-        "location": "169-170|4:41-4:42"
+        "location": "4:41-4:42|169-170"
       },
       "script": 41,
-      "location": "129-170|4:1-4:42"
+      "location": "4:1-4:42|129-170"
     },
     {
       "type": "Functional_atom",
@@ -168,15 +294,15 @@
         "id": "bienvenidos a la estraña historia",
         "aliased": null,
         "script": 33,
-        "location": "173-206|7:1-7:34"
+        "location": "7:1-7:34|173-206"
       },
       "parameters": {
         "type": "Function_call_appendix_for_empty_parameter",
         "script": 1,
-        "location": "206-207|7:34-7:35"
+        "location": "7:34-7:35|206-207"
       },
       "script": 34,
-      "location": "173-207|7:1-7:35"
+      "location": "7:1-7:35|173-207"
     },
     {
       "type": "Functional_molecule",
@@ -190,7 +316,7 @@
             "id": "file",
             "aliased": null,
             "script": 4,
-            "location": "209-213|9:1-9:5"
+            "location": "9:1-9:5|209-213"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -200,14 +326,14 @@
                 "supertype": "Generative",
                 "contents": "main.java",
                 "script": 11,
-                "location": "215-226|9:7-9:18"
+                "location": "9:7-9:18|215-226"
               }
             ],
             "script": 15,
-            "location": "213-228|9:5-9:20"
+            "location": "9:5-9:20|213-228"
           },
           "script": 19,
-          "location": "209-228|9:1-9:20",
+          "location": "9:1-9:20|209-228",
           "formula": "file{$1}"
         },
         {
@@ -217,7 +343,7 @@
             "id": "contains",
             "aliased": null,
             "script": 8,
-            "location": "228-236|9:20-9:28"
+            "location": "9:20-9:28|228-236"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -234,7 +360,7 @@
                       "id": "class",
                       "aliased": null,
                       "script": 5,
-                      "location": "240-245|10:3-10:8"
+                      "location": "10:3-10:8|240-245"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -244,14 +370,14 @@
                           "supertype": "Generative",
                           "contents": "main",
                           "script": 6,
-                          "location": "247-253|10:10-10:16"
+                          "location": "10:10-10:16|247-253"
                         }
                       ],
                       "script": 10,
-                      "location": "245-255|10:8-10:18"
+                      "location": "10:8-10:18|245-255"
                     },
                     "script": 15,
-                    "location": "240-255|10:3-10:18",
+                    "location": "10:3-10:18|240-255",
                     "formula": "class{$1}"
                   },
                   {
@@ -261,7 +387,7 @@
                       "id": "with",
                       "aliased": null,
                       "script": 4,
-                      "location": "255-259|10:18-10:22"
+                      "location": "10:18-10:22|255-259"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -278,7 +404,7 @@
                                 "id": "type",
                                 "aliased": null,
                                 "script": 4,
-                                "location": "265-269|11:5-11:9"
+                                "location": "11:5-11:9|265-269"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -288,21 +414,21 @@
                                     "supertype": "Generative",
                                     "contents": "String",
                                     "script": 8,
-                                    "location": "271-279|11:11-11:19"
+                                    "location": "11:11-11:19|271-279"
                                   },
                                   {
                                     "type": "Text",
                                     "supertype": "Generative",
                                     "contents": "message",
                                     "script": 9,
-                                    "location": "280-289|11:20-11:29"
+                                    "location": "11:20-11:29|280-289"
                                   }
                                 ],
                                 "script": 22,
-                                "location": "269-291|11:9-11:31"
+                                "location": "11:9-11:31|269-291"
                               },
                               "script": 26,
-                              "location": "265-291|11:5-11:31",
+                              "location": "11:5-11:31|265-291",
                               "formula": "type{$1}"
                             },
                             {
@@ -312,7 +438,7 @@
                                 "id": "as",
                                 "aliased": null,
                                 "script": 2,
-                                "location": "291-293|11:31-11:33"
+                                "location": "11:31-11:33|291-293"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -322,17 +448,19 @@
                                     "supertype": "Generative",
                                     "contents": "Hello, %!",
                                     "script": 11,
-                                    "location": "295-306|11:35-11:46"
+                                    "location": "11:35-11:46|295-306"
                                   }
                                 ],
                                 "script": 15,
-                                "location": "293-308|11:33-11:48"
+                                "location": "11:33-11:48|293-308"
                               },
                               "script": 17,
-                              "location": "291-308|11:31-11:48",
+                              "location": "11:31-11:48|291-308",
                               "formula": "as{$1}"
                             }
-                          ]
+                          ],
+                          "script": 43,
+                          "location": "11:5-11:48|265-308"
                         },
                         {
                           "type": "Functional_molecule",
@@ -346,7 +474,7 @@
                                 "id": "type",
                                 "aliased": null,
                                 "script": 4,
-                                "location": "313-317|12:5-12:9"
+                                "location": "12:5-12:9|313-317"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -356,21 +484,21 @@
                                     "supertype": "Generative",
                                     "contents": "String",
                                     "script": 8,
-                                    "location": "319-327|12:11-12:19"
+                                    "location": "12:11-12:19|319-327"
                                   },
                                   {
                                     "type": "Text",
                                     "supertype": "Generative",
                                     "contents": "name",
                                     "script": 6,
-                                    "location": "328-334|12:20-12:26"
+                                    "location": "12:20-12:26|328-334"
                                   }
                                 ],
                                 "script": 19,
-                                "location": "317-336|12:9-12:28"
+                                "location": "12:9-12:28|317-336"
                               },
                               "script": 23,
-                              "location": "313-336|12:5-12:28",
+                              "location": "12:5-12:28|313-336",
                               "formula": "type{$1}"
                             },
                             {
@@ -380,7 +508,7 @@
                                 "id": "as",
                                 "aliased": null,
                                 "script": 2,
-                                "location": "336-338|12:28-12:30"
+                                "location": "12:28-12:30|336-338"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -394,25 +522,27 @@
                                       "id": "undefined",
                                       "aliased": null,
                                       "script": 9,
-                                      "location": "340-349|12:32-12:41"
+                                      "location": "12:32-12:41|340-349"
                                     },
                                     "parameters": {
                                       "type": "Function_call_appendix_for_empty_parameter",
                                       "script": 1,
-                                      "location": "349-350|12:41-12:42"
+                                      "location": "12:41-12:42|349-350"
                                     },
                                     "script": 10,
-                                    "location": "340-350|12:32-12:42"
+                                    "location": "12:32-12:42|340-350"
                                   }
                                 ],
                                 "script": 14,
-                                "location": "338-352|12:30-12:44"
+                                "location": "12:30-12:44|338-352"
                               },
                               "script": 16,
-                              "location": "336-352|12:28-12:44",
+                              "location": "12:28-12:44|336-352",
                               "formula": "as{$1}"
                             }
-                          ]
+                          ],
+                          "script": 39,
+                          "location": "12:5-12:44|313-352"
                         },
                         {
                           "type": "Functional_molecule",
@@ -426,7 +556,7 @@
                                 "id": "method",
                                 "aliased": null,
                                 "script": 6,
-                                "location": "357-363|13:5-13:11"
+                                "location": "13:5-13:11|357-363"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -436,21 +566,21 @@
                                     "supertype": "Generative",
                                     "contents": "public static void",
                                     "script": 20,
-                                    "location": "365-385|13:13-13:33"
+                                    "location": "13:13-13:33|365-385"
                                   },
                                   {
                                     "type": "Text",
                                     "supertype": "Generative",
                                     "contents": "main",
                                     "script": 6,
-                                    "location": "386-392|13:34-13:40"
+                                    "location": "13:34-13:40|386-392"
                                   }
                                 ],
                                 "script": 31,
-                                "location": "363-394|13:11-13:42"
+                                "location": "13:11-13:42|363-394"
                               },
                               "script": 37,
-                              "location": "357-394|13:5-13:42",
+                              "location": "13:5-13:42|357-394",
                               "formula": "method{$1}"
                             },
                             {
@@ -460,7 +590,7 @@
                                 "id": "can",
                                 "aliased": null,
                                 "script": 3,
-                                "location": "394-397|13:42-13:45"
+                                "location": "13:42-13:45|394-397"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -474,7 +604,7 @@
                                       "id": "print",
                                       "aliased": null,
                                       "script": 5,
-                                      "location": "407-412|14:9-14:14"
+                                      "location": "14:9-14:14|407-412"
                                     },
                                     "parameters": {
                                       "type": "Function_call_appendix_for_list_parameter",
@@ -484,19 +614,19 @@
                                           "supertype": "Generative",
                                           "name": "this",
                                           "script": 5,
-                                          "location": "414-419|14:16-14:21",
+                                          "location": "14:16-14:21|414-419",
                                           "extended_by": [
                                             {
                                               "type": "Access_by_dot_appendix",
                                               "access": "name",
                                               "script": 5,
-                                              "location": "419-424|14:21-14:26"
+                                              "location": "14:21-14:26|419-424"
                                             },
                                             {
                                               "type": "Pipe_appendix",
                                               "operator": "|[render one]=",
                                               "pipe": {
-                                                "type": "Covalent_molecule_type",
+                                                "type": "Covalent_molecule",
                                                 "supertype": "Generative",
                                                 "base": {
                                                   "type": "Function_call_appendix_for_list_parameter",
@@ -506,13 +636,13 @@
                                                       "supertype": "Generative",
                                                       "name": "this",
                                                       "script": 5,
-                                                      "location": "442-447|14:44-14:49",
+                                                      "location": "14:44-14:49|442-447",
                                                       "extended_by": [
                                                         {
                                                           "type": "Access_by_dot_appendix",
                                                           "access": "message",
                                                           "script": 8,
-                                                          "location": "447-455|14:49-14:57"
+                                                          "location": "14:49-14:57|447-455"
                                                         }
                                                       ]
                                                     },
@@ -521,27 +651,27 @@
                                                       "supertype": "Generative",
                                                       "name": null,
                                                       "script": 1,
-                                                      "location": "456-457|14:58-14:59"
+                                                      "location": "14:58-14:59|456-457"
                                                     }
                                                   ],
                                                   "script": 19,
-                                                  "location": "440-459|14:42-14:61"
+                                                  "location": "14:42-14:61|440-459"
                                                 },
                                                 "atoms": [],
                                                 "script": 19,
-                                                "location": "440-459|14:42-14:61"
+                                                "location": "14:42-14:61|440-459"
                                               },
                                               "script": 35,
-                                              "location": "424-459|14:26-14:61"
+                                              "location": "14:26-14:61|424-459"
                                             }
                                           ]
                                         }
                                       ],
                                       "script": 49,
-                                      "location": "412-461|14:14-14:63"
+                                      "location": "14:14-14:63|412-461"
                                     },
                                     "script": 54,
-                                    "location": "407-461|14:9-14:63"
+                                    "location": "14:9-14:63|407-461"
                                   },
                                   {
                                     "type": "Functional_atom",
@@ -552,7 +682,7 @@
                                       "id": "print",
                                       "aliased": null,
                                       "script": 5,
-                                      "location": "470-475|15:9-15:14"
+                                      "location": "15:9-15:14|470-475"
                                     },
                                     "parameters": {
                                       "type": "Function_call_appendix_for_list_parameter",
@@ -566,7 +696,7 @@
                                             "id": "render one",
                                             "aliased": null,
                                             "script": 10,
-                                            "location": "477-487|15:16-15:26"
+                                            "location": "15:16-15:26|477-487"
                                           },
                                           "parameters": {
                                             "type": "Function_call_appendix_for_list_parameter",
@@ -576,13 +706,13 @@
                                                 "supertype": "Generative",
                                                 "name": "this",
                                                 "script": 5,
-                                                "location": "488-493|15:27-15:32",
+                                                "location": "15:27-15:32|488-493",
                                                 "extended_by": [
                                                   {
                                                     "type": "Access_by_dot_appendix",
                                                     "access": "name",
                                                     "script": 5,
-                                                    "location": "493-498|15:32-15:37"
+                                                    "location": "15:32-15:37|493-498"
                                                   }
                                                 ]
                                               },
@@ -591,59 +721,65 @@
                                                 "supertype": "Generative",
                                                 "name": "this",
                                                 "script": 5,
-                                                "location": "499-504|15:38-15:43",
+                                                "location": "15:38-15:43|499-504",
                                                 "extended_by": [
                                                   {
                                                     "type": "Access_by_dot_appendix",
                                                     "access": "message",
                                                     "script": 8,
-                                                    "location": "504-512|15:43-15:51"
+                                                    "location": "15:43-15:51|504-512"
                                                   }
                                                 ]
                                               }
                                             ],
                                             "script": 26,
-                                            "location": "487-513|15:26-15:52"
+                                            "location": "15:26-15:52|487-513"
                                           },
                                           "script": 36,
-                                          "location": "477-513|15:16-15:52"
+                                          "location": "15:16-15:52|477-513"
                                         }
                                       ],
                                       "script": 40,
-                                      "location": "475-515|15:14-15:54"
+                                      "location": "15:14-15:54|475-515"
                                     },
                                     "script": 45,
-                                    "location": "470-515|15:9-15:54"
+                                    "location": "15:9-15:54|470-515"
                                   }
                                 ],
                                 "script": 124,
-                                "location": "397-521|13:45-16:6"
+                                "location": "13:45-16:6|397-521"
                               },
                               "script": 127,
-                              "location": "394-521|13:42-16:6",
+                              "location": "13:42-16:6|394-521",
                               "formula": "can{$1}"
                             }
-                          ]
+                          ],
+                          "script": 164,
+                          "location": "13:5-16:6|357-521"
                         }
                       ],
                       "script": 266,
-                      "location": "259-525|10:22-17:4"
+                      "location": "10:22-17:4|259-525"
                     },
                     "script": 270,
-                    "location": "255-525|10:18-17:4",
+                    "location": "10:18-17:4|255-525",
                     "formula": "with{$1}"
                   }
-                ]
+                ],
+                "script": 285,
+                "location": "10:3-17:4|240-525"
               }
             ],
             "script": 291,
-            "location": "236-527|9:28-18:2"
+            "location": "9:28-18:2|236-527"
           },
           "script": 299,
-          "location": "228-527|9:20-18:2",
+          "location": "9:20-18:2|228-527",
           "formula": "contains{$1}"
         }
-      ]
+      ],
+      "script": 318,
+      "location": "9:1-18:2|209-527"
     },
     {
       "type": "Functional_molecule",
@@ -657,7 +793,7 @@
             "id": "const",
             "aliased": null,
             "script": 5,
-            "location": "530-535|21:1-21:6"
+            "location": "21:1-21:6|530-535"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -667,14 +803,14 @@
                 "supertype": "Generative",
                 "name": "wherever",
                 "script": 9,
-                "location": "537-546|21:8-21:17"
+                "location": "21:8-21:17|537-546"
               }
             ],
             "script": 13,
-            "location": "535-548|21:6-21:19"
+            "location": "21:6-21:19|535-548"
           },
           "script": 18,
-          "location": "530-548|21:1-21:19",
+          "location": "21:1-21:19|530-548",
           "formula": "const{$1}"
         },
         {
@@ -684,7 +820,7 @@
             "id": "to",
             "aliased": null,
             "script": 2,
-            "location": "548-550|21:19-21:21"
+            "location": "21:19-21:21|548-550"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -694,17 +830,19 @@
                 "supertype": "Generative",
                 "value": 100,
                 "script": 3,
-                "location": "552-555|21:23-21:26"
+                "location": "21:23-21:26|552-555"
               }
             ],
             "script": 7,
-            "location": "550-557|21:21-21:28"
+            "location": "21:21-21:28|550-557"
           },
           "script": 9,
-          "location": "548-557|21:19-21:28",
+          "location": "21:19-21:28|548-557",
           "formula": "to{$1}"
         }
-      ]
+      ],
+      "script": 27,
+      "location": "21:1-21:28|530-557"
     },
     {
       "type": "Functional_atom",
@@ -715,7 +853,7 @@
         "id": "return",
         "aliased": null,
         "script": 6,
-        "location": "558-564|22:1-22:7"
+        "location": "22:1-22:7|558-564"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -725,7 +863,7 @@
             "supertype": "Generative",
             "name": "wherever",
             "script": 9,
-            "location": "566-575|22:9-22:18",
+            "location": "22:9-22:18|566-575",
             "extended_by": [
               {
                 "type": "Pipe_appendix",
@@ -735,10 +873,10 @@
                   "supertype": "Generative",
                   "value": 200,
                   "script": 3,
-                  "location": "588-591|22:31-22:34"
+                  "location": "22:31-22:34|588-591"
                 },
                 "script": 16,
-                "location": "575-591|22:18-22:34"
+                "location": "22:18-22:34|575-591"
               },
               {
                 "type": "Pipe_appendix",
@@ -748,19 +886,19 @@
                   "supertype": "Generative",
                   "value": 100,
                   "script": 3,
-                  "location": "610-613|22:53-22:56"
+                  "location": "22:53-22:56|610-613"
                 },
                 "script": 22,
-                "location": "591-613|22:34-22:56"
+                "location": "22:34-22:56|591-613"
               }
             ]
           }
         ],
         "script": 51,
-        "location": "564-615|22:7-22:58"
+        "location": "22:7-22:58|564-615"
       },
       "script": 57,
-      "location": "558-615|22:1-22:58"
+      "location": "22:1-22:58|558-615"
     },
     {
       "type": "Functional_molecule",
@@ -774,15 +912,15 @@
             "id": "function",
             "aliased": null,
             "script": 8,
-            "location": "616-624|23:1-23:9"
+            "location": "23:1-23:9|616-624"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "624-625|23:9-23:10"
+            "location": "23:9-23:10|624-625"
           },
           "script": 9,
-          "location": "616-625|23:1-23:10",
+          "location": "23:1-23:10|616-625",
           "formula": "function{$1}"
         },
         {
@@ -792,7 +930,7 @@
             "id": "can",
             "aliased": null,
             "script": 3,
-            "location": "625-628|23:10-23:13"
+            "location": "23:10-23:13|625-628"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -802,7 +940,7 @@
                 "supertype": "Generative",
                 "name": "arguments",
                 "script": 10,
-                "location": "632-642|24:3-24:13",
+                "location": "24:3-24:13|632-642",
                 "extended_by": [
                   {
                     "type": "Access_by_accessor_appendix",
@@ -811,16 +949,16 @@
                       "supertype": "Generative",
                       "value": 0,
                       "script": 1,
-                      "location": "643-644|24:14-24:15"
+                      "location": "24:14-24:15|643-644"
                     },
                     "script": 3,
-                    "location": "642-645|24:13-24:16"
+                    "location": "24:13-24:16|642-645"
                   },
                   {
                     "type": "Pipe_appendix",
                     "operator": "|[math sum]=",
                     "pipe": {
-                      "type": "Covalent_molecule_type",
+                      "type": "Covalent_molecule",
                       "supertype": "Generative",
                       "base": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -830,31 +968,31 @@
                             "supertype": "Generative",
                             "name": null,
                             "script": 1,
-                            "location": "665-666|25:20-25:21"
+                            "location": "25:20-25:21|665-666"
                           },
                           {
                             "type": "Number",
                             "supertype": "Generative",
                             "value": 200,
                             "script": 3,
-                            "location": "667-670|25:22-25:25"
+                            "location": "25:22-25:25|667-670"
                           }
                         ],
                         "script": 9,
-                        "location": "663-672|25:18-25:27"
+                        "location": "25:18-25:27|663-672"
                       },
                       "atoms": [],
                       "script": 9,
-                      "location": "663-672|25:18-25:27"
+                      "location": "25:18-25:27|663-672"
                     },
                     "script": 27,
-                    "location": "645-672|24:16-25:27"
+                    "location": "24:16-25:27|645-672"
                   },
                   {
                     "type": "Pipe_appendix",
                     "operator": "|[math substract]=",
                     "pipe": {
-                      "type": "Covalent_molecule_type",
+                      "type": "Covalent_molecule",
                       "supertype": "Generative",
                       "base": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -864,31 +1002,31 @@
                             "supertype": "Generative",
                             "name": null,
                             "script": 1,
-                            "location": "698-699|26:26-26:27"
+                            "location": "26:26-26:27|698-699"
                           },
                           {
                             "type": "Number",
                             "supertype": "Generative",
                             "value": 100,
                             "script": 3,
-                            "location": "700-703|26:28-26:31"
+                            "location": "26:28-26:31|700-703"
                           }
                         ],
                         "script": 9,
-                        "location": "696-705|26:24-26:33"
+                        "location": "26:24-26:33|696-705"
                       },
                       "atoms": [],
                       "script": 9,
-                      "location": "696-705|26:24-26:33"
+                      "location": "26:24-26:33|696-705"
                     },
                     "script": 33,
-                    "location": "672-705|25:27-26:33"
+                    "location": "25:27-26:33|672-705"
                   },
                   {
                     "type": "Pipe_appendix",
                     "operator": "|[math divide]=",
                     "pipe": {
-                      "type": "Covalent_molecule_type",
+                      "type": "Covalent_molecule",
                       "supertype": "Generative",
                       "base": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -898,25 +1036,25 @@
                             "supertype": "Generative",
                             "name": null,
                             "script": 1,
-                            "location": "728-729|27:23-27:24"
+                            "location": "27:23-27:24|728-729"
                           },
                           {
                             "type": "Number",
                             "supertype": "Generative",
                             "value": 5,
                             "script": 1,
-                            "location": "730-731|27:25-27:26"
+                            "location": "27:25-27:26|730-731"
                           }
                         ],
                         "script": 7,
-                        "location": "726-733|27:21-27:28"
+                        "location": "27:21-27:28|726-733"
                       },
                       "atoms": [],
                       "script": 7,
-                      "location": "726-733|27:21-27:28"
+                      "location": "27:21-27:28|726-733"
                     },
                     "script": 28,
-                    "location": "705-733|26:33-27:28"
+                    "location": "26:33-27:28|705-733"
                   },
                   {
                     "type": "Pipe_appendix",
@@ -926,22 +1064,24 @@
                       "supertype": "Generative",
                       "name": null,
                       "script": 1,
-                      "location": "747-748|28:14-28:15"
+                      "location": "28:14-28:15|747-748"
                     },
                     "script": 15,
-                    "location": "733-748|27:28-28:15"
+                    "location": "27:28-28:15|733-748"
                   }
                 ]
               }
             ],
             "script": 122,
-            "location": "628-750|23:13-29:2"
+            "location": "23:13-29:2|628-750"
           },
           "script": 125,
-          "location": "625-750|23:10-29:2",
+          "location": "23:10-29:2|625-750",
           "formula": "can{$1}"
         }
-      ]
+      ],
+      "script": 134,
+      "location": "23:1-29:2|616-750"
     },
     {
       "type": "Functional_molecule",
@@ -955,7 +1095,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "752-754|31:1-31:3"
+            "location": "31:1-31:3|752-754"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -969,22 +1109,22 @@
                   "id": "te fijas",
                   "aliased": null,
                   "script": 8,
-                  "location": "756-764|31:5-31:13"
+                  "location": "31:5-31:13|756-764"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_empty_parameter",
                   "script": 1,
-                  "location": "764-765|31:13-31:14"
+                  "location": "31:13-31:14|764-765"
                 },
                 "script": 9,
-                "location": "756-765|31:5-31:14"
+                "location": "31:5-31:14|756-765"
               }
             ],
             "script": 13,
-            "location": "754-767|31:3-31:16"
+            "location": "31:3-31:16|754-767"
           },
           "script": 15,
-          "location": "752-767|31:1-31:16",
+          "location": "31:1-31:16|752-767",
           "formula": "si{$1}"
         },
         {
@@ -994,7 +1134,7 @@
             "id": "ocurre que",
             "aliased": null,
             "script": 10,
-            "location": "767-777|31:16-31:26"
+            "location": "31:16-31:26|767-777"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1008,7 +1148,7 @@
                   "id": "ellos",
                   "aliased": null,
                   "script": 5,
-                  "location": "779-784|31:28-31:33"
+                  "location": "31:28-31:33|779-784"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1022,7 +1162,7 @@
                         "id": "no",
                         "aliased": null,
                         "script": 2,
-                        "location": "786-788|31:35-31:37"
+                        "location": "31:35-31:37|786-788"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -1036,39 +1176,41 @@
                               "id": "se pronuncian",
                               "aliased": null,
                               "script": 13,
-                              "location": "790-803|31:39-31:52"
+                              "location": "31:39-31:52|790-803"
                             },
                             "parameters": {
                               "type": "Function_call_appendix_for_empty_parameter",
                               "script": 1,
-                              "location": "803-804|31:52-31:53"
+                              "location": "31:52-31:53|803-804"
                             },
                             "script": 14,
-                            "location": "790-804|31:39-31:53"
+                            "location": "31:39-31:53|790-804"
                           }
                         ],
                         "script": 18,
-                        "location": "788-806|31:37-31:55"
+                        "location": "31:37-31:55|788-806"
                       },
                       "script": 20,
-                      "location": "786-806|31:35-31:55"
+                      "location": "31:35-31:55|786-806"
                     }
                   ],
                   "script": 24,
-                  "location": "784-808|31:33-31:57"
+                  "location": "31:33-31:57|784-808"
                 },
                 "script": 29,
-                "location": "779-808|31:28-31:57"
+                "location": "31:28-31:57|779-808"
               }
             ],
             "script": 33,
-            "location": "777-810|31:26-31:59"
+            "location": "31:26-31:59|777-810"
           },
           "script": 43,
-          "location": "767-810|31:16-31:59",
+          "location": "31:16-31:59|767-810",
           "formula": "ocurre que{$1}"
         }
-      ]
+      ],
+      "script": 58,
+      "location": "31:1-31:59|752-810"
     },
     {
       "type": "Functional_molecule",
@@ -1082,7 +1224,7 @@
             "id": "qué",
             "aliased": null,
             "script": 3,
-            "location": "811-814|32:1-32:4"
+            "location": "32:1-32:4|811-814"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1096,22 +1238,22 @@
                   "id": "podríamos hacer",
                   "aliased": null,
                   "script": 15,
-                  "location": "816-831|32:6-32:21"
+                  "location": "32:6-32:21|816-831"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_empty_parameter",
                   "script": 1,
-                  "location": "831-832|32:21-32:22"
+                  "location": "32:21-32:22|831-832"
                 },
                 "script": 16,
-                "location": "816-832|32:6-32:22"
+                "location": "32:6-32:22|816-832"
               }
             ],
             "script": 20,
-            "location": "814-834|32:4-32:24"
+            "location": "32:4-32:24|814-834"
           },
           "script": 23,
-          "location": "811-834|32:1-32:24",
+          "location": "32:1-32:24|811-834",
           "formula": "qué{$1}"
         },
         {
@@ -1121,18 +1263,20 @@
             "id": "igualmente",
             "aliased": null,
             "script": 10,
-            "location": "834-844|32:24-32:34"
+            "location": "32:24-32:34|834-844"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "844-845|32:34-32:35"
+            "location": "32:34-32:35|844-845"
           },
           "script": 11,
-          "location": "834-845|32:24-32:35",
+          "location": "32:24-32:35|834-845",
           "formula": "igualmente{$1}"
         }
-      ]
+      ],
+      "script": 34,
+      "location": "32:1-32:35|811-845"
     },
     {
       "type": "Functional_molecule",
@@ -1146,7 +1290,7 @@
             "id": "el",
             "aliased": null,
             "script": 2,
-            "location": "846-848|33:1-33:3"
+            "location": "33:1-33:3|846-848"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1156,14 +1300,14 @@
                 "supertype": "Generative",
                 "name": "universo",
                 "script": 9,
-                "location": "850-859|33:5-33:14"
+                "location": "33:5-33:14|850-859"
               }
             ],
             "script": 13,
-            "location": "848-861|33:3-33:16"
+            "location": "33:3-33:16|848-861"
           },
           "script": 15,
-          "location": "846-861|33:1-33:16",
+          "location": "33:1-33:16|846-861",
           "formula": "el{$1}"
         },
         {
@@ -1173,7 +1317,7 @@
             "id": "explora",
             "aliased": null,
             "script": 7,
-            "location": "861-868|33:16-33:23"
+            "location": "33:16-33:23|861-868"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1190,7 +1334,7 @@
                       "id": "caminos de",
                       "aliased": null,
                       "script": 10,
-                      "location": "870-880|33:25-33:35"
+                      "location": "33:25-33:35|870-880"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -1200,14 +1344,14 @@
                           "supertype": "Generative",
                           "name": "inteligencia",
                           "script": 13,
-                          "location": "882-895|33:37-33:50"
+                          "location": "33:37-33:50|882-895"
                         }
                       ],
                       "script": 17,
-                      "location": "880-897|33:35-33:52"
+                      "location": "33:35-33:52|880-897"
                     },
                     "script": 27,
-                    "location": "870-897|33:25-33:52",
+                    "location": "33:25-33:52|870-897",
                     "formula": "caminos de{$1}"
                   },
                   {
@@ -1217,7 +1361,7 @@
                       "id": "y de",
                       "aliased": null,
                       "script": 4,
-                      "location": "897-901|33:52-33:56"
+                      "location": "33:52-33:56|897-901"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -1227,27 +1371,31 @@
                           "supertype": "Generative",
                           "name": "estupidez",
                           "script": 10,
-                          "location": "903-913|33:58-33:68"
+                          "location": "33:58-33:68|903-913"
                         }
                       ],
                       "script": 14,
-                      "location": "901-915|33:56-33:70"
+                      "location": "33:56-33:70|901-915"
                     },
                     "script": 18,
-                    "location": "897-915|33:52-33:70",
+                    "location": "33:52-33:70|897-915",
                     "formula": "y de{$1}"
                   }
-                ]
+                ],
+                "script": 45,
+                "location": "33:25-33:70|870-915"
               }
             ],
             "script": 49,
-            "location": "868-917|33:23-33:72"
+            "location": "33:23-33:72|868-917"
           },
           "script": 56,
-          "location": "861-917|33:16-33:72",
+          "location": "33:16-33:72|861-917",
           "formula": "explora{$1}"
         }
-      ]
+      ],
+      "script": 71,
+      "location": "33:1-33:72|846-917"
     },
     {
       "type": "Functional_molecule",
@@ -1261,7 +1409,7 @@
             "id": "tú",
             "aliased": null,
             "script": 2,
-            "location": "918-920|34:1-34:3"
+            "location": "34:1-34:3|918-920"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1275,7 +1423,7 @@
                   "id": "eres el",
                   "aliased": null,
                   "script": 7,
-                  "location": "922-929|34:5-34:12"
+                  "location": "34:5-34:12|922-929"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1285,21 +1433,21 @@
                       "supertype": "Generative",
                       "name": "universo",
                       "script": 9,
-                      "location": "931-940|34:14-34:23"
+                      "location": "34:14-34:23|931-940"
                     }
                   ],
                   "script": 13,
-                  "location": "929-942|34:12-34:25"
+                  "location": "34:12-34:25|929-942"
                 },
                 "script": 20,
-                "location": "922-942|34:5-34:25"
+                "location": "34:5-34:25|922-942"
               }
             ],
             "script": 24,
-            "location": "920-944|34:3-34:27"
+            "location": "34:3-34:27|920-944"
           },
           "script": 26,
-          "location": "918-944|34:1-34:27",
+          "location": "34:1-34:27|918-944",
           "formula": "tú{$1}"
         },
         {
@@ -1309,7 +1457,7 @@
             "id": "así que tú",
             "aliased": null,
             "script": 10,
-            "location": "944-954|34:27-34:37"
+            "location": "34:27-34:37|944-954"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1323,25 +1471,27 @@
                   "id": "decides",
                   "aliased": null,
                   "script": 7,
-                  "location": "956-963|34:39-34:46"
+                  "location": "34:39-34:46|956-963"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_empty_parameter",
                   "script": 1,
-                  "location": "963-964|34:46-34:47"
+                  "location": "34:46-34:47|963-964"
                 },
                 "script": 8,
-                "location": "956-964|34:39-34:47"
+                "location": "34:39-34:47|956-964"
               }
             ],
             "script": 12,
-            "location": "954-966|34:37-34:49"
+            "location": "34:37-34:49|954-966"
           },
           "script": 22,
-          "location": "944-966|34:27-34:49",
+          "location": "34:27-34:49|944-966",
           "formula": "así que tú{$1}"
         }
-      ]
+      ],
+      "script": 48,
+      "location": "34:1-34:49|918-966"
     },
     {
       "type": "Functional_molecule",
@@ -1355,7 +1505,7 @@
             "id": "it is",
             "aliased": null,
             "script": 5,
-            "location": "968-973|36:1-36:6"
+            "location": "36:1-36:6|968-973"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1369,22 +1519,22 @@
                   "id": "such a beauty",
                   "aliased": null,
                   "script": 13,
-                  "location": "975-988|36:8-36:21"
+                  "location": "36:8-36:21|975-988"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_empty_parameter",
                   "script": 1,
-                  "location": "988-989|36:21-36:22"
+                  "location": "36:21-36:22|988-989"
                 },
                 "script": 14,
-                "location": "975-989|36:8-36:22"
+                "location": "36:8-36:22|975-989"
               }
             ],
             "script": 18,
-            "location": "973-991|36:6-36:24"
+            "location": "36:6-36:24|973-991"
           },
           "script": 23,
-          "location": "968-991|36:1-36:24",
+          "location": "36:1-36:24|968-991",
           "formula": "it is{$1}"
         },
         {
@@ -1394,7 +1544,7 @@
             "id": "that",
             "aliased": null,
             "script": 4,
-            "location": "991-995|36:24-36:28"
+            "location": "36:24-36:28|991-995"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1408,7 +1558,7 @@
                   "id": "i get",
                   "aliased": null,
                   "script": 5,
-                  "location": "997-1002|36:30-36:35"
+                  "location": "36:30-36:35|997-1002"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1422,32 +1572,34 @@
                         "id": "stucked",
                         "aliased": null,
                         "script": 7,
-                        "location": "1004-1011|36:37-36:44"
+                        "location": "36:37-36:44|1004-1011"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_empty_parameter",
                         "script": 1,
-                        "location": "1011-1012|36:44-36:45"
+                        "location": "36:44-36:45|1011-1012"
                       },
                       "script": 8,
-                      "location": "1004-1012|36:37-36:45"
+                      "location": "36:37-36:45|1004-1012"
                     }
                   ],
                   "script": 12,
-                  "location": "1002-1014|36:35-36:47"
+                  "location": "36:35-36:47|1002-1014"
                 },
                 "script": 17,
-                "location": "997-1014|36:30-36:47"
+                "location": "36:30-36:47|997-1014"
               }
             ],
             "script": 21,
-            "location": "995-1016|36:28-36:49"
+            "location": "36:28-36:49|995-1016"
           },
           "script": 25,
-          "location": "991-1016|36:24-36:49",
+          "location": "36:24-36:49|991-1016",
           "formula": "that{$1}"
         }
-      ]
+      ],
+      "script": 48,
+      "location": "36:1-36:49|968-1016"
     },
     {
       "type": "Functional_molecule",
@@ -1461,7 +1613,7 @@
             "id": "write",
             "aliased": null,
             "script": 5,
-            "location": "1018-1023|38:1-38:6"
+            "location": "38:1-38:6|1018-1023"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1475,7 +1627,7 @@
                   "id": "your own fucking",
                   "aliased": null,
                   "script": 16,
-                  "location": "1025-1041|38:8-38:24"
+                  "location": "38:8-38:24|1025-1041"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1485,21 +1637,21 @@
                       "supertype": "Generative",
                       "name": "code",
                       "script": 5,
-                      "location": "1043-1048|38:26-38:31"
+                      "location": "38:26-38:31|1043-1048"
                     }
                   ],
                   "script": 9,
-                  "location": "1041-1050|38:24-38:33"
+                  "location": "38:24-38:33|1041-1050"
                 },
                 "script": 25,
-                "location": "1025-1050|38:8-38:33"
+                "location": "38:8-38:33|1025-1050"
               }
             ],
             "script": 29,
-            "location": "1023-1052|38:6-38:35"
+            "location": "38:6-38:35|1023-1052"
           },
           "script": 34,
-          "location": "1018-1052|38:1-38:35",
+          "location": "38:1-38:35|1018-1052",
           "formula": "write{$1}"
         },
         {
@@ -1509,7 +1661,7 @@
             "id": "the way you fucking",
             "aliased": null,
             "script": 19,
-            "location": "1052-1071|38:35-38:54"
+            "location": "38:35-38:54|1052-1071"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1523,25 +1675,27 @@
                   "id": "want",
                   "aliased": null,
                   "script": 4,
-                  "location": "1073-1077|38:56-38:60"
+                  "location": "38:56-38:60|1073-1077"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_empty_parameter",
                   "script": 1,
-                  "location": "1077-1078|38:60-38:61"
+                  "location": "38:60-38:61|1077-1078"
                 },
                 "script": 5,
-                "location": "1073-1078|38:56-38:61"
+                "location": "38:56-38:61|1073-1078"
               }
             ],
             "script": 9,
-            "location": "1071-1080|38:54-38:63"
+            "location": "38:54-38:63|1071-1080"
           },
           "script": 28,
-          "location": "1052-1080|38:35-38:63",
+          "location": "38:35-38:63|1052-1080",
           "formula": "the way you fucking{$1}"
         }
-      ]
+      ],
+      "script": 62,
+      "location": "38:1-38:63|1018-1080"
     },
     {
       "type": "Functional_atom",
@@ -1552,7 +1706,7 @@
         "id": "it is",
         "aliased": null,
         "script": 5,
-        "location": "1081-1086|39:1-39:6"
+        "location": "39:1-39:6|1081-1086"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -1566,15 +1720,15 @@
               "id": "incredible",
               "aliased": null,
               "script": 10,
-              "location": "1088-1098|39:8-39:18"
+              "location": "39:8-39:18|1088-1098"
             },
             "parameters": {
               "type": "Function_call_appendix_for_empty_parameter",
               "script": 1,
-              "location": "1098-1099|39:18-39:19"
+              "location": "39:18-39:19|1098-1099"
             },
             "script": 11,
-            "location": "1088-1099|39:8-39:19"
+            "location": "39:8-39:19|1088-1099"
           },
           {
             "type": "Functional_atom",
@@ -1585,22 +1739,22 @@
               "id": "hard to explain",
               "aliased": null,
               "script": 15,
-              "location": "1100-1115|39:20-39:35"
+              "location": "39:20-39:35|1100-1115"
             },
             "parameters": {
               "type": "Function_call_appendix_for_empty_parameter",
               "script": 1,
-              "location": "1115-1116|39:35-39:36"
+              "location": "39:35-39:36|1115-1116"
             },
             "script": 16,
-            "location": "1100-1116|39:20-39:36"
+            "location": "39:20-39:36|1100-1116"
           }
         ],
         "script": 32,
-        "location": "1086-1118|39:6-39:38"
+        "location": "39:6-39:38|1086-1118"
       },
       "script": 37,
-      "location": "1081-1118|39:1-39:38"
+      "location": "39:1-39:38|1081-1118"
     },
     {
       "type": "Functional_atom",
@@ -1611,7 +1765,7 @@
         "id": "it is",
         "aliased": null,
         "script": 5,
-        "location": "1119-1124|40:1-40:6"
+        "location": "40:1-40:6|1119-1124"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -1625,15 +1779,15 @@
               "id": "incredible",
               "aliased": null,
               "script": 10,
-              "location": "1126-1136|40:8-40:18"
+              "location": "40:8-40:18|1126-1136"
             },
             "parameters": {
               "type": "Function_call_appendix_for_empty_parameter",
               "script": 1,
-              "location": "1136-1137|40:18-40:19"
+              "location": "40:18-40:19|1136-1137"
             },
             "script": 11,
-            "location": "1126-1137|40:8-40:19"
+            "location": "40:8-40:19|1126-1137"
           },
           {
             "type": "Functional_atom",
@@ -1644,15 +1798,15 @@
               "id": "awesome",
               "aliased": null,
               "script": 7,
-              "location": "1138-1145|40:20-40:27"
+              "location": "40:20-40:27|1138-1145"
             },
             "parameters": {
               "type": "Function_call_appendix_for_empty_parameter",
               "script": 1,
-              "location": "1145-1146|40:27-40:28"
+              "location": "40:27-40:28|1145-1146"
             },
             "script": 8,
-            "location": "1138-1146|40:20-40:28"
+            "location": "40:20-40:28|1138-1146"
           },
           {
             "type": "Functional_atom",
@@ -1663,15 +1817,15 @@
               "id": "hard to explain",
               "aliased": null,
               "script": 15,
-              "location": "1147-1162|40:29-40:44"
+              "location": "40:29-40:44|1147-1162"
             },
             "parameters": {
               "type": "Function_call_appendix_for_empty_parameter",
               "script": 1,
-              "location": "1162-1163|40:44-40:45"
+              "location": "40:44-40:45|1162-1163"
             },
             "script": 16,
-            "location": "1147-1163|40:29-40:45"
+            "location": "40:29-40:45|1147-1163"
           },
           {
             "type": "Functional_molecule",
@@ -1685,7 +1839,7 @@
                   "id": "fucking",
                   "aliased": null,
                   "script": 7,
-                  "location": "1164-1171|40:46-40:53"
+                  "location": "40:46-40:53|1164-1171"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1695,14 +1849,14 @@
                       "supertype": "Generative",
                       "name": "crazy",
                       "script": 6,
-                      "location": "1173-1179|40:55-40:61"
+                      "location": "40:55-40:61|1173-1179"
                     }
                   ],
                   "script": 10,
-                  "location": "1171-1181|40:53-40:63"
+                  "location": "40:53-40:63|1171-1181"
                 },
                 "script": 17,
-                "location": "1164-1181|40:46-40:63",
+                "location": "40:46-40:63|1164-1181",
                 "formula": "fucking{$1}"
               },
               {
@@ -1712,7 +1866,7 @@
                   "id": "because",
                   "aliased": null,
                   "script": 7,
-                  "location": "1181-1188|40:63-40:70"
+                  "location": "40:63-40:70|1181-1188"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1726,7 +1880,7 @@
                         "id": "you never thought",
                         "aliased": null,
                         "script": 17,
-                        "location": "1190-1207|40:72-40:89"
+                        "location": "40:72-40:89|1190-1207"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -1740,39 +1894,41 @@
                               "id": "you could write code this way",
                               "aliased": null,
                               "script": 29,
-                              "location": "1209-1238|40:91-40:120"
+                              "location": "40:91-40:120|1209-1238"
                             },
                             "parameters": {
                               "type": "Function_call_appendix_for_empty_parameter",
                               "script": 1,
-                              "location": "1238-1239|40:120-40:121"
+                              "location": "40:120-40:121|1238-1239"
                             },
                             "script": 30,
-                            "location": "1209-1239|40:91-40:121"
+                            "location": "40:91-40:121|1209-1239"
                           }
                         ],
                         "script": 34,
-                        "location": "1207-1241|40:89-40:123"
+                        "location": "40:89-40:123|1207-1241"
                       },
                       "script": 51,
-                      "location": "1190-1241|40:72-40:123"
+                      "location": "40:72-40:123|1190-1241"
                     }
                   ],
                   "script": 55,
-                  "location": "1188-1243|40:70-40:125"
+                  "location": "40:70-40:125|1188-1243"
                 },
                 "script": 62,
-                "location": "1181-1243|40:63-40:125",
+                "location": "40:63-40:125|1181-1243",
                 "formula": "because{$1}"
               }
-            ]
+            ],
+            "script": 79,
+            "location": "40:46-40:125|1164-1243"
           }
         ],
         "script": 121,
-        "location": "1124-1245|40:6-40:127"
+        "location": "40:6-40:127|1124-1245"
       },
       "script": 126,
-      "location": "1119-1245|40:1-40:127"
+      "location": "40:1-40:127|1119-1245"
     }
   ],
   "footer": {
@@ -1803,55 +1959,63 @@
         "as": "pos=4 times=2",
         "can": "pos=5 times=2",
         "print": "pos=6 times=2",
-        "incredible": "pos=7 times=2",
-        "hard to explain": "pos=8 times=2",
-        "no cesan": "pos=9 times=1",
-        "van bajando": "pos=10 times=1",
-        "cuando": "pos=11 times=1",
-        "cae entonces pasan": "pos=12 times=1",
-        "pero entonces puedo escribir asi tambien": "pos=13 times=1",
-        "bienvenidos a la estraña historia": "pos=14 times=1",
-        "file": "pos=15 times=1",
-        "contains": "pos=16 times=1",
-        "class": "pos=17 times=1",
-        "with": "pos=18 times=1",
-        "undefined": "pos=19 times=1",
-        "method": "pos=20 times=1",
-        "render one": "pos=21 times=1",
-        "const": "pos=22 times=1",
-        "to": "pos=23 times=1",
-        "return": "pos=24 times=1",
-        "function": "pos=25 times=1",
-        "si": "pos=26 times=1",
-        "te fijas": "pos=27 times=1",
-        "ocurre que": "pos=28 times=1",
-        "ellos": "pos=29 times=1",
-        "no": "pos=30 times=1",
-        "se pronuncian": "pos=31 times=1",
-        "qué": "pos=32 times=1",
-        "podríamos hacer": "pos=33 times=1",
-        "igualmente": "pos=34 times=1",
-        "el": "pos=35 times=1",
-        "explora": "pos=36 times=1",
-        "caminos de": "pos=37 times=1",
-        "y de": "pos=38 times=1",
-        "tú": "pos=39 times=1",
-        "eres el": "pos=40 times=1",
-        "así que tú": "pos=41 times=1",
-        "decides": "pos=42 times=1",
-        "such a beauty": "pos=43 times=1",
-        "that": "pos=44 times=1",
-        "i get": "pos=45 times=1",
-        "stucked": "pos=46 times=1",
-        "write": "pos=47 times=1",
-        "your own fucking": "pos=48 times=1",
-        "the way you fucking": "pos=49 times=1",
-        "want": "pos=50 times=1",
-        "awesome": "pos=51 times=1",
-        "fucking": "pos=52 times=1",
-        "because": "pos=53 times=1",
-        "you never thought": "pos=54 times=1",
-        "you could write code this way": "pos=55 times=1"
+        "render one": "pos=7 times=2",
+        "return": "pos=8 times=2",
+        "math": "pos=9 times=2",
+        "incredible": "pos=10 times=2",
+        "hard to explain": "pos=11 times=2",
+        "las voces": "pos=12 times=1",
+        "no cesan": "pos=13 times=1",
+        "los porrillos": "pos=14 times=1",
+        "van bajando": "pos=15 times=1",
+        "cuando": "pos=16 times=1",
+        "la noche": "pos=17 times=1",
+        "cae entonces pasan": "pos=18 times=1",
+        "cosas": "pos=19 times=1",
+        "pero entonces puedo escribir asi tambien": "pos=20 times=1",
+        "bienvenidos a la estraña historia": "pos=21 times=1",
+        "file": "pos=22 times=1",
+        "contains": "pos=23 times=1",
+        "class": "pos=24 times=1",
+        "with": "pos=25 times=1",
+        "undefined": "pos=26 times=1",
+        "method": "pos=27 times=1",
+        "const": "pos=28 times=1",
+        "to": "pos=29 times=1",
+        "function": "pos=30 times=1",
+        "math sum": "pos=31 times=1",
+        "math substract": "pos=32 times=1",
+        "math divide": "pos=33 times=1",
+        "si": "pos=34 times=1",
+        "te fijas": "pos=35 times=1",
+        "ocurre que": "pos=36 times=1",
+        "ellos": "pos=37 times=1",
+        "no": "pos=38 times=1",
+        "se pronuncian": "pos=39 times=1",
+        "qué": "pos=40 times=1",
+        "podríamos hacer": "pos=41 times=1",
+        "igualmente": "pos=42 times=1",
+        "el": "pos=43 times=1",
+        "explora": "pos=44 times=1",
+        "caminos de": "pos=45 times=1",
+        "y de": "pos=46 times=1",
+        "tú": "pos=47 times=1",
+        "eres el": "pos=48 times=1",
+        "así que tú": "pos=49 times=1",
+        "decides": "pos=50 times=1",
+        "such a beauty": "pos=51 times=1",
+        "that": "pos=52 times=1",
+        "i get": "pos=53 times=1",
+        "stucked": "pos=54 times=1",
+        "write": "pos=55 times=1",
+        "your own fucking": "pos=56 times=1",
+        "the way you fucking": "pos=57 times=1",
+        "want": "pos=58 times=1",
+        "awesome": "pos=59 times=1",
+        "fucking": "pos=60 times=1",
+        "because": "pos=61 times=1",
+        "you never thought": "pos=62 times=1",
+        "you could write code this way": "pos=63 times=1"
       }
     }
   },

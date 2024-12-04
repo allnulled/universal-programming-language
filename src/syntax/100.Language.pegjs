@@ -31,9 +31,17 @@ Full_sentence = _* sentence:Sentence EOS { return sentence }
 EOS = EOL / EOF
 EOL = ___
 EOF = !.
-_ = __ / ___
+_ = __ / ___ / Comment_group
 __ = " " / "\t"
 ___ = "\r\n" / "\r" / "\n"
+
+/* Comentarios: */
+Comment_group = 
+  token1:("comment{{")
+  comment:(Contents_between_double_curly_brackets)
+  token3:"}}"
+    { return comment }
+  
 
 /* Sentencias: */
 Sentence = Generative
@@ -83,7 +91,7 @@ Chained_word_continuation =
     { return word }
 
 Valid_pipe_operators = op:(
-  ("|[" Contents_between_square_brackets "]" ("=")? ) /
+  ("|[" Generative "]" ("=")? ) /
   ("|@" Chained_word "=") /
   ("|=") /
   ("|"))
@@ -155,11 +163,11 @@ Variable_type =
 Covalent_molecule_type =
   base:Function_call_appendix
   atoms:Functional_atom*
-    { return { type: "Covalent_molecule_type", supertype: "Generative", base, atoms, script: text().length, location: minify_location(location()) } }
+    { return { type: "Covalent_molecule", supertype: "Generative", base, atoms, script: text().length, location: minify_location(location()) } }
 
 Functional_molecule_type =
   atoms:Functional_atom+
-    { return simplify_molecule_type({ type: "Functional_molecule", atoms }) }
+    { return simplify_molecule_type({ type: "Functional_molecule", atoms, script: text().length, location: minify_location(location()) }) }
 
 Functional_atom = 
   name:Function_name
@@ -196,13 +204,7 @@ Function_name_continuation =
 
 Function_chainer = " "
 
-Function_call_appendix = Function_call_appendix_for_text_parameter / Function_call_appendix_for_list_parameter / Function_call_appendix_for_empty_parameter
-
-Function_call_appendix_for_text_parameter = 
-  token1:("{{")
-  parameter:Contents_between_double_curly_brackets?
-  token2:("}}")
-    { return { type: "Function_call_appendix_for_text_parameter", text: parameter, script: text().length, location: minify_location(location()) } }
+Function_call_appendix = Function_call_appendix_for_list_parameter / Function_call_appendix_for_empty_parameter
 
 Function_call_appendix_for_list_parameter = 
   token1:("{" _*)

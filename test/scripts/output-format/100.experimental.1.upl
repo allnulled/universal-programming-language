@@ -1,6 +1,6 @@
-observo que{{ las voces }}no cesan!
-observo que{{ los porrillos }}van bajando!
-cuando{{ la noche }}cae entonces pasan{{ cosas }}
+observo que{ undefined }no cesan!
+observo que{ undefined }van bajando!
+cuando{ undefined }cae entonces pasan{ undefined }
 pero entonces puedo escribir asi tambien!
 bienvenidos a la estraña historia!
 file{ "main.java" }contains{
@@ -10,7 +10,7 @@ file{ "main.java" }contains{
     method{ "public static void" "main" }can{
       print{
         @this.name
-          |[render one]= { @this.message @ }
+          |[render one]= undefined
       }
       print{ render one{ @this.name @this.message } }
     }
@@ -24,9 +24,9 @@ return{
 }
 function!can{
   @arguments[0]
-    |[math sum]= { @ 200 }
-    |[math substract]= { @ 100 }
-    |[math divide]= { @ 5 }
+    |[math sum]= undefined
+    |[math substract]= undefined
+    |[math divide]= undefined
     |[return] @
 }
 si{ te fijas! }ocurre que{ ellos{ no{ se pronuncian! } } }

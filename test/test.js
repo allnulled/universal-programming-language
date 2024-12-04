@@ -2,10 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const change_extension_to = (ext, file) => file.replace(/\.upl$/g, ext);
 const tests_list = [
-  async function(memo) {
+  async function (memo) {
     console.log(" [*] Testing: can reset test memo");
-    memo.unlezz = function(expr, error_message) {
-      if(!expr) {
+    memo.unlezz = function (expr, error_message) {
+      if (!expr) {
         throw error_message;
       }
       console.log("  [+] Passed: " + error_message);
@@ -28,24 +28,24 @@ const tests_list = [
       output_transpile: [],
     };
   },
-  async function(memo) {
+  async function (memo) {
     console.log(" [*] Testing: can load upl api");
     const { unlezz } = memo;
     const upl = require(__dirname + "/../src/upl.api.js");
     memo.upl = upl;
-    unlezz(typeof(upl) === "function", "upl should be a function");
-    unlezz(typeof(upl.parse) === "function", "upl.parse should be a function");
-    unlezz(typeof(upl.classes) === "object", "upl.classes should be an object");
-    unlezz(typeof(upl.classes.parser) === "object", "upl.classes.parser should be an object");
-    unlezz(typeof(upl.classes.transpiler) === "function", "upl.classes.transpiler should be a function");
-    unlezz(typeof(upl.classes.formatter) === "function", "upl.classes.formatter should be a function");
+    unlezz(typeof (upl) === "function", "upl should be a function");
+    unlezz(typeof (upl.parse) === "function", "upl.parse should be a function");
+    unlezz(typeof (upl.classes) === "object", "upl.classes should be an object");
+    unlezz(typeof (upl.classes.parser) === "object", "upl.classes.parser should be an object");
+    unlezz(typeof (upl.classes.transpiler) === "function", "upl.classes.transpiler should be a function");
+    unlezz(typeof (upl.classes.formatter) === "function", "upl.classes.formatter should be a function");
   },
-  async function(memo) {
+  async function (memo) {
     console.log(" [*] Testing: can use upl.parse [output-ast]");
     let current_test = undefined;
     const { unlezz, upl, scripts } = memo;
     try {
-      for(let index=0; index<scripts.input.length; index++) {
+      for (let index = 0; index < scripts.input.length; index++) {
         const { file, contents } = scripts.input[index];
         current_test = path.basename(file);
         console.log("  [+] Parsing file «" + current_test + "»");
@@ -61,12 +61,12 @@ const tests_list = [
       throw error;
     }
   },
-  async function(memo) {
+  async function (memo) {
     console.log(" [*] Testing: can use upl.format [output-format]");
     let current_test = undefined;
     const { unlezz, upl, scripts } = memo;
     try {
-      for(let index=0; index<scripts.input.length; index++) {
+      for (let index = 0; index < scripts.input.length; index++) {
         const { file, contents } = scripts.input[index];
         current_test = path.basename(file);
         console.log("  [+] Formatting file «" + current_test + "»");
@@ -82,7 +82,7 @@ const tests_list = [
       throw error;
     }
   },
-  async function(memo) {
+  async function (memo) {
     console.log(" [*] Testing: can use upl.createTranspiler");
     const { upl } = memo;
     const transpiler = upl.createTranspiler([{
@@ -102,31 +102,70 @@ const tests_list = [
     }, {
       type: "Molecules",
       formula: "^create( variable)?@as@$",
-      matcher(ast, indexes, asb) {
+      matcher: function (ast, indexes, asb) {
         return true;
       },
-      tagger(ast, indexes, asb) {
+      // if@(else if@)*(else@)?
+      // if\{\$[0-9]+\}(else if@)*(else@)?
+      tagger: function (ast, indexes, asb) {
         return {
           is_sentence: true,
           is_generative: false,
         };
       },
-      checker(ast, indexes, asb) {
-        // @TODO:
+      checker: function (ast, indexes, asb) {
+        const is_create_ok = this.is_one_variable_in_group_only(asb.atoms[0].parameters.list);
+        const is_as_ok = this.is_one_generative_in_group_only(asb.atoms[1].parameters.list);
+        if (is_create_ok !== true) {
+          throw new this.Compilation_error({
+            location: asb.location,
+            chars: asb.script,
+            step: "checker",
+            agent: "«create@» in «create@as@»",
+            error: is_create_ok,
+          });
+        }
+        if (is_as_ok !== true) {
+          throw new this.Compilation_error({
+            location: asb.location,
+            chars: asb.script,
+            step: "checker",
+            agent: "«as@» in «create@as@»",
+            error: is_as_ok,
+          });
+        }
       },
-      transpiler(ast, indexes, asb) {
+      transpiler: function (ast, indexes, asb) {
         // @TODO:
       },
     }]);
-    const output1 = transpiler.transpile("create{@a}as{0}");
-    console.log(output1);
+    Must_pass: {
+      const output1 = transpiler.transpile(`
+      create{ @a }as{ "whatever" }
+    `);
+      console.log(output1);
+      fs.writeFileSync(__dirname + "/example.json", JSON.stringify(output1.tagged, null, 2), "utf8");
+      console.log("(transpilation)");
+    }
+    Must_fail: {
+      try {
+        const output1 = transpiler.transpile(`
+          create{ 100 }as{ "whatever" }
+        `);
+        throw Error("Example should not be transpilable because of the «checker»");
+      } catch (error) {
+        if(error.name !== "Compilation_error") {
+          throw error;
+        }
+      }
+    }
   }
 ];
 
-const test_all = async function(memo = {}, results = []) {
+const test_all = async function (memo = {}, results = []) {
   try {
     console.log("[*] Starting tests of upl.")
-    for(let index_test=0; index_test<tests_list.length; index_test++) {
+    for (let index_test = 0; index_test < tests_list.length; index_test++) {
       const test_item = tests_list[index_test];
       const test_result = await test_item(memo);
       results.push(test_result);

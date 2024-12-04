@@ -3,7 +3,7 @@ const stringify = JSON.stringify;
 
 // Method for the parser: simplify_molecule_type
 const minify_location = function(loc) {
-  return `${loc.start.offset}-${loc.end.offset}|${loc.start.line}:${loc.start.column}-${loc.end.line}:${loc.end.column}`;
+  return `${loc.start.line}:${loc.start.column}-${loc.end.line}:${loc.end.column}|${loc.start.offset}-${loc.end.offset}`;
 };
 
 // Method for the parser: simplify_molecule_type

@@ -12,6 +12,7 @@ Most pretencious programming language in the world. But ambitious too.
     - [Using git](#using-git)
   - [Syntax highlighter](#syntax-highlighter)
   - [Syntax examples](#syntax-examples)
+  - [Syntax fastly explained](#syntax-fastly-explained)
   - [Online editor](#online-editor)
 - [The «bla bla bla» part](#the-bla-bla-bla-part)
   - [Why?](#why)
@@ -52,6 +53,53 @@ Install your syntax highlighter for Visual Studio Code from `vsix` file directly
 ## Syntax examples
 
 ![sample-1](./docs/upl.sample.001.png)
+
+## Syntax fastly explained
+
+You have primitives:
+
+- **Text:** `"This is a text. Can be multiline. Can escape with \". Cannot chain."`
+- **Number:** `-100.50`
+- **Object:** `object{ name="Carlos" surname="Jimeno" age="greater than you, always" }`
+- **List:** `list{ 0 1 2 3 4 5 }`
+
+You have higher-level expressions:
+
+- **Molecule:**
+  - `word word{ @parameter @parameter }word word{ @parameter @parameter }`
+- **Covalent molecule:**
+  - `{ @parameter @parameter }word word{ @parameter @parameter }`
+- **Atom:**
+  - `word word{ @parameter }`
+- **Variable access type 1:**
+  - `@whatever.access.deeper`
+- **Variable access type 2:**
+  - `@whatever["access"]["deeper"]`
+- **Variable call type 1:**
+  - `@whatever.function{ @parameter @parameter }`
+- **Variable call type 2:**
+  - `@whatever.function!`
+- **Comment:**
+  - `comment{{ This is a comment }}`
+- **Function shortcut (only in the header of the script):**
+  - `#func shortcut=real function name`
+  - `#func shortcut usage{ "same as functions" }
+
+Then you have piping:
+
+- **Pipe type 1:**
+  - `@whatever | expression{ @ }`
+- **Pipe type 2:**
+  - `@whatever |= expression{ @ }`
+- **Pipe type 3:**
+  - `@whatever |[ "name" ] expression{ @ }`
+- **Pipe type 4:**
+  - `@whatever |[ "name" ]= expression{ @ }`
+- **Pipe type 5:**
+  - `@whatever |@chainable.varname expression{ @ }`
+- **Pipe type 6:**
+  - `@whatever |@chainable.varname= expression{ @ }`
+
 
 ## Online editor
 

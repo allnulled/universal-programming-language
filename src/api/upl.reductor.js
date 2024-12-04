@@ -7,7 +7,7 @@ class UPL_reductor {
     process.exit(0);
   }
   trace(method) {
-    console.log("[trace][formatter][" + method + "]");
+    console.log("[trace][reductor][" + method + "]");
   }
   stringify(ast) {
     return JSON.stringify(ast);

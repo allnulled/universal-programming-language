@@ -33,6 +33,9 @@ class UPL_formatter extends UPL_reductor {
     }
     return false;
   }
+  trace(method) {
+    console.log("[trace][formatter][" + method + "]");
+  }
   tab(mov = 0) {
     if (mov) {
       this.tab_cursor += mov;

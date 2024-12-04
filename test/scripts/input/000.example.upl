@@ -9,7 +9,7 @@
 #attr=xml attributes
 #cont=xml contents
 
-ignored comment{{ This could be used as import es6 js bridge syntax: }}
+comment{{ This could be used as import es6 js bridge syntax: }}
 import{@fs}from{"fs"}
 import{@path}from{"path"}
 import{@globby}from{"globby"}
@@ -22,7 +22,8 @@ comment{{ Functional molecule + Text:  }}
 create variable{@a}as{"a"}
 
 comment{{ Functional molecule by alias + String parameter:  }}
-#create{@b}as{{ This can be a multiline string }}
+#create{@b}as{"This can be a multiline string
+fdsafdsa"}
 
 comment{{ Functional atom + Piped suffix: }}
 "Hello, folks!"|print{@}
@@ -70,11 +71,11 @@ create{@user}as{object{}}
 print{
   concat strings{
     "Hello, "
-    @user.name |[eq] ui ask{{ First, tell me. What is your name? }}
+    @user.name |[eq] ui ask{ "First, tell me. What is your name?" }
     "!\n"
     "Welcome to the application.\n"
     "As you are "
-    @user.age |= ui ask{{ And how old are you? }}
+    @user.age |= ui ask{ "And how old are you?" }
     " years old "
   when{ {@user.age}is lower than{18} }then{
     "yet, you cannot use this app."
@@ -147,7 +148,7 @@ function{@x @y @z}returns{
    |=sum{@ @a @b @c}
 }
 
-print{{Advanced pipe operators:}}
+print{ "Advanced pipe operators:" }
 "Hello, @!" |[string.replace] { @ "@" ui ask{ "What is your name?" } } |[print] @
 
 print{

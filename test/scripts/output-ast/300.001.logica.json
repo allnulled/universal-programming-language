@@ -4,7 +4,7 @@
     "type": "Preblock",
     "declarations": {},
     "script": 0,
-    "location": "0-0|1:1-1:1"
+    "location": "1:1-1:1|0-0"
   },
   "body": [
     {
@@ -19,7 +19,7 @@
             "id": "defino",
             "aliased": null,
             "script": 6,
-            "location": "0-6|1:1-1:7"
+            "location": "1:1-1:7|0-6"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -29,14 +29,14 @@
                 "supertype": "Generative",
                 "name": "a",
                 "script": 2,
-                "location": "7-9|1:8-1:10"
+                "location": "1:8-1:10|7-9"
               }
             ],
             "script": 4,
-            "location": "6-10|1:7-1:11"
+            "location": "1:7-1:11|6-10"
           },
           "script": 10,
-          "location": "0-10|1:1-1:11",
+          "location": "1:1-1:11|0-10",
           "formula": "defino{$1}"
         },
         {
@@ -46,7 +46,7 @@
             "id": "como",
             "aliased": null,
             "script": 4,
-            "location": "10-14|1:11-1:15"
+            "location": "1:11-1:15|10-14"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -60,7 +60,7 @@
                   "id": "fenómeno",
                   "aliased": null,
                   "script": 8,
-                  "location": "15-23|1:16-1:24"
+                  "location": "1:16-1:24|15-23"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -74,15 +74,15 @@
                         "id": "llueve",
                         "aliased": null,
                         "script": 6,
-                        "location": "24-30|1:25-1:31"
+                        "location": "1:25-1:31|24-30"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_empty_parameter",
                         "script": 1,
-                        "location": "30-31|1:31-1:32"
+                        "location": "1:31-1:32|30-31"
                       },
                       "script": 7,
-                      "location": "24-31|1:25-1:32"
+                      "location": "1:25-1:32|24-31"
                     },
                     {
                       "type": "Functional_atom",
@@ -93,32 +93,34 @@
                         "id": "llover",
                         "aliased": null,
                         "script": 6,
-                        "location": "32-38|1:33-1:39"
+                        "location": "1:33-1:39|32-38"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_empty_parameter",
                         "script": 1,
-                        "location": "38-39|1:39-1:40"
+                        "location": "1:39-1:40|38-39"
                       },
                       "script": 7,
-                      "location": "32-39|1:33-1:40"
+                      "location": "1:33-1:40|32-39"
                     }
                   ],
                   "script": 17,
-                  "location": "23-40|1:24-1:41"
+                  "location": "1:24-1:41|23-40"
                 },
                 "script": 25,
-                "location": "15-40|1:16-1:41"
+                "location": "1:16-1:41|15-40"
               }
             ],
             "script": 27,
-            "location": "14-41|1:15-1:42"
+            "location": "1:15-1:42|14-41"
           },
           "script": 31,
-          "location": "10-41|1:11-1:42",
+          "location": "1:11-1:42|10-41",
           "formula": "como{$1}"
         }
-      ]
+      ],
+      "script": 41,
+      "location": "1:1-1:42|0-41"
     },
     {
       "type": "Functional_molecule",
@@ -132,7 +134,7 @@
             "id": "defino",
             "aliased": null,
             "script": 6,
-            "location": "42-48|2:1-2:7"
+            "location": "2:1-2:7|42-48"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -142,14 +144,14 @@
                 "supertype": "Generative",
                 "name": "b",
                 "script": 2,
-                "location": "49-51|2:8-2:10"
+                "location": "2:8-2:10|49-51"
               }
             ],
             "script": 4,
-            "location": "48-52|2:7-2:11"
+            "location": "2:7-2:11|48-52"
           },
           "script": 10,
-          "location": "42-52|2:1-2:11",
+          "location": "2:1-2:11|42-52",
           "formula": "defino{$1}"
         },
         {
@@ -159,7 +161,7 @@
             "id": "como",
             "aliased": null,
             "script": 4,
-            "location": "52-56|2:11-2:15"
+            "location": "2:11-2:15|52-56"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -173,7 +175,7 @@
                   "id": "fenómeno",
                   "aliased": null,
                   "script": 8,
-                  "location": "57-65|2:16-2:24"
+                  "location": "2:16-2:24|57-65"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -187,15 +189,15 @@
                         "id": "se moja",
                         "aliased": null,
                         "script": 7,
-                        "location": "66-73|2:25-2:32"
+                        "location": "2:25-2:32|66-73"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_empty_parameter",
                         "script": 1,
-                        "location": "73-74|2:32-2:33"
+                        "location": "2:32-2:33|73-74"
                       },
                       "script": 8,
-                      "location": "66-74|2:25-2:33"
+                      "location": "2:25-2:33|66-74"
                     },
                     {
                       "type": "Functional_atom",
@@ -206,52 +208,34 @@
                         "id": "mojarse",
                         "aliased": null,
                         "script": 7,
-                        "location": "75-82|2:34-2:41"
+                        "location": "2:34-2:41|75-82"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_empty_parameter",
                         "script": 1,
-                        "location": "82-83|2:41-2:42"
+                        "location": "2:41-2:42|82-83"
                       },
                       "script": 8,
-                      "location": "75-83|2:34-2:42"
+                      "location": "2:34-2:42|75-83"
                     }
                   ],
                   "script": 19,
-                  "location": "65-84|2:24-2:43"
+                  "location": "2:24-2:43|65-84"
                 },
                 "script": 27,
-                "location": "57-84|2:16-2:43"
+                "location": "2:16-2:43|57-84"
               }
             ],
             "script": 29,
-            "location": "56-85|2:15-2:44"
+            "location": "2:15-2:44|56-85"
           },
           "script": 33,
-          "location": "52-85|2:11-2:44",
+          "location": "2:11-2:44|52-85",
           "formula": "como{$1}"
         }
-      ]
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "87-94|4:1-4:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de frecuencia estrictos: ",
-        "script": 41,
-        "location": "94-135|4:8-4:49"
-      },
-      "script": 48,
-      "location": "87-135|4:1-4:49"
+      ],
+      "script": 43,
+      "location": "2:1-2:44|42-85"
     },
     {
       "type": "Functional_molecule",
@@ -265,7 +249,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "137-139|6:1-6:3"
+            "location": "6:1-6:3|137-139"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -279,18 +263,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "140-146|6:4-6:10"
+                  "location": "6:4-6:10|140-146"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "140-146|6:4-6:10"
+                "location": "6:4-6:10|140-146"
               }
             ],
             "script": 8,
-            "location": "139-147|6:3-6:11"
+            "location": "6:3-6:11|139-147"
           },
           "script": 10,
-          "location": "137-147|6:1-6:11",
+          "location": "6:1-6:11|137-147",
           "formula": "si{$1}"
         },
         {
@@ -300,7 +284,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "147-155|6:11-6:19"
+            "location": "6:11-6:19|147-155"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -314,7 +298,7 @@
                   "id": "siempre",
                   "aliased": null,
                   "script": 7,
-                  "location": "156-163|6:20-6:27"
+                  "location": "6:20-6:27|156-163"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -328,28 +312,30 @@
                         "id": "se moja",
                         "aliased": null,
                         "script": 7,
-                        "location": "164-171|6:28-6:35"
+                        "location": "6:28-6:35|164-171"
                       },
                       "parameters": null,
                       "script": 7,
-                      "location": "164-171|6:28-6:35"
+                      "location": "6:28-6:35|164-171"
                     }
                   ],
                   "script": 9,
-                  "location": "163-172|6:27-6:36"
+                  "location": "6:27-6:36|163-172"
                 },
                 "script": 16,
-                "location": "156-172|6:20-6:36"
+                "location": "6:20-6:36|156-172"
               }
             ],
             "script": 18,
-            "location": "155-173|6:19-6:37"
+            "location": "6:19-6:37|155-173"
           },
           "script": 26,
-          "location": "147-173|6:11-6:37",
+          "location": "6:11-6:37|147-173",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 36,
+      "location": "6:1-6:37|137-173"
     },
     {
       "type": "Functional_molecule",
@@ -363,7 +349,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "174-176|7:1-7:3"
+            "location": "7:1-7:3|174-176"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -377,18 +363,18 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "177-184|7:4-7:11"
+                  "location": "7:4-7:11|177-184"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "177-184|7:4-7:11"
+                "location": "7:4-7:11|177-184"
               }
             ],
             "script": 9,
-            "location": "176-185|7:3-7:12"
+            "location": "7:3-7:12|176-185"
           },
           "script": 11,
-          "location": "174-185|7:1-7:12",
+          "location": "7:1-7:12|174-185",
           "formula": "si{$1}"
         },
         {
@@ -398,7 +384,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "185-193|7:12-7:20"
+            "location": "7:12-7:20|185-193"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -412,7 +398,7 @@
                   "id": "nunca",
                   "aliased": null,
                   "script": 5,
-                  "location": "194-199|7:21-7:26"
+                  "location": "7:21-7:26|194-199"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -426,28 +412,30 @@
                         "id": "llueve",
                         "aliased": null,
                         "script": 6,
-                        "location": "200-206|7:27-7:33"
+                        "location": "7:27-7:33|200-206"
                       },
                       "parameters": null,
                       "script": 6,
-                      "location": "200-206|7:27-7:33"
+                      "location": "7:27-7:33|200-206"
                     }
                   ],
                   "script": 8,
-                  "location": "199-207|7:26-7:34"
+                  "location": "7:26-7:34|199-207"
                 },
                 "script": 13,
-                "location": "194-207|7:21-7:34"
+                "location": "7:21-7:34|194-207"
               }
             ],
             "script": 15,
-            "location": "193-208|7:20-7:35"
+            "location": "7:20-7:35|193-208"
           },
           "script": 23,
-          "location": "185-208|7:12-7:35",
+          "location": "7:12-7:35|185-208",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 34,
+      "location": "7:1-7:35|174-208"
     },
     {
       "type": "Functional_molecule",
@@ -461,7 +449,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "209-211|8:1-8:3"
+            "location": "8:1-8:3|209-211"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -475,18 +463,18 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "212-219|8:4-8:11"
+                  "location": "8:4-8:11|212-219"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "212-219|8:4-8:11"
+                "location": "8:4-8:11|212-219"
               }
             ],
             "script": 9,
-            "location": "211-220|8:3-8:12"
+            "location": "8:3-8:12|211-220"
           },
           "script": 11,
-          "location": "209-220|8:1-8:12",
+          "location": "8:1-8:12|209-220",
           "formula": "si{$1}"
         },
         {
@@ -496,7 +484,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "220-228|8:12-8:20"
+            "location": "8:12-8:20|220-228"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -513,7 +501,7 @@
                       "id": "un",
                       "aliased": null,
                       "script": 2,
-                      "location": "229-231|8:21-8:23"
+                      "location": "8:21-8:23|229-231"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -523,7 +511,7 @@
                           "supertype": "Generative",
                           "value": 10,
                           "script": 2,
-                          "location": "233-235|8:25-8:27",
+                          "location": "8:25-8:27|233-235",
                           "extended_by": [
                             {
                               "type": "Pipe_appendix",
@@ -537,23 +525,23 @@
                                   "id": "porciento",
                                   "aliased": null,
                                   "script": 9,
-                                  "location": "238-247|8:30-8:39"
+                                  "location": "8:30-8:39|238-247"
                                 },
                                 "parameters": null,
                                 "script": 9,
-                                "location": "238-247|8:30-8:39"
+                                "location": "8:30-8:39|238-247"
                               },
                               "script": 12,
-                              "location": "235-247|8:27-8:39"
+                              "location": "8:27-8:39|235-247"
                             }
                           ]
                         }
                       ],
                       "script": 18,
-                      "location": "231-249|8:23-8:41"
+                      "location": "8:23-8:41|231-249"
                     },
                     "script": 20,
-                    "location": "229-249|8:21-8:41",
+                    "location": "8:21-8:41|229-249",
                     "formula": "un{$1}"
                   },
                   {
@@ -563,7 +551,7 @@
                       "id": "de las veces",
                       "aliased": null,
                       "script": 12,
-                      "location": "249-261|8:41-8:53"
+                      "location": "8:41-8:53|249-261"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -577,31 +565,35 @@
                             "id": "llueve",
                             "aliased": null,
                             "script": 6,
-                            "location": "263-269|8:55-8:61"
+                            "location": "8:55-8:61|263-269"
                           },
                           "parameters": null,
                           "script": 6,
-                          "location": "263-269|8:55-8:61"
+                          "location": "8:55-8:61|263-269"
                         }
                       ],
                       "script": 10,
-                      "location": "261-271|8:53-8:63"
+                      "location": "8:53-8:63|261-271"
                     },
                     "script": 22,
-                    "location": "249-271|8:41-8:63",
+                    "location": "8:41-8:63|249-271",
                     "formula": "de las veces{$1}"
                   }
-                ]
+                ],
+                "script": 42,
+                "location": "8:21-8:63|229-271"
               }
             ],
             "script": 44,
-            "location": "228-272|8:20-8:64"
+            "location": "8:20-8:64|228-272"
           },
           "script": 52,
-          "location": "220-272|8:12-8:64",
+          "location": "8:12-8:64|220-272",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 63,
+      "location": "8:1-8:64|209-272"
     },
     {
       "type": "Functional_molecule",
@@ -615,7 +607,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "274-276|10:1-10:3"
+            "location": "10:1-10:3|274-276"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -629,18 +621,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "277-283|10:4-10:10"
+                  "location": "10:4-10:10|277-283"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "277-283|10:4-10:10"
+                "location": "10:4-10:10|277-283"
               }
             ],
             "script": 8,
-            "location": "276-284|10:3-10:11"
+            "location": "10:3-10:11|276-284"
           },
           "script": 10,
-          "location": "274-284|10:1-10:11",
+          "location": "10:1-10:11|274-284",
           "formula": "si{$1}"
         },
         {
@@ -650,7 +642,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "284-292|10:11-10:19"
+            "location": "10:11-10:19|284-292"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -664,7 +656,7 @@
                   "id": "siempre",
                   "aliased": null,
                   "script": 7,
-                  "location": "294-301|10:21-10:28"
+                  "location": "10:21-10:28|294-301"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -678,28 +670,30 @@
                         "id": "se moja",
                         "aliased": null,
                         "script": 7,
-                        "location": "302-309|10:29-10:36"
+                        "location": "10:29-10:36|302-309"
                       },
                       "parameters": null,
                       "script": 7,
-                      "location": "302-309|10:29-10:36"
+                      "location": "10:29-10:36|302-309"
                     }
                   ],
                   "script": 9,
-                  "location": "301-310|10:28-10:37"
+                  "location": "10:28-10:37|301-310"
                 },
                 "script": 16,
-                "location": "294-310|10:21-10:37"
+                "location": "10:21-10:37|294-310"
               }
             ],
             "script": 20,
-            "location": "292-312|10:19-10:39"
+            "location": "10:19-10:39|292-312"
           },
           "script": 28,
-          "location": "284-312|10:11-10:39",
+          "location": "10:11-10:39|284-312",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 38,
+      "location": "10:1-10:39|274-312"
     },
     {
       "type": "Functional_molecule",
@@ -713,7 +707,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "313-315|11:1-11:3"
+            "location": "11:1-11:3|313-315"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -727,18 +721,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "316-322|11:4-11:10"
+                  "location": "11:4-11:10|316-322"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "316-322|11:4-11:10"
+                "location": "11:4-11:10|316-322"
               }
             ],
             "script": 8,
-            "location": "315-323|11:3-11:11"
+            "location": "11:3-11:11|315-323"
           },
           "script": 10,
-          "location": "313-323|11:1-11:11",
+          "location": "11:1-11:11|313-323",
           "formula": "si{$1}"
         },
         {
@@ -748,7 +742,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "323-331|11:11-11:19"
+            "location": "11:11-11:19|323-331"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -762,7 +756,7 @@
                   "id": "nunca",
                   "aliased": null,
                   "script": 5,
-                  "location": "333-338|11:21-11:26"
+                  "location": "11:21-11:26|333-338"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -776,28 +770,30 @@
                         "id": "se moja",
                         "aliased": null,
                         "script": 7,
-                        "location": "339-346|11:27-11:34"
+                        "location": "11:27-11:34|339-346"
                       },
                       "parameters": null,
                       "script": 7,
-                      "location": "339-346|11:27-11:34"
+                      "location": "11:27-11:34|339-346"
                     }
                   ],
                   "script": 9,
-                  "location": "338-347|11:26-11:35"
+                  "location": "11:26-11:35|338-347"
                 },
                 "script": 14,
-                "location": "333-347|11:21-11:35"
+                "location": "11:21-11:35|333-347"
               }
             ],
             "script": 18,
-            "location": "331-349|11:19-11:37"
+            "location": "11:19-11:37|331-349"
           },
           "script": 26,
-          "location": "323-349|11:11-11:37",
+          "location": "11:11-11:37|323-349",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 36,
+      "location": "11:1-11:37|313-349"
     },
     {
       "type": "Functional_molecule",
@@ -811,7 +807,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "351-353|13:1-13:3"
+            "location": "13:1-13:3|351-353"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -825,18 +821,18 @@
                   "id": "llover",
                   "aliased": null,
                   "script": 6,
-                  "location": "354-360|13:4-13:10"
+                  "location": "13:4-13:10|354-360"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "354-360|13:4-13:10"
+                "location": "13:4-13:10|354-360"
               }
             ],
             "script": 8,
-            "location": "353-361|13:3-13:11"
+            "location": "13:3-13:11|353-361"
           },
           "script": 10,
-          "location": "351-361|13:1-13:11",
+          "location": "13:1-13:11|351-361",
           "formula": "si{$1}"
         },
         {
@@ -846,7 +842,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "361-369|13:11-13:19"
+            "location": "13:11-13:19|361-369"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -860,7 +856,7 @@
                   "id": "siempre",
                   "aliased": null,
                   "script": 7,
-                  "location": "370-377|13:20-13:27"
+                  "location": "13:20-13:27|370-377"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -874,28 +870,30 @@
                         "id": "mojarse",
                         "aliased": null,
                         "script": 7,
-                        "location": "378-385|13:28-13:35"
+                        "location": "13:28-13:35|378-385"
                       },
                       "parameters": null,
                       "script": 7,
-                      "location": "378-385|13:28-13:35"
+                      "location": "13:28-13:35|378-385"
                     }
                   ],
                   "script": 9,
-                  "location": "377-386|13:27-13:36"
+                  "location": "13:27-13:36|377-386"
                 },
                 "script": 16,
-                "location": "370-386|13:20-13:36"
+                "location": "13:20-13:36|370-386"
               }
             ],
             "script": 18,
-            "location": "369-387|13:19-13:37"
+            "location": "13:19-13:37|369-387"
           },
           "script": 26,
-          "location": "361-387|13:11-13:37",
+          "location": "13:11-13:37|361-387",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 36,
+      "location": "13:1-13:37|351-387"
     },
     {
       "type": "Functional_molecule",
@@ -909,7 +907,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "388-390|14:1-14:3"
+            "location": "14:1-14:3|388-390"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -923,7 +921,7 @@
                   "id": "no",
                   "aliased": null,
                   "script": 2,
-                  "location": "391-393|14:4-14:6"
+                  "location": "14:4-14:6|391-393"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -937,25 +935,25 @@
                         "id": "llover",
                         "aliased": null,
                         "script": 6,
-                        "location": "394-400|14:7-14:13"
+                        "location": "14:7-14:13|394-400"
                       },
                       "parameters": null,
                       "script": 6,
-                      "location": "394-400|14:7-14:13"
+                      "location": "14:7-14:13|394-400"
                     }
                   ],
                   "script": 8,
-                  "location": "393-401|14:6-14:14"
+                  "location": "14:6-14:14|393-401"
                 },
                 "script": 10,
-                "location": "391-401|14:4-14:14"
+                "location": "14:4-14:14|391-401"
               }
             ],
             "script": 12,
-            "location": "390-402|14:3-14:15"
+            "location": "14:3-14:15|390-402"
           },
           "script": 14,
-          "location": "388-402|14:1-14:15",
+          "location": "14:1-14:15|388-402",
           "formula": "si{$1}"
         },
         {
@@ -965,7 +963,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "402-410|14:15-14:23"
+            "location": "14:15-14:23|402-410"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -979,7 +977,7 @@
                   "id": "nunca",
                   "aliased": null,
                   "script": 5,
-                  "location": "411-416|14:24-14:29"
+                  "location": "14:24-14:29|411-416"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -993,28 +991,30 @@
                         "id": "mojarse",
                         "aliased": null,
                         "script": 7,
-                        "location": "417-424|14:30-14:37"
+                        "location": "14:30-14:37|417-424"
                       },
                       "parameters": null,
                       "script": 7,
-                      "location": "417-424|14:30-14:37"
+                      "location": "14:30-14:37|417-424"
                     }
                   ],
                   "script": 9,
-                  "location": "416-425|14:29-14:38"
+                  "location": "14:29-14:38|416-425"
                 },
                 "script": 14,
-                "location": "411-425|14:24-14:38"
+                "location": "14:24-14:38|411-425"
               }
             ],
             "script": 16,
-            "location": "410-426|14:23-14:39"
+            "location": "14:23-14:39|410-426"
           },
           "script": 24,
-          "location": "402-426|14:15-14:39",
+          "location": "14:15-14:39|402-426",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 38,
+      "location": "14:1-14:39|388-426"
     },
     {
       "type": "Functional_molecule",
@@ -1028,7 +1028,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "427-429|15:1-15:3"
+            "location": "15:1-15:3|427-429"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1042,18 +1042,18 @@
                   "id": "llover",
                   "aliased": null,
                   "script": 6,
-                  "location": "430-436|15:4-15:10"
+                  "location": "15:4-15:10|430-436"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "430-436|15:4-15:10"
+                "location": "15:4-15:10|430-436"
               }
             ],
             "script": 8,
-            "location": "429-437|15:3-15:11"
+            "location": "15:3-15:11|429-437"
           },
           "script": 10,
-          "location": "427-437|15:1-15:11",
+          "location": "15:1-15:11|427-437",
           "formula": "si{$1}"
         },
         {
@@ -1063,7 +1063,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "437-445|15:11-15:19"
+            "location": "15:11-15:19|437-445"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1080,7 +1080,7 @@
                       "id": "un",
                       "aliased": null,
                       "script": 2,
-                      "location": "446-448|15:20-15:22"
+                      "location": "15:20-15:22|446-448"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -1090,7 +1090,7 @@
                           "supertype": "Generative",
                           "value": 10,
                           "script": 2,
-                          "location": "449-451|15:23-15:25",
+                          "location": "15:23-15:25|449-451",
                           "extended_by": [
                             {
                               "type": "Pipe_appendix",
@@ -1104,23 +1104,23 @@
                                   "id": "porciento",
                                   "aliased": null,
                                   "script": 9,
-                                  "location": "452-461|15:26-15:35"
+                                  "location": "15:26-15:35|452-461"
                                 },
                                 "parameters": null,
                                 "script": 9,
-                                "location": "452-461|15:26-15:35"
+                                "location": "15:26-15:35|452-461"
                               },
                               "script": 10,
-                              "location": "451-461|15:25-15:35"
+                              "location": "15:25-15:35|451-461"
                             }
                           ]
                         }
                       ],
                       "script": 14,
-                      "location": "448-462|15:22-15:36"
+                      "location": "15:22-15:36|448-462"
                     },
                     "script": 16,
-                    "location": "446-462|15:20-15:36",
+                    "location": "15:20-15:36|446-462",
                     "formula": "un{$1}"
                   },
                   {
@@ -1130,7 +1130,7 @@
                       "id": "de las veces",
                       "aliased": null,
                       "script": 12,
-                      "location": "462-474|15:36-15:48"
+                      "location": "15:36-15:48|462-474"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -1144,51 +1144,35 @@
                             "id": "mojarse",
                             "aliased": null,
                             "script": 7,
-                            "location": "475-482|15:49-15:56"
+                            "location": "15:49-15:56|475-482"
                           },
                           "parameters": null,
                           "script": 7,
-                          "location": "475-482|15:49-15:56"
+                          "location": "15:49-15:56|475-482"
                         }
                       ],
                       "script": 9,
-                      "location": "474-483|15:48-15:57"
+                      "location": "15:48-15:57|474-483"
                     },
                     "script": 21,
-                    "location": "462-483|15:36-15:57",
+                    "location": "15:36-15:57|462-483",
                     "formula": "de las veces{$1}"
                   }
-                ]
+                ],
+                "script": 37,
+                "location": "15:20-15:57|446-483"
               }
             ],
             "script": 39,
-            "location": "445-484|15:19-15:58"
+            "location": "15:19-15:58|445-484"
           },
           "script": 47,
-          "location": "437-484|15:11-15:58",
+          "location": "15:11-15:58|437-484",
           "formula": "entonces{$1}"
         }
-      ]
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "486-493|17:1-17:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de frecuencia vagos: ",
-        "script": 37,
-        "location": "493-530|17:8-17:45"
-      },
-      "script": 44,
-      "location": "486-530|17:1-17:45"
+      ],
+      "script": 57,
+      "location": "15:1-15:58|427-484"
     },
     {
       "type": "Functional_molecule",
@@ -1202,7 +1186,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "532-534|19:1-19:3"
+            "location": "19:1-19:3|532-534"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1216,18 +1200,18 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "535-542|19:4-19:11"
+                  "location": "19:4-19:11|535-542"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "535-542|19:4-19:11"
+                "location": "19:4-19:11|535-542"
               }
             ],
             "script": 9,
-            "location": "534-543|19:3-19:12"
+            "location": "19:3-19:12|534-543"
           },
           "script": 11,
-          "location": "532-543|19:1-19:12",
+          "location": "19:1-19:12|532-543",
           "formula": "si{$1}"
         },
         {
@@ -1237,7 +1221,7 @@
             "id": "a veces",
             "aliased": null,
             "script": 7,
-            "location": "543-550|19:12-19:19"
+            "location": "19:12-19:19|543-550"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1251,21 +1235,23 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "551-557|19:20-19:26"
+                  "location": "19:20-19:26|551-557"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "551-557|19:20-19:26"
+                "location": "19:20-19:26|551-557"
               }
             ],
             "script": 8,
-            "location": "550-558|19:19-19:27"
+            "location": "19:19-19:27|550-558"
           },
           "script": 15,
-          "location": "543-558|19:12-19:27",
+          "location": "19:12-19:27|543-558",
           "formula": "a veces{$1}"
         }
-      ]
+      ],
+      "script": 26,
+      "location": "19:1-19:27|532-558"
     },
     {
       "type": "Functional_molecule",
@@ -1279,7 +1265,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "559-561|20:1-20:3"
+            "location": "20:1-20:3|559-561"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1293,18 +1279,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "562-568|20:4-20:10"
+                  "location": "20:4-20:10|562-568"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "562-568|20:4-20:10"
+                "location": "20:4-20:10|562-568"
               }
             ],
             "script": 8,
-            "location": "561-569|20:3-20:11"
+            "location": "20:3-20:11|561-569"
           },
           "script": 10,
-          "location": "559-569|20:1-20:11",
+          "location": "20:1-20:11|559-569",
           "formula": "si{$1}"
         },
         {
@@ -1314,7 +1300,7 @@
             "id": "muchas veces",
             "aliased": null,
             "script": 12,
-            "location": "569-581|20:11-20:23"
+            "location": "20:11-20:23|569-581"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1328,21 +1314,23 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "582-589|20:24-20:31"
+                  "location": "20:24-20:31|582-589"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "582-589|20:24-20:31"
+                "location": "20:24-20:31|582-589"
               }
             ],
             "script": 9,
-            "location": "581-590|20:23-20:32"
+            "location": "20:23-20:32|581-590"
           },
           "script": 21,
-          "location": "569-590|20:11-20:32",
+          "location": "20:11-20:32|569-590",
           "formula": "muchas veces{$1}"
         }
-      ]
+      ],
+      "script": 31,
+      "location": "20:1-20:32|559-590"
     },
     {
       "type": "Functional_molecule",
@@ -1356,7 +1344,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "591-593|21:1-21:3"
+            "location": "21:1-21:3|591-593"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1370,18 +1358,18 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "594-601|21:4-21:11"
+                  "location": "21:4-21:11|594-601"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "594-601|21:4-21:11"
+                "location": "21:4-21:11|594-601"
               }
             ],
             "script": 9,
-            "location": "593-602|21:3-21:12"
+            "location": "21:3-21:12|593-602"
           },
           "script": 11,
-          "location": "591-602|21:1-21:12",
+          "location": "21:1-21:12|591-602",
           "formula": "si{$1}"
         },
         {
@@ -1391,7 +1379,7 @@
             "id": "pocas veces",
             "aliased": null,
             "script": 11,
-            "location": "602-613|21:12-21:23"
+            "location": "21:12-21:23|602-613"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1405,21 +1393,23 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "614-620|21:24-21:30"
+                  "location": "21:24-21:30|614-620"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "614-620|21:24-21:30"
+                "location": "21:24-21:30|614-620"
               }
             ],
             "script": 8,
-            "location": "613-621|21:23-21:31"
+            "location": "21:23-21:31|613-621"
           },
           "script": 19,
-          "location": "602-621|21:12-21:31",
+          "location": "21:12-21:31|602-621",
           "formula": "pocas veces{$1}"
         }
-      ]
+      ],
+      "script": 30,
+      "location": "21:1-21:31|591-621"
     },
     {
       "type": "Functional_molecule",
@@ -1433,7 +1423,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "622-624|22:1-22:3"
+            "location": "22:1-22:3|622-624"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1447,18 +1437,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "625-631|22:4-22:10"
+                  "location": "22:4-22:10|625-631"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "625-631|22:4-22:10"
+                "location": "22:4-22:10|625-631"
               }
             ],
             "script": 8,
-            "location": "624-632|22:3-22:11"
+            "location": "22:3-22:11|624-632"
           },
           "script": 10,
-          "location": "622-632|22:1-22:11",
+          "location": "22:1-22:11|622-632",
           "formula": "si{$1}"
         },
         {
@@ -1468,7 +1458,7 @@
             "id": "suele",
             "aliased": null,
             "script": 5,
-            "location": "632-637|22:11-22:16"
+            "location": "22:11-22:16|632-637"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1482,21 +1472,23 @@
                   "id": "mojarse",
                   "aliased": null,
                   "script": 7,
-                  "location": "638-645|22:17-22:24"
+                  "location": "22:17-22:24|638-645"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "638-645|22:17-22:24"
+                "location": "22:17-22:24|638-645"
               }
             ],
             "script": 9,
-            "location": "637-646|22:16-22:25"
+            "location": "22:16-22:25|637-646"
           },
           "script": 14,
-          "location": "632-646|22:11-22:25",
+          "location": "22:11-22:25|632-646",
           "formula": "suele{$1}"
         }
-      ]
+      ],
+      "script": 24,
+      "location": "22:1-22:25|622-646"
     },
     {
       "type": "Functional_molecule",
@@ -1510,7 +1502,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "647-649|23:1-23:3"
+            "location": "23:1-23:3|647-649"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1524,18 +1516,18 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "650-657|23:4-23:11"
+                  "location": "23:4-23:11|650-657"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "650-657|23:4-23:11"
+                "location": "23:4-23:11|650-657"
               }
             ],
             "script": 9,
-            "location": "649-658|23:3-23:12"
+            "location": "23:3-23:12|649-658"
           },
           "script": 11,
-          "location": "647-658|23:1-23:12",
+          "location": "23:1-23:12|647-658",
           "formula": "si{$1}"
         },
         {
@@ -1545,7 +1537,7 @@
             "id": "no suele",
             "aliased": null,
             "script": 8,
-            "location": "658-666|23:12-23:20"
+            "location": "23:12-23:20|658-666"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1559,44 +1551,26 @@
                   "id": "llover",
                   "aliased": null,
                   "script": 6,
-                  "location": "667-673|23:21-23:27"
+                  "location": "23:21-23:27|667-673"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "667-673|23:21-23:27"
+                "location": "23:21-23:27|667-673"
               }
             ],
             "script": 8,
-            "location": "666-674|23:20-23:28"
+            "location": "23:20-23:28|666-674"
           },
           "script": 16,
-          "location": "658-674|23:12-23:28",
+          "location": "23:12-23:28|658-674",
           "formula": "no suele{$1}"
         }
-      ]
+      ],
+      "script": 27,
+      "location": "23:1-23:28|647-674"
     },
     {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "676-683|25:1-25:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de agrupación: ",
-        "script": 31,
-        "location": "683-714|25:8-25:39"
-      },
-      "script": 38,
-      "location": "676-714|25:1-25:39"
-    },
-    {
-      "type": "Covalent_molecule_type",
+      "type": "Covalent_molecule",
       "supertype": "Generative",
       "base": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -1610,15 +1584,15 @@
               "id": "se moja",
               "aliased": null,
               "script": 7,
-              "location": "717-724|27:2-27:9"
+              "location": "27:2-27:9|717-724"
             },
             "parameters": null,
             "script": 7,
-            "location": "717-724|27:2-27:9"
+            "location": "27:2-27:9|717-724"
           }
         ],
         "script": 9,
-        "location": "716-725|27:1-27:10"
+        "location": "27:1-27:10|716-725"
       },
       "atoms": [
         {
@@ -1628,7 +1602,7 @@
             "id": "y",
             "aliased": null,
             "script": 1,
-            "location": "725-726|27:10-27:11"
+            "location": "27:10-27:11|725-726"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1642,25 +1616,25 @@
                   "id": "se escucha",
                   "aliased": null,
                   "script": 10,
-                  "location": "727-737|27:12-27:22"
+                  "location": "27:12-27:22|727-737"
                 },
                 "parameters": null,
                 "script": 10,
-                "location": "727-737|27:12-27:22"
+                "location": "27:12-27:22|727-737"
               }
             ],
             "script": 12,
-            "location": "726-738|27:11-27:23"
+            "location": "27:11-27:23|726-738"
           },
           "script": 13,
-          "location": "725-738|27:10-27:23"
+          "location": "27:10-27:23|725-738"
         }
       ],
       "script": 22,
-      "location": "716-738|27:1-27:23"
+      "location": "27:1-27:23|716-738"
     },
     {
-      "type": "Covalent_molecule_type",
+      "type": "Covalent_molecule",
       "supertype": "Generative",
       "base": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -1674,22 +1648,22 @@
               "id": "se moja",
               "aliased": null,
               "script": 7,
-              "location": "740-747|28:2-28:9"
+              "location": "28:2-28:9|740-747"
             },
             "parameters": null,
             "script": 7,
-            "location": "740-747|28:2-28:9"
+            "location": "28:2-28:9|740-747"
           },
           {
             "type": "Variable",
             "supertype": "Generative",
             "name": "levemente",
             "script": 10,
-            "location": "748-758|28:10-28:20"
+            "location": "28:10-28:20|748-758"
           }
         ],
         "script": 20,
-        "location": "739-759|28:1-28:21"
+        "location": "28:1-28:21|739-759"
       },
       "atoms": [
         {
@@ -1699,7 +1673,7 @@
             "id": "y",
             "aliased": null,
             "script": 1,
-            "location": "759-760|28:21-28:22"
+            "location": "28:21-28:22|759-760"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1713,52 +1687,32 @@
                   "id": "se escucha",
                   "aliased": null,
                   "script": 10,
-                  "location": "761-771|28:23-28:33"
+                  "location": "28:23-28:33|761-771"
                 },
                 "parameters": null,
                 "script": 10,
-                "location": "761-771|28:23-28:33"
+                "location": "28:23-28:33|761-771"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "intensamente",
                 "script": 13,
-                "location": "772-785|28:34-28:47"
+                "location": "28:34-28:47|772-785"
               }
             ],
             "script": 26,
-            "location": "760-786|28:22-28:48"
+            "location": "28:22-28:48|760-786"
           },
           "script": 27,
-          "location": "759-786|28:21-28:48"
+          "location": "28:21-28:48|759-786"
         }
       ],
       "script": 47,
-      "location": "739-786|28:1-28:48"
+      "location": "28:1-28:48|739-786"
     },
     {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "788-795|30:1-30:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de separación inclusiva: ",
-        "script": 41,
-        "location": "795-836|30:8-30:49"
-      },
-      "script": 48,
-      "location": "788-836|30:1-30:49"
-    },
-    {
-      "type": "Covalent_molecule_type",
+      "type": "Covalent_molecule",
       "supertype": "Generative",
       "base": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -1772,15 +1726,15 @@
               "id": "se moja",
               "aliased": null,
               "script": 7,
-              "location": "839-846|32:2-32:9"
+              "location": "32:2-32:9|839-846"
             },
             "parameters": null,
             "script": 7,
-            "location": "839-846|32:2-32:9"
+            "location": "32:2-32:9|839-846"
           }
         ],
         "script": 9,
-        "location": "838-847|32:1-32:10"
+        "location": "32:1-32:10|838-847"
       },
       "atoms": [
         {
@@ -1790,7 +1744,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "847-848|32:10-32:11"
+            "location": "32:10-32:11|847-848"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1804,25 +1758,25 @@
                   "id": "se escucha",
                   "aliased": null,
                   "script": 10,
-                  "location": "849-859|32:12-32:22"
+                  "location": "32:12-32:22|849-859"
                 },
                 "parameters": null,
                 "script": 10,
-                "location": "849-859|32:12-32:22"
+                "location": "32:12-32:22|849-859"
               }
             ],
             "script": 12,
-            "location": "848-860|32:11-32:23"
+            "location": "32:11-32:23|848-860"
           },
           "script": 13,
-          "location": "847-860|32:10-32:23"
+          "location": "32:10-32:23|847-860"
         }
       ],
       "script": 22,
-      "location": "838-860|32:1-32:23"
+      "location": "32:1-32:23|838-860"
     },
     {
-      "type": "Covalent_molecule_type",
+      "type": "Covalent_molecule",
       "supertype": "Generative",
       "base": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -1836,22 +1790,22 @@
               "id": "se moja",
               "aliased": null,
               "script": 7,
-              "location": "862-869|33:2-33:9"
+              "location": "33:2-33:9|862-869"
             },
             "parameters": null,
             "script": 7,
-            "location": "862-869|33:2-33:9"
+            "location": "33:2-33:9|862-869"
           },
           {
             "type": "Variable",
             "supertype": "Generative",
             "name": "levemente",
             "script": 10,
-            "location": "870-880|33:10-33:20"
+            "location": "33:10-33:20|870-880"
           }
         ],
         "script": 20,
-        "location": "861-881|33:1-33:21"
+        "location": "33:1-33:21|861-881"
       },
       "atoms": [
         {
@@ -1861,7 +1815,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "881-882|33:21-33:22"
+            "location": "33:21-33:22|881-882"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1875,49 +1829,29 @@
                   "id": "se escucha",
                   "aliased": null,
                   "script": 10,
-                  "location": "883-893|33:23-33:33"
+                  "location": "33:23-33:33|883-893"
                 },
                 "parameters": null,
                 "script": 10,
-                "location": "883-893|33:23-33:33"
+                "location": "33:23-33:33|883-893"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "intensamente",
                 "script": 13,
-                "location": "894-907|33:34-33:47"
+                "location": "33:34-33:47|894-907"
               }
             ],
             "script": 26,
-            "location": "882-908|33:22-33:48"
+            "location": "33:22-33:48|882-908"
           },
           "script": 27,
-          "location": "881-908|33:21-33:48"
+          "location": "33:21-33:48|881-908"
         }
       ],
       "script": 47,
-      "location": "861-908|33:1-33:48"
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "910-917|35:1-35:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de separación exclusiva: ",
-        "script": 41,
-        "location": "917-958|35:8-35:49"
-      },
-      "script": 48,
-      "location": "910-958|35:1-35:49"
+      "location": "33:1-33:48|861-908"
     },
     {
       "type": "Functional_molecule",
@@ -1931,7 +1865,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "960-961|37:1-37:2"
+            "location": "37:1-37:2|960-961"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1945,18 +1879,18 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "962-969|37:3-37:10"
+                  "location": "37:3-37:10|962-969"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "962-969|37:3-37:10"
+                "location": "37:3-37:10|962-969"
               }
             ],
             "script": 9,
-            "location": "961-970|37:2-37:11"
+            "location": "37:2-37:11|961-970"
           },
           "script": 10,
-          "location": "960-970|37:1-37:11",
+          "location": "37:1-37:11|960-970",
           "formula": "o{$1}"
         },
         {
@@ -1966,7 +1900,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "970-971|37:11-37:12"
+            "location": "37:11-37:12|970-971"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1980,18 +1914,18 @@
                   "id": "se escucha",
                   "aliased": null,
                   "script": 10,
-                  "location": "972-982|37:13-37:23"
+                  "location": "37:13-37:23|972-982"
                 },
                 "parameters": null,
                 "script": 10,
-                "location": "972-982|37:13-37:23"
+                "location": "37:13-37:23|972-982"
               }
             ],
             "script": 12,
-            "location": "971-983|37:12-37:24"
+            "location": "37:12-37:24|971-983"
           },
           "script": 13,
-          "location": "970-983|37:11-37:24",
+          "location": "37:11-37:24|970-983",
           "formula": "o{$1}"
         },
         {
@@ -2001,7 +1935,7 @@
             "id": "pero no",
             "aliased": null,
             "script": 7,
-            "location": "983-990|37:24-37:31"
+            "location": "37:24-37:31|983-990"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2015,18 +1949,18 @@
                   "id": "todos",
                   "aliased": null,
                   "script": 5,
-                  "location": "991-996|37:32-37:37"
+                  "location": "37:32-37:37|991-996"
                 },
                 "parameters": null,
                 "script": 5,
-                "location": "991-996|37:32-37:37"
+                "location": "37:32-37:37|991-996"
               }
             ],
             "script": 7,
-            "location": "990-997|37:31-37:38"
+            "location": "37:31-37:38|990-997"
           },
           "script": 14,
-          "location": "983-997|37:24-37:38",
+          "location": "37:24-37:38|983-997",
           "formula": "pero no{$1}"
         },
         {
@@ -2036,18 +1970,20 @@
             "id": "a la vez",
             "aliased": null,
             "script": 8,
-            "location": "997-1005|37:38-37:46"
+            "location": "37:38-37:46|997-1005"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "1005-1006|37:46-37:47"
+            "location": "37:46-37:47|1005-1006"
           },
           "script": 9,
-          "location": "997-1006|37:38-37:47",
+          "location": "37:38-37:47|997-1006",
           "formula": "a la vez{$1}"
         }
-      ]
+      ],
+      "script": 46,
+      "location": "37:1-37:47|960-1006"
     },
     {
       "type": "Functional_molecule",
@@ -2061,7 +1997,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "1007-1008|38:1-38:2"
+            "location": "38:1-38:2|1007-1008"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2075,25 +2011,25 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "1009-1016|38:3-38:10"
+                  "location": "38:3-38:10|1009-1016"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1009-1016|38:3-38:10"
+                "location": "38:3-38:10|1009-1016"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "levemente",
                 "script": 10,
-                "location": "1017-1027|38:11-38:21"
+                "location": "38:11-38:21|1017-1027"
               }
             ],
             "script": 20,
-            "location": "1008-1028|38:2-38:22"
+            "location": "38:2-38:22|1008-1028"
           },
           "script": 21,
-          "location": "1007-1028|38:1-38:22",
+          "location": "38:1-38:22|1007-1028",
           "formula": "o{$1}"
         },
         {
@@ -2103,7 +2039,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "1028-1029|38:22-38:23"
+            "location": "38:22-38:23|1028-1029"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2117,25 +2053,25 @@
                   "id": "se escucha",
                   "aliased": null,
                   "script": 10,
-                  "location": "1030-1040|38:24-38:34"
+                  "location": "38:24-38:34|1030-1040"
                 },
                 "parameters": null,
                 "script": 10,
-                "location": "1030-1040|38:24-38:34"
+                "location": "38:24-38:34|1030-1040"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "intensamente",
                 "script": 13,
-                "location": "1041-1054|38:35-38:48"
+                "location": "38:35-38:48|1041-1054"
               }
             ],
             "script": 26,
-            "location": "1029-1055|38:23-38:49"
+            "location": "38:23-38:49|1029-1055"
           },
           "script": 27,
-          "location": "1028-1055|38:22-38:49",
+          "location": "38:22-38:49|1028-1055",
           "formula": "o{$1}"
         },
         {
@@ -2145,7 +2081,7 @@
             "id": "pero no",
             "aliased": null,
             "script": 7,
-            "location": "1055-1062|38:49-38:56"
+            "location": "38:49-38:56|1055-1062"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2159,18 +2095,18 @@
                   "id": "todos",
                   "aliased": null,
                   "script": 5,
-                  "location": "1063-1068|38:57-38:62"
+                  "location": "38:57-38:62|1063-1068"
                 },
                 "parameters": null,
                 "script": 5,
-                "location": "1063-1068|38:57-38:62"
+                "location": "38:57-38:62|1063-1068"
               }
             ],
             "script": 7,
-            "location": "1062-1069|38:56-38:63"
+            "location": "38:56-38:63|1062-1069"
           },
           "script": 14,
-          "location": "1055-1069|38:49-38:63",
+          "location": "38:49-38:63|1055-1069",
           "formula": "pero no{$1}"
         },
         {
@@ -2180,18 +2116,20 @@
             "id": "a la vez",
             "aliased": null,
             "script": 8,
-            "location": "1069-1077|38:63-38:71"
+            "location": "38:63-38:71|1069-1077"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "1077-1078|38:71-38:72"
+            "location": "38:71-38:72|1077-1078"
           },
           "script": 9,
-          "location": "1069-1078|38:63-38:72",
+          "location": "38:63-38:72|1069-1078",
           "formula": "a la vez{$1}"
         }
-      ]
+      ],
+      "script": 71,
+      "location": "38:1-38:72|1007-1078"
     },
     {
       "type": "Functional_molecule",
@@ -2205,7 +2143,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "1079-1080|39:1-39:2"
+            "location": "39:1-39:2|1079-1080"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2215,14 +2153,14 @@
                 "supertype": "Generative",
                 "name": "a",
                 "script": 2,
-                "location": "1081-1083|39:3-39:5"
+                "location": "39:3-39:5|1081-1083"
               }
             ],
             "script": 4,
-            "location": "1080-1084|39:2-39:6"
+            "location": "39:2-39:6|1080-1084"
           },
           "script": 5,
-          "location": "1079-1084|39:1-39:6",
+          "location": "39:1-39:6|1079-1084",
           "formula": "o{$1}"
         },
         {
@@ -2232,7 +2170,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "1084-1085|39:6-39:7"
+            "location": "39:6-39:7|1084-1085"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2242,14 +2180,14 @@
                 "supertype": "Generative",
                 "name": "b",
                 "script": 2,
-                "location": "1086-1088|39:8-39:10"
+                "location": "39:8-39:10|1086-1088"
               }
             ],
             "script": 4,
-            "location": "1085-1089|39:7-39:11"
+            "location": "39:7-39:11|1085-1089"
           },
           "script": 5,
-          "location": "1084-1089|39:6-39:11",
+          "location": "39:6-39:11|1084-1089",
           "formula": "o{$1}"
         },
         {
@@ -2259,7 +2197,7 @@
             "id": "o",
             "aliased": null,
             "script": 1,
-            "location": "1089-1090|39:11-39:12"
+            "location": "39:11-39:12|1089-1090"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2269,14 +2207,14 @@
                 "supertype": "Generative",
                 "name": "c",
                 "script": 2,
-                "location": "1091-1093|39:13-39:15"
+                "location": "39:13-39:15|1091-1093"
               }
             ],
             "script": 4,
-            "location": "1090-1094|39:12-39:16"
+            "location": "39:12-39:16|1090-1094"
           },
           "script": 5,
-          "location": "1089-1094|39:11-39:16",
+          "location": "39:11-39:16|1089-1094",
           "formula": "o{$1}"
         },
         {
@@ -2286,7 +2224,7 @@
             "id": "pero no",
             "aliased": null,
             "script": 7,
-            "location": "1094-1101|39:16-39:23"
+            "location": "39:16-39:23|1094-1101"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2303,7 +2241,7 @@
                       "id": "ni",
                       "aliased": null,
                       "script": 2,
-                      "location": "1103-1105|39:25-39:27"
+                      "location": "39:25-39:27|1103-1105"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2313,14 +2251,14 @@
                           "supertype": "Generative",
                           "name": "a",
                           "script": 2,
-                          "location": "1106-1108|39:28-39:30"
+                          "location": "39:28-39:30|1106-1108"
                         }
                       ],
                       "script": 4,
-                      "location": "1105-1109|39:27-39:31"
+                      "location": "39:27-39:31|1105-1109"
                     },
                     "script": 6,
-                    "location": "1103-1109|39:25-39:31",
+                    "location": "39:25-39:31|1103-1109",
                     "formula": "ni{$1}"
                   },
                   {
@@ -2330,7 +2268,7 @@
                       "id": "y",
                       "aliased": null,
                       "script": 1,
-                      "location": "1109-1110|39:31-39:32"
+                      "location": "39:31-39:32|1109-1110"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2340,17 +2278,19 @@
                           "supertype": "Generative",
                           "name": "c",
                           "script": 2,
-                          "location": "1111-1113|39:33-39:35"
+                          "location": "39:33-39:35|1111-1113"
                         }
                       ],
                       "script": 4,
-                      "location": "1110-1114|39:32-39:36"
+                      "location": "39:32-39:36|1110-1114"
                     },
                     "script": 5,
-                    "location": "1109-1114|39:31-39:36",
+                    "location": "39:31-39:36|1109-1114",
                     "formula": "y{$1}"
                   }
-                ]
+                ],
+                "script": 11,
+                "location": "39:25-39:36|1103-1114"
               },
               {
                 "type": "Functional_molecule",
@@ -2364,7 +2304,7 @@
                       "id": "ni",
                       "aliased": null,
                       "script": 2,
-                      "location": "1115-1117|39:37-39:39"
+                      "location": "39:37-39:39|1115-1117"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2374,14 +2314,14 @@
                           "supertype": "Generative",
                           "name": "a",
                           "script": 2,
-                          "location": "1118-1120|39:40-39:42"
+                          "location": "39:40-39:42|1118-1120"
                         }
                       ],
                       "script": 4,
-                      "location": "1117-1121|39:39-39:43"
+                      "location": "39:39-39:43|1117-1121"
                     },
                     "script": 6,
-                    "location": "1115-1121|39:37-39:43",
+                    "location": "39:37-39:43|1115-1121",
                     "formula": "ni{$1}"
                   },
                   {
@@ -2391,7 +2331,7 @@
                       "id": "y",
                       "aliased": null,
                       "script": 1,
-                      "location": "1121-1122|39:43-39:44"
+                      "location": "39:43-39:44|1121-1122"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2401,17 +2341,19 @@
                           "supertype": "Generative",
                           "name": "b",
                           "script": 2,
-                          "location": "1123-1125|39:45-39:47"
+                          "location": "39:45-39:47|1123-1125"
                         }
                       ],
                       "script": 4,
-                      "location": "1122-1126|39:44-39:48"
+                      "location": "39:44-39:48|1122-1126"
                     },
                     "script": 5,
-                    "location": "1121-1126|39:43-39:48",
+                    "location": "39:43-39:48|1121-1126",
                     "formula": "y{$1}"
                   }
-                ]
+                ],
+                "script": 11,
+                "location": "39:37-39:48|1115-1126"
               },
               {
                 "type": "Functional_molecule",
@@ -2425,7 +2367,7 @@
                       "id": "ni",
                       "aliased": null,
                       "script": 2,
-                      "location": "1127-1129|39:49-39:51"
+                      "location": "39:49-39:51|1127-1129"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2435,14 +2377,14 @@
                           "supertype": "Generative",
                           "name": "b",
                           "script": 2,
-                          "location": "1130-1132|39:52-39:54"
+                          "location": "39:52-39:54|1130-1132"
                         }
                       ],
                       "script": 4,
-                      "location": "1129-1133|39:51-39:55"
+                      "location": "39:51-39:55|1129-1133"
                     },
                     "script": 6,
-                    "location": "1127-1133|39:49-39:55",
+                    "location": "39:49-39:55|1127-1133",
                     "formula": "ni{$1}"
                   },
                   {
@@ -2452,7 +2394,7 @@
                       "id": "y",
                       "aliased": null,
                       "script": 1,
-                      "location": "1133-1134|39:55-39:56"
+                      "location": "39:55-39:56|1133-1134"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2462,24 +2404,26 @@
                           "supertype": "Generative",
                           "name": "c",
                           "script": 2,
-                          "location": "1135-1137|39:57-39:59"
+                          "location": "39:57-39:59|1135-1137"
                         }
                       ],
                       "script": 4,
-                      "location": "1134-1138|39:56-39:60"
+                      "location": "39:56-39:60|1134-1138"
                     },
                     "script": 5,
-                    "location": "1133-1138|39:55-39:60",
+                    "location": "39:55-39:60|1133-1138",
                     "formula": "y{$1}"
                   }
-                ]
+                ],
+                "script": 11,
+                "location": "39:49-39:60|1127-1138"
               }
             ],
             "script": 39,
-            "location": "1101-1140|39:23-39:62"
+            "location": "39:23-39:62|1101-1140"
           },
           "script": 46,
-          "location": "1094-1140|39:16-39:62",
+          "location": "39:16-39:62|1094-1140",
           "formula": "pero no{$1}"
         },
         {
@@ -2489,38 +2433,20 @@
             "id": "a la vez",
             "aliased": null,
             "script": 8,
-            "location": "1140-1148|39:62-39:70"
+            "location": "39:62-39:70|1140-1148"
           },
           "parameters": {
             "type": "Function_call_appendix_for_empty_parameter",
             "script": 1,
-            "location": "1148-1149|39:70-39:71"
+            "location": "39:70-39:71|1148-1149"
           },
           "script": 9,
-          "location": "1140-1149|39:62-39:71",
+          "location": "39:62-39:71|1140-1149",
           "formula": "a la vez{$1}"
         }
-      ]
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "1152-1159|42:1-42:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de intensidad y modo: ",
-        "script": 38,
-        "location": "1159-1197|42:8-42:46"
-      },
-      "script": 45,
-      "location": "1152-1197|42:1-42:46"
+      ],
+      "script": 70,
+      "location": "39:1-39:71|1079-1149"
     },
     {
       "type": "Functional_molecule",
@@ -2534,7 +2460,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "1199-1201|44:1-44:3"
+            "location": "44:1-44:3|1199-1201"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2548,18 +2474,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "1202-1208|44:4-44:10"
+                  "location": "44:4-44:10|1202-1208"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "1202-1208|44:4-44:10"
+                "location": "44:4-44:10|1202-1208"
               }
             ],
             "script": 8,
-            "location": "1201-1209|44:3-44:11"
+            "location": "44:3-44:11|1201-1209"
           },
           "script": 10,
-          "location": "1199-1209|44:1-44:11",
+          "location": "44:1-44:11|1199-1209",
           "formula": "si{$1}"
         },
         {
@@ -2569,13 +2495,13 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "1209-1217|44:11-44:19"
+            "location": "44:11-44:19|1209-1217"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
             "list": [
               {
-                "type": "Covalent_molecule_type",
+                "type": "Covalent_molecule",
                 "supertype": "Generative",
                 "base": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -2589,22 +2515,22 @@
                         "id": "se moja",
                         "aliased": null,
                         "script": 7,
-                        "location": "1220-1227|44:22-44:29"
+                        "location": "44:22-44:29|1220-1227"
                       },
                       "parameters": null,
                       "script": 7,
-                      "location": "1220-1227|44:22-44:29"
+                      "location": "44:22-44:29|1220-1227"
                     },
                     {
                       "type": "Variable",
                       "supertype": "Generative",
                       "name": "levemente",
                       "script": 10,
-                      "location": "1228-1238|44:30-44:40"
+                      "location": "44:30-44:40|1228-1238"
                     }
                   ],
                   "script": 20,
-                  "location": "1219-1239|44:21-44:41"
+                  "location": "44:21-44:41|1219-1239"
                 },
                 "atoms": [
                   {
@@ -2614,7 +2540,7 @@
                       "id": "pero",
                       "aliased": null,
                       "script": 4,
-                      "location": "1239-1243|44:41-44:45"
+                      "location": "44:41-44:45|1239-1243"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -2628,39 +2554,41 @@
                             "id": "se escucha",
                             "aliased": null,
                             "script": 10,
-                            "location": "1244-1254|44:46-44:56"
+                            "location": "44:46-44:56|1244-1254"
                           },
                           "parameters": null,
                           "script": 10,
-                          "location": "1244-1254|44:46-44:56"
+                          "location": "44:46-44:56|1244-1254"
                         },
                         {
                           "type": "Variable",
                           "supertype": "Generative",
                           "name": "intensamente",
                           "script": 13,
-                          "location": "1255-1268|44:57-44:70"
+                          "location": "44:57-44:70|1255-1268"
                         }
                       ],
                       "script": 26,
-                      "location": "1243-1269|44:45-44:71"
+                      "location": "44:45-44:71|1243-1269"
                     },
                     "script": 30,
-                    "location": "1239-1269|44:41-44:71"
+                    "location": "44:41-44:71|1239-1269"
                   }
                 ],
                 "script": 50,
-                "location": "1219-1269|44:21-44:71"
+                "location": "44:21-44:71|1219-1269"
               }
             ],
             "script": 54,
-            "location": "1217-1271|44:19-44:73"
+            "location": "44:19-44:73|1217-1271"
           },
           "script": 62,
-          "location": "1209-1271|44:11-44:73",
+          "location": "44:11-44:73|1209-1271",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 72,
+      "location": "44:1-44:73|1199-1271"
     },
     {
       "type": "Functional_molecule",
@@ -2674,7 +2602,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "1272-1274|45:1-45:3"
+            "location": "45:1-45:3|1272-1274"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2688,18 +2616,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "1275-1281|45:4-45:10"
+                  "location": "45:4-45:10|1275-1281"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "1275-1281|45:4-45:10"
+                "location": "45:4-45:10|1275-1281"
               }
             ],
             "script": 8,
-            "location": "1274-1282|45:3-45:11"
+            "location": "45:3-45:11|1274-1282"
           },
           "script": 10,
-          "location": "1272-1282|45:1-45:11",
+          "location": "45:1-45:11|1272-1282",
           "formula": "si{$1}"
         },
         {
@@ -2709,7 +2637,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "1282-1290|45:11-45:19"
+            "location": "45:11-45:19|1282-1290"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2723,28 +2651,30 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "1291-1298|45:20-45:27"
+                  "location": "45:20-45:27|1291-1298"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1291-1298|45:20-45:27"
+                "location": "45:20-45:27|1291-1298"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "intensamente",
                 "script": 13,
-                "location": "1299-1312|45:28-45:41"
+                "location": "45:28-45:41|1299-1312"
               }
             ],
             "script": 23,
-            "location": "1290-1313|45:19-45:42"
+            "location": "45:19-45:42|1290-1313"
           },
           "script": 31,
-          "location": "1282-1313|45:11-45:42",
+          "location": "45:11-45:42|1282-1313",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 41,
+      "location": "45:1-45:42|1272-1313"
     },
     {
       "type": "Functional_molecule",
@@ -2758,7 +2688,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "1314-1316|46:1-46:3"
+            "location": "46:1-46:3|1314-1316"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2772,18 +2702,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "1317-1323|46:4-46:10"
+                  "location": "46:4-46:10|1317-1323"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "1317-1323|46:4-46:10"
+                "location": "46:4-46:10|1317-1323"
               }
             ],
             "script": 8,
-            "location": "1316-1324|46:3-46:11"
+            "location": "46:3-46:11|1316-1324"
           },
           "script": 10,
-          "location": "1314-1324|46:1-46:11",
+          "location": "46:1-46:11|1314-1324",
           "formula": "si{$1}"
         },
         {
@@ -2793,7 +2723,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "1324-1332|46:11-46:19"
+            "location": "46:11-46:19|1324-1332"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2807,28 +2737,30 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "1333-1340|46:20-46:27"
+                  "location": "46:20-46:27|1333-1340"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1333-1340|46:20-46:27"
+                "location": "46:20-46:27|1333-1340"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "constantemente",
                 "script": 15,
-                "location": "1341-1356|46:28-46:43"
+                "location": "46:28-46:43|1341-1356"
               }
             ],
             "script": 25,
-            "location": "1332-1357|46:19-46:44"
+            "location": "46:19-46:44|1332-1357"
           },
           "script": 33,
-          "location": "1324-1357|46:11-46:44",
+          "location": "46:11-46:44|1324-1357",
           "formula": "entonces{$1}"
         }
-      ]
+      ],
+      "script": 43,
+      "location": "46:1-46:44|1314-1357"
     },
     {
       "type": "Functional_molecule",
@@ -2842,7 +2774,7 @@
             "id": "si",
             "aliased": null,
             "script": 2,
-            "location": "1358-1360|47:1-47:3"
+            "location": "47:1-47:3|1358-1360"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2856,18 +2788,18 @@
                   "id": "llueve",
                   "aliased": null,
                   "script": 6,
-                  "location": "1361-1367|47:4-47:10"
+                  "location": "47:4-47:10|1361-1367"
                 },
                 "parameters": null,
                 "script": 6,
-                "location": "1361-1367|47:4-47:10"
+                "location": "47:4-47:10|1361-1367"
               }
             ],
             "script": 8,
-            "location": "1360-1368|47:3-47:11"
+            "location": "47:3-47:11|1360-1368"
           },
           "script": 10,
-          "location": "1358-1368|47:1-47:11",
+          "location": "47:1-47:11|1358-1368",
           "formula": "si{$1}"
         },
         {
@@ -2877,7 +2809,7 @@
             "id": "entonces",
             "aliased": null,
             "script": 8,
-            "location": "1368-1376|47:11-47:19"
+            "location": "47:11-47:19|1368-1376"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -2891,48 +2823,30 @@
                   "id": "se moja",
                   "aliased": null,
                   "script": 7,
-                  "location": "1377-1384|47:20-47:27"
+                  "location": "47:20-47:27|1377-1384"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1377-1384|47:20-47:27"
+                "location": "47:20-47:27|1377-1384"
               },
               {
                 "type": "Variable",
                 "supertype": "Generative",
                 "name": "constantemente",
                 "script": 15,
-                "location": "1385-1400|47:28-47:43"
+                "location": "47:28-47:43|1385-1400"
               }
             ],
             "script": 25,
-            "location": "1376-1401|47:19-47:44"
+            "location": "47:19-47:44|1376-1401"
           },
           "script": 33,
-          "location": "1368-1401|47:11-47:44",
+          "location": "47:11-47:44|1368-1401",
           "formula": "entonces{$1}"
         }
-      ]
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "1403-1410|49:1-49:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de asignación: ",
-        "script": 31,
-        "location": "1410-1441|49:8-49:39"
-      },
-      "script": 38,
-      "location": "1403-1441|49:1-49:39"
+      ],
+      "script": 43,
+      "location": "47:1-47:44|1358-1401"
     },
     {
       "type": "Functional_atom",
@@ -2943,7 +2857,7 @@
         "id": "ocurre",
         "aliased": null,
         "script": 6,
-        "location": "1443-1449|51:1-51:7"
+        "location": "51:1-51:7|1443-1449"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -2957,18 +2871,18 @@
               "id": "llover",
               "aliased": null,
               "script": 6,
-              "location": "1450-1456|51:8-51:14"
+              "location": "51:8-51:14|1450-1456"
             },
             "parameters": null,
             "script": 6,
-            "location": "1450-1456|51:8-51:14"
+            "location": "51:8-51:14|1450-1456"
           }
         ],
         "script": 8,
-        "location": "1449-1457|51:7-51:15"
+        "location": "51:7-51:15|1449-1457"
       },
       "script": 14,
-      "location": "1443-1457|51:1-51:15"
+      "location": "51:1-51:15|1443-1457"
     },
     {
       "type": "Functional_atom",
@@ -2979,7 +2893,7 @@
         "id": "no ocurre",
         "aliased": null,
         "script": 9,
-        "location": "1458-1467|52:1-52:10"
+        "location": "52:1-52:10|1458-1467"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -2993,38 +2907,18 @@
               "id": "mojarse",
               "aliased": null,
               "script": 7,
-              "location": "1468-1475|52:11-52:18"
+              "location": "52:11-52:18|1468-1475"
             },
             "parameters": null,
             "script": 7,
-            "location": "1468-1475|52:11-52:18"
+            "location": "52:11-52:18|1468-1475"
           }
         ],
         "script": 9,
-        "location": "1467-1476|52:10-52:19"
+        "location": "52:10-52:19|1467-1476"
       },
       "script": 18,
-      "location": "1458-1476|52:1-52:19"
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "1478-1485|54:1-54:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": " Operadores de pregunta: ",
-        "script": 29,
-        "location": "1485-1514|54:8-54:37"
-      },
-      "script": 36,
-      "location": "1478-1514|54:1-54:37"
+      "location": "52:1-52:19|1458-1476"
     },
     {
       "type": "Functional_atom",
@@ -3035,7 +2929,7 @@
         "id": "dime qué ocurre con",
         "aliased": null,
         "script": 19,
-        "location": "1516-1535|56:1-56:20"
+        "location": "56:1-56:20|1516-1535"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -3049,18 +2943,18 @@
               "id": "mojarse",
               "aliased": null,
               "script": 7,
-              "location": "1536-1543|56:21-56:28"
+              "location": "56:21-56:28|1536-1543"
             },
             "parameters": null,
             "script": 7,
-            "location": "1536-1543|56:21-56:28"
+            "location": "56:21-56:28|1536-1543"
           }
         ],
         "script": 9,
-        "location": "1535-1544|56:20-56:29"
+        "location": "56:20-56:29|1535-1544"
       },
       "script": 28,
-      "location": "1516-1544|56:1-56:29"
+      "location": "56:1-56:29|1516-1544"
     },
     {
       "type": "Functional_atom",
@@ -3071,7 +2965,7 @@
         "id": "dime por qué ocurre",
         "aliased": null,
         "script": 19,
-        "location": "1545-1564|57:1-57:20"
+        "location": "57:1-57:20|1545-1564"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
@@ -3085,38 +2979,18 @@
               "id": "mojarse",
               "aliased": null,
               "script": 7,
-              "location": "1565-1572|57:21-57:28"
+              "location": "57:21-57:28|1565-1572"
             },
             "parameters": null,
             "script": 7,
-            "location": "1565-1572|57:21-57:28"
+            "location": "57:21-57:28|1565-1572"
           }
         ],
         "script": 9,
-        "location": "1564-1573|57:20-57:29"
+        "location": "57:20-57:29|1564-1573"
       },
       "script": 28,
-      "location": "1545-1573|57:1-57:29"
-    },
-    {
-      "type": "Functional_atom",
-      "supertype": "Generative",
-      "formula": "comment{$1}",
-      "name": {
-        "type": "Function_name_by_word",
-        "id": "comment",
-        "aliased": null,
-        "script": 7,
-        "location": "1576-1583|60:1-60:8"
-      },
-      "parameters": {
-        "type": "Function_call_appendix_for_text_parameter",
-        "text": "\nTeoría:\n\nLos «operadores de frecuencia» son un aspecto de las «operaciones de causalidad», una «relación» entre el «causal» y el «consecuencial».\n\nLos «operadores de frecuencia» permiten a las «operaciones de causalidad» una ampliación de rango expresable.\n\nLos «operadores de frecuencia estrictos» son los que se incluyen en este aoar\n\nLa correlación entre estos operadores y la lógica clásica sería la siguiente:\n\n\nOperadores de frecuencia:\n    - siempre\n    - a veces\n    - nunca\n",
-        "script": 488,
-        "location": "1583-2071|60:8-76:3"
-      },
-      "script": 495,
-      "location": "1576-2071|60:1-76:3"
+      "location": "57:1-57:29|1545-1573"
     }
   ],
   "footer": {
@@ -3139,35 +3013,34 @@
         "si": "pos=2 times=17",
         "llueve": "pos=3 times=14",
         "entonces": "pos=4 times=12",
-        "comment": "pos=5 times=9",
-        "o": "pos=6 times=9",
-        "mojarse": "pos=7 times=8",
-        "se escucha": "pos=8 times=7",
-        "llover": "pos=9 times=6",
-        "y": "pos=10 times=5",
-        "siempre": "pos=11 times=3",
-        "nunca": "pos=12 times=3",
-        "pero no": "pos=13 times=3",
-        "a la vez": "pos=14 times=3",
-        "ni": "pos=15 times=3",
-        "defino": "pos=16 times=2",
-        "como": "pos=17 times=2",
-        "fenómeno": "pos=18 times=2",
-        "un": "pos=19 times=2",
-        "porciento": "pos=20 times=2",
-        "de las veces": "pos=21 times=2",
-        "todos": "pos=22 times=2",
-        "no": "pos=23 times=1",
-        "a veces": "pos=24 times=1",
-        "muchas veces": "pos=25 times=1",
-        "pocas veces": "pos=26 times=1",
-        "suele": "pos=27 times=1",
-        "no suele": "pos=28 times=1",
-        "pero": "pos=29 times=1",
-        "ocurre": "pos=30 times=1",
-        "no ocurre": "pos=31 times=1",
-        "dime qué ocurre con": "pos=32 times=1",
-        "dime por qué ocurre": "pos=33 times=1"
+        "o": "pos=5 times=9",
+        "mojarse": "pos=6 times=8",
+        "se escucha": "pos=7 times=7",
+        "llover": "pos=8 times=6",
+        "y": "pos=9 times=5",
+        "siempre": "pos=10 times=3",
+        "nunca": "pos=11 times=3",
+        "pero no": "pos=12 times=3",
+        "a la vez": "pos=13 times=3",
+        "ni": "pos=14 times=3",
+        "defino": "pos=15 times=2",
+        "como": "pos=16 times=2",
+        "fenómeno": "pos=17 times=2",
+        "un": "pos=18 times=2",
+        "porciento": "pos=19 times=2",
+        "de las veces": "pos=20 times=2",
+        "todos": "pos=21 times=2",
+        "no": "pos=22 times=1",
+        "a veces": "pos=23 times=1",
+        "muchas veces": "pos=24 times=1",
+        "pocas veces": "pos=25 times=1",
+        "suele": "pos=26 times=1",
+        "no suele": "pos=27 times=1",
+        "pero": "pos=28 times=1",
+        "ocurre": "pos=29 times=1",
+        "no ocurre": "pos=30 times=1",
+        "dime qué ocurre con": "pos=31 times=1",
+        "dime por qué ocurre": "pos=32 times=1"
       }
     }
   },

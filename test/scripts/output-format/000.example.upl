@@ -9,20 +9,14 @@
 #attr=xml attributes
 #cont=xml contents
 
-ignored comment{{ This could be used as import es6 js bridge syntax: }}
 import{ @fs }from{ "fs" }
 import{ @path }from{ "path" }
 import{ @globby }from{ "globby" }
 import{ @express }from{ "express" }
 import{ @upl }from{ "@allnulled upl" }
-comment{{ This script uses all the syntax of the language }}
-comment{{ Functional molecule + Text:  }}
 create variable{ @a }as{ "a" }
-comment{{ Functional molecule by alias + String parameter:  }}
-#create{ @b }as{{ This can be a multiline string }}
-comment{{ Functional atom + Piped suffix: }}
+#create{ @b }as{ "This can be a multiline string\nfdsafdsa" }
 "Hello, folks!" | print{ @ }
-comment{{ Example of object and list: }}
 assign{ @ }as{
   #tag{
     "div"
@@ -33,7 +27,6 @@ assign{ @ }as{
     list{ #tag{ "h1" list{} "Hello from html app!" } }
   }
 }
-comment{{ This could exemplify a class construction: }}
 class{ @last_class }extends{ @another_class }with{
   static class property{ @default_configurations }as{ object{ } }
   static class method{ @create }as{
@@ -46,7 +39,6 @@ class{ @last_class }extends{ @another_class }with{
     async function{ @options }that{ print{ "This is a constructor" } }
   }
 }
-comment{{ Piping + accessing + calling + chaining example: }}
 object{
   name="admin"
   password="admin"
@@ -66,29 +58,25 @@ export{
     function{}that{ print{ "Authentication successfull" } }
   }
 }as es6 property{ @email }
-comment{{ This could be a syntax for concatenating strings }}
 create{ @user }as{ object{ } }
 print{
   concat strings{
     "Hello, "
     @user.name
-      |[eq] ui ask{{ First, tell me. What is your name? }}
+      |[eq] ui ask{ "First, tell me. What is your name?" }
     "!\\n"
     "Welcome to the application.\\n"
     "As you are "
     @user.age
-      |= ui ask{{ And how old are you? }}
+      |= ui ask{ "And how old are you?" }
     " years old "
-    when{ { @user.age }is lower than{ 18 } }then{ "yet, you cannot use this app." }otherwise{
+    when{ undefined }then{ "yet, you cannot use this app." }otherwise{
       "already, you can go to the home page."
     }
   }
 }
-comment{{ We could create a grammar for operator overloading }}
-comment{{ That allows us to do like this, but extended to any type: }}
 print{}
 function{ @source }returns{ @source | sum{ @ 500 } }
-comment{{ without pipe operator overloading you need to: }}
 reversable function{ @source |= @ }that{
   reversable sum{ @ 500 }
   reversable substract{ @ 100 }
@@ -144,33 +132,18 @@ fn{ @i }returns{ #sum{ @i 100 }
 fn{ @i }returns{ #sum{ @i 100 }
   |= #subs{ @ 50 }
   |= #div{ @ 2 } }
-comment{{ but with pipe operator overloading you are allowed to: }}
-comment{{ In math lang you would write something like: }}
-comment{{ f(x) => (x+100-50) 2 }}
-comment{{
-  que el primer caracter no pueda ser {
-    ni letras
-    ni espacios
-    ni números
-    ni arroba
-  }
-  y que vaya seguido
-  y lo que matchee, tú.
-  y así puedes sobrecargar símbolos e inventarte otros si quieres
-  y apañaos
-}}
 function{ @x @y @z }returns{
   0 |@a= power{ @x 2 }
     |@b= multiply{ @y 2 }
     |@c= sum{ @z 2 }
     |= sum{ @ @a @b @c }
 }
-print{{Advanced pipe operators:}}
+print{ "Advanced pipe operators:" }
 "Hello, @!"
-  |[string.replace] { @ "@" ui ask{ "What is your name?" } }
+  |[string.replace] undefined
   |[print] @
 print{
   "Formula:"
-  0 |[math.sum] { { 1 2 3 } { 4 5 6 } { 7 8 9 } }
-    |[math.sum] { 100 200 300 { 400 500 } }
+  0 |[math.sum] undefined
+    |[math.sum] undefined
 }

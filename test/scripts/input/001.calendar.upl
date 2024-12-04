@@ -1,9 +1,9 @@
 registers{
-  day{{26/11/2024}}with{
-    hour{{08:00}}with{
-      event{{Desayunar}}
-      duration{{1h}}
-      details{{Wherever}}
+  day{ "26/11/2024" }with{
+    hour{ "08:00" }with{
+      event{ "Desayunar" }
+      duration{ "1h" }
+      details{ "Wherever" }
     }
   }
 }

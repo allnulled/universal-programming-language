@@ -1,69 +1,73 @@
-sección donde{{ Iniciamos el objeto de configuraciones globales del script }}mediante{
+sección donde{
+  "Iniciamos el objeto de configuraciones globales del script"
+}mediante{
   creo{ @config }como{
     object{
       ENTORNO="DEVELOPMENT"
-      CONTEXTO=cuando{ { @window }no es indefinido! }entonces{ @window }sino{ @global }
-      MAQUINA=cuando{ { @window }no es indefinido! }entonces{ @window.navigator }sino{ @process.os }
+      CONTEXTO=cuando{ undefined }entonces{ @window }sino{ @global }
+      MAQUINA=cuando{ undefined }entonces{ @window.navigator }sino{ @process.os }
     }
   }
 }
-sección donde{{ Obtenemos conexión con la base de datos }}mediante{
+sección donde{ "Obtenemos conexión con la base de datos" }mediante{
   creo{ @conexion }como asíncronamente{
-    obtener conexión a base de datos{{ principal }}
+    obtener conexión a base de datos{ "principal" }
   }
 }
-sección donde{{ Recuperamos y formateamos datos de usuario }}mediante{
+sección donde{ "Recuperamos y formateamos datos de usuario" }mediante{
   creo{ @datos_de_usuario }como{
     asíncronamente{
-      preguntar a base de datos mediante{ @conexion }acerca de{{ datos de usuario }}
+      preguntar a base de datos mediante{ @conexion }acerca de{ "datos de usuario" }
     }
   }
   formateo datos de usuario | capturo errores{ @{ @datos_de_usuario } }filtro errores con{ @error }donde{ informo al usuario de{ @error } }
 }
-sección donde{{ Obtenemos y registramos los datos de usuario si no los tenemos }}mediante{
+sección donde{
+  "Obtenemos y registramos los datos de usuario si no los tenemos"
+}mediante{
   si{
-    { @datos_de_usuario }no cumple con el formato de{{ datos de usuario }}
+    undefined
   }entonces{
     creo{ @usuario }como{
       object{
         nombre=asíncronamente{
-          interfaz de usuario pide{{ ¿Cuál es tu nombre? }}
+          interfaz de usuario pide{ "¿Cuál es tu nombre?" }
         }
         sexo=asíncronamente{
-          interfaz de usuario pide{{ ¿Cuál es tu sexo? }}
+          interfaz de usuario pide{ "¿Cuál es tu sexo?" }
         }
         edad=asíncronamente{
-          interfaz de usuario pide{{ ¿Cuál es tu edad? }}
+          interfaz de usuario pide{ "¿Cuál es tu edad?" }
         }
       }
     }
-    guardar en base de datos mediante{ @conexion }acerca de{{ datos de usuario }}los datos{{ @usuario }}
+    guardar en base de datos mediante{ @conexion }acerca de{ "datos de usuario" }los datos{ "@usuario" }
   }
 }
-sección donde{{ Cargamos librerías y funciones }}mediante{
+sección donde{ "Cargamos librerías y funciones" }mediante{
   declaro función{ @correr_menu_inicial }que recibe{ @estado }donde{
-    imprimo{{ [Inicio] }}
-    imprimo{{ Las opciones son: }}
-    imprimo{{  a) Calendario }}
-    imprimo{{  b) Agenda }}
-    imprimo{{  c) Registro }}
-    imprimo{{  d) Notas }}
-    imprimo{{  e) Links }}
-    imprimo{{  f) Estructuras }}
-    imprimo{{ ¿A qué sección quieres ir? }}
+    imprimo{ "[Inicio]" }
+    imprimo{ "Las opciones son:" }
+    imprimo{ " a) Calendario" }
+    imprimo{ " b) Agenda" }
+    imprimo{ " c) Registro" }
+    imprimo{ " d) Notas" }
+    imprimo{ " e) Links" }
+    imprimo{ " f) Estructuras" }
+    imprimo{ "¿A qué sección quieres ir?" }
     creo variable{ @respuesta }como{ @undefined }
     mientras{
-      { @respuesta }no sea uno entre{ "abcdef".split{} }
+      undefined
     }entonces{
       asigno{ @respuesta }como{ entrada de usuario! }
     }
     según{ @respuesta }entonces{
-      caso{{ a }}retorno{ @correr_calendario{ @estado } }
-      caso{{ b }}retorno{ @correr_agenda{ @estado } }
-      caso{{ c }}retorno{ @correr_registro{ @estado } }
-      caso{{ d }}retorno{ @correr_notas{ @estado } }
-      caso{{ e }}retorno{ @correr_links{ @estado } }
-      caso{{ f }}retorno{ @correr_estructuras{ @estado } }
+      caso{ "a" }retorno{ @correr_calendario{ @estado } }
+      caso{ "b" }retorno{ @correr_agenda{ @estado } }
+      caso{ "c" }retorno{ @correr_registro{ @estado } }
+      caso{ "d" }retorno{ @correr_notas{ @estado } }
+      caso{ "e" }retorno{ @correr_links{ @estado } }
+      caso{ "f" }retorno{ @correr_estructuras{ @estado } }
     }
   }
   declaro función{ @correr_calendario }donde{ por completar! }
@@ -73,7 +77,7 @@ sección donde{{ Cargamos librerías y funciones }}mediante{
   declaro función{ @correr_links }donde{ por completar! }
   declaro función{ @correr_estructuras }donde{ por completar! }
 }
-sección donde{{ Iniciamos el programa }}mediante{
+sección donde{ "Iniciamos el programa" }mediante{
   creo{ @estado }como{ object{ } }
   imprimo{
     concatenación de texto{ "¡Bienvenido, " @usuario.nombre "!" }

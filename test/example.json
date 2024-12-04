@@ -1,0 +1,88 @@
+{
+  "type": "Language",
+  "header": {
+    "type": "Preblock",
+    "declarations": {},
+    "script": 0,
+    "location": "2:7-2:7|7-7"
+  },
+  "body": [
+    {
+      "type": "Functional_molecule",
+      "supertype": "Generative",
+      "formula": "create{$1}as{$2}",
+      "atoms": [
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "create",
+            "aliased": null,
+            "script": 6,
+            "location": "2:7-2:13|7-13"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Variable",
+                "supertype": "Generative",
+                "name": "a",
+                "script": 2,
+                "location": "2:15-2:17|15-17"
+              }
+            ],
+            "script": 6,
+            "location": "2:13-2:19|13-19"
+          },
+          "script": 12,
+          "location": "2:7-2:19|7-19",
+          "formula": "create{$1}"
+        },
+        {
+          "type": "Functional_atom",
+          "name": {
+            "type": "Function_name_by_word",
+            "id": "as",
+            "aliased": null,
+            "script": 2,
+            "location": "2:19-2:21|19-21"
+          },
+          "parameters": {
+            "type": "Function_call_appendix_for_list_parameter",
+            "list": [
+              {
+                "type": "Text",
+                "supertype": "Generative",
+                "contents": "whatever",
+                "script": 10,
+                "location": "2:23-2:33|23-33"
+              }
+            ],
+            "script": 14,
+            "location": "2:21-2:35|21-35"
+          },
+          "script": 16,
+          "location": "2:19-2:35|19-35",
+          "formula": "as{$1}"
+        }
+      ],
+      "script": 28,
+      "location": "2:7-2:35|7-35",
+      "is_sentence": true,
+      "is_generative": false
+    }
+  ],
+  "footer": {
+    "mentions": {
+      "molecules": {
+        "create{$1}as{$2}": "pos=1 times=1"
+      },
+      "atoms": {
+        "create": "pos=1 times=1",
+        "as": "pos=2 times=1"
+      }
+    }
+  },
+  "seed": "\n      create{ @a }as{ \"whatever\" }\n    "
+}

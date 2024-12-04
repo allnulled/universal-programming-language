@@ -4,7 +4,7 @@
     "type": "Preblock",
     "declarations": {},
     "script": 0,
-    "location": "0-0|1:1-1:1"
+    "location": "1:1-1:1|0-0"
   },
   "body": [
     {
@@ -19,7 +19,7 @@
             "id": "creo",
             "aliased": null,
             "script": 4,
-            "location": "0-4|1:1-1:5"
+            "location": "1:1-1:5|0-4"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -29,14 +29,14 @@
                 "supertype": "Generative",
                 "name": "usuario",
                 "script": 8,
-                "location": "6-14|1:7-1:15"
+                "location": "1:7-1:15|6-14"
               }
             ],
             "script": 12,
-            "location": "4-16|1:5-1:17"
+            "location": "1:5-1:17|4-16"
           },
           "script": 16,
-          "location": "0-16|1:1-1:17",
+          "location": "1:1-1:17|0-16",
           "formula": "creo{$1}"
         },
         {
@@ -46,7 +46,7 @@
             "id": "como",
             "aliased": null,
             "script": 4,
-            "location": "16-20|1:17-1:21"
+            "location": "1:17-1:21|16-20"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -66,16 +66,24 @@
                         "id": "pedir a usuario",
                         "aliased": null,
                         "script": 15,
-                        "location": "32-47|2:10-2:25"
+                        "location": "2:10-2:25|32-47"
                       },
                       "parameters": {
-                        "type": "Function_call_appendix_for_text_parameter",
-                        "text": " ¿Cómo te llamas? ",
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "¿Cómo te llamas?",
+                            "script": 18,
+                            "location": "2:27-2:45|49-67"
+                          }
+                        ],
                         "script": 22,
-                        "location": "47-69|2:25-2:47"
+                        "location": "2:25-2:47|47-69"
                       },
                       "script": 37,
-                      "location": "32-69|2:10-2:47"
+                      "location": "2:10-2:47|32-69"
                     }
                   },
                   {
@@ -89,16 +97,24 @@
                         "id": "pedir a usuario",
                         "aliased": null,
                         "script": 15,
-                        "location": "77-92|3:8-3:23"
+                        "location": "3:8-3:23|77-92"
                       },
                       "parameters": {
-                        "type": "Function_call_appendix_for_text_parameter",
-                        "text": " ¿Qué edad tienes? ",
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "¿Qué edad tienes?",
+                            "script": 19,
+                            "location": "3:25-3:44|94-113"
+                          }
+                        ],
                         "script": 23,
-                        "location": "92-115|3:23-3:46"
+                        "location": "3:23-3:46|92-115"
                       },
                       "script": 38,
-                      "location": "77-115|3:8-3:46"
+                      "location": "3:8-3:46|77-115"
                     }
                   },
                   {
@@ -112,31 +128,41 @@
                         "id": "pedir a usuario",
                         "aliased": null,
                         "script": 15,
-                        "location": "125-140|4:10-4:25"
+                        "location": "4:10-4:25|125-140"
                       },
                       "parameters": {
-                        "type": "Function_call_appendix_for_text_parameter",
-                        "text": " ¿En qué ciudad vives? ",
+                        "type": "Function_call_appendix_for_list_parameter",
+                        "list": [
+                          {
+                            "type": "Text",
+                            "supertype": "Generative",
+                            "contents": "¿En qué ciudad vives?",
+                            "script": 23,
+                            "location": "4:27-4:50|142-165"
+                          }
+                        ],
                         "script": 27,
-                        "location": "140-167|4:25-4:52"
+                        "location": "4:25-4:52|140-167"
                       },
                       "script": 42,
-                      "location": "125-167|4:10-4:52"
+                      "location": "4:10-4:52|125-167"
                     }
                   }
                 ],
                 "script": 148,
-                "location": "21-169|1:22-5:2"
+                "location": "1:22-5:2|21-169"
               }
             ],
             "script": 150,
-            "location": "20-170|1:21-5:3"
+            "location": "1:21-5:3|20-170"
           },
           "script": 154,
-          "location": "16-170|1:17-5:3",
+          "location": "1:17-5:3|16-170",
           "formula": "como{$1}"
         }
-      ]
+      ],
+      "script": 170,
+      "location": "1:1-5:3|0-170"
     },
     {
       "type": "Functional_molecule",
@@ -150,7 +176,7 @@
             "id": "componente",
             "aliased": null,
             "script": 10,
-            "location": "171-181|6:1-6:11"
+            "location": "6:1-6:11|171-181"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -160,14 +186,14 @@
                 "supertype": "Generative",
                 "contents": "Página de inicio",
                 "script": 18,
-                "location": "183-201|6:13-6:31"
+                "location": "6:13-6:31|183-201"
               }
             ],
             "script": 22,
-            "location": "181-203|6:11-6:33"
+            "location": "6:11-6:33|181-203"
           },
           "script": 32,
-          "location": "171-203|6:1-6:33",
+          "location": "6:1-6:33|171-203",
           "formula": "componente{$1}"
         },
         {
@@ -177,7 +203,7 @@
             "id": "pinta",
             "aliased": null,
             "script": 5,
-            "location": "203-208|6:33-6:38"
+            "location": "6:33-6:38|203-208"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -191,7 +217,7 @@
                   "id": "botones",
                   "aliased": null,
                   "script": 7,
-                  "location": "212-219|7:3-7:10"
+                  "location": "7:3-7:10|212-219"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -207,12 +233,12 @@
                             "supertype": "Generative",
                             "contents": "superior",
                             "script": 10,
-                            "location": "239-249|8:19-8:29"
+                            "location": "8:19-8:29|239-249"
                           }
                         }
                       ],
                       "script": 26,
-                      "location": "225-251|8:5-8:31"
+                      "location": "8:5-8:31|225-251"
                     },
                     {
                       "type": "Functional_atom",
@@ -223,7 +249,7 @@
                         "id": "list",
                         "aliased": null,
                         "script": 4,
-                        "location": "256-260|9:5-9:9"
+                        "location": "9:5-9:9|256-260"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -233,35 +259,35 @@
                             "supertype": "Generative",
                             "contents": "Entrada",
                             "script": 9,
-                            "location": "262-271|9:11-9:20"
+                            "location": "9:11-9:20|262-271"
                           },
                           {
                             "type": "Text",
                             "supertype": "Generative",
                             "contents": "Sintaxis",
                             "script": 10,
-                            "location": "272-282|9:21-9:31"
+                            "location": "9:21-9:31|272-282"
                           },
                           {
                             "type": "Text",
                             "supertype": "Generative",
                             "contents": "Salida",
                             "script": 8,
-                            "location": "283-291|9:32-9:40"
+                            "location": "9:32-9:40|283-291"
                           }
                         ],
                         "script": 33,
-                        "location": "260-293|9:9-9:42"
+                        "location": "9:9-9:42|260-293"
                       },
                       "script": 37,
-                      "location": "256-293|9:5-9:42"
+                      "location": "9:5-9:42|256-293"
                     }
                   ],
                   "script": 78,
-                  "location": "219-297|7:10-10:4"
+                  "location": "7:10-10:4|219-297"
                 },
                 "script": 85,
-                "location": "212-297|7:3-10:4"
+                "location": "7:3-10:4|212-297"
               },
               {
                 "type": "Functional_atom",
@@ -272,7 +298,7 @@
                   "id": "editor de texto",
                   "aliased": null,
                   "script": 15,
-                  "location": "300-315|11:3-11:18"
+                  "location": "11:3-11:18|300-315"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -288,12 +314,12 @@
                             "supertype": "Generative",
                             "contents": "monoespaciado grande",
                             "script": 22,
-                            "location": "335-357|12:19-12:41"
+                            "location": "12:19-12:41|335-357"
                           }
                         }
                       ],
                       "script": 38,
-                      "location": "321-359|12:5-12:43"
+                      "location": "12:5-12:43|321-359"
                     },
                     {
                       "type": "Functional_atom",
@@ -304,7 +330,7 @@
                         "id": "reflejando modelo",
                         "aliased": null,
                         "script": 17,
-                        "location": "364-381|13:5-13:22"
+                        "location": "13:5-13:22|364-381"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -314,21 +340,21 @@
                             "supertype": "Generative",
                             "name": "texto_de_entrada",
                             "script": 17,
-                            "location": "383-400|13:24-13:41"
+                            "location": "13:24-13:41|383-400"
                           }
                         ],
                         "script": 21,
-                        "location": "381-402|13:22-13:43"
+                        "location": "13:22-13:43|381-402"
                       },
                       "script": 38,
-                      "location": "364-402|13:5-13:43"
+                      "location": "13:5-13:43|364-402"
                     }
                   ],
                   "script": 91,
-                  "location": "315-406|11:18-14:4"
+                  "location": "11:18-14:4|315-406"
                 },
                 "script": 106,
-                "location": "300-406|11:3-14:4"
+                "location": "11:3-14:4|300-406"
               },
               {
                 "type": "Functional_atom",
@@ -339,7 +365,7 @@
                   "id": "panel inferior",
                   "aliased": null,
                   "script": 14,
-                  "location": "409-423|15:3-15:17"
+                  "location": "15:3-15:17|409-423"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -353,7 +379,7 @@
                         "id": "información sobre",
                         "aliased": null,
                         "script": 17,
-                        "location": "429-446|16:5-16:22"
+                        "location": "16:5-16:22|429-446"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -363,14 +389,14 @@
                             "supertype": "Generative",
                             "name": "cursor",
                             "script": 7,
-                            "location": "448-455|16:24-16:31"
+                            "location": "16:24-16:31|448-455"
                           }
                         ],
                         "script": 11,
-                        "location": "446-457|16:22-16:33"
+                        "location": "16:22-16:33|446-457"
                       },
                       "script": 28,
-                      "location": "429-457|16:5-16:33"
+                      "location": "16:5-16:33|429-457"
                     },
                     {
                       "type": "Functional_atom",
@@ -381,7 +407,7 @@
                         "id": "botones",
                         "aliased": null,
                         "script": 7,
-                        "location": "462-469|17:5-17:12"
+                        "location": "17:5-17:12|462-469"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -397,12 +423,12 @@
                                   "supertype": "Generative",
                                   "contents": "inferior",
                                   "script": 10,
-                                  "location": "491-501|18:21-18:31"
+                                  "location": "18:21-18:31|491-501"
                                 }
                               }
                             ],
                             "script": 26,
-                            "location": "477-503|18:7-18:33"
+                            "location": "18:7-18:33|477-503"
                           },
                           {
                             "type": "Functional_atom",
@@ -413,7 +439,7 @@
                               "id": "list",
                               "aliased": null,
                               "script": 4,
-                              "location": "510-514|19:7-19:11"
+                              "location": "19:7-19:11|510-514"
                             },
                             "parameters": {
                               "type": "Function_call_appendix_for_list_parameter",
@@ -423,42 +449,42 @@
                                   "supertype": "Generative",
                                   "contents": "Formatear",
                                   "script": 11,
-                                  "location": "516-527|19:13-19:24"
+                                  "location": "19:13-19:24|516-527"
                                 },
                                 {
                                   "type": "Text",
                                   "supertype": "Generative",
                                   "contents": "Guardar",
                                   "script": 9,
-                                  "location": "528-537|19:25-19:34"
+                                  "location": "19:25-19:34|528-537"
                                 }
                               ],
                               "script": 25,
-                              "location": "514-539|19:11-19:36"
+                              "location": "19:11-19:36|514-539"
                             },
                             "script": 29,
-                            "location": "510-539|19:7-19:36"
+                            "location": "19:7-19:36|510-539"
                           }
                         ],
                         "script": 76,
-                        "location": "469-545|17:12-20:6"
+                        "location": "17:12-20:6|469-545"
                       },
                       "script": 83,
-                      "location": "462-545|17:5-20:6"
+                      "location": "17:5-20:6|462-545"
                     }
                   ],
                   "script": 126,
-                  "location": "423-549|15:17-21:4"
+                  "location": "15:17-21:4|423-549"
                 },
                 "script": 140,
-                "location": "409-549|15:3-21:4"
+                "location": "15:3-21:4|409-549"
               }
             ],
             "script": 343,
-            "location": "208-551|6:38-22:2"
+            "location": "6:38-22:2|208-551"
           },
           "script": 348,
-          "location": "203-551|6:33-22:2",
+          "location": "6:33-22:2|203-551",
           "formula": "pinta{$1}"
         },
         {
@@ -468,7 +494,7 @@
             "id": "se construye",
             "aliased": null,
             "script": 12,
-            "location": "551-563|22:2-22:14"
+            "location": "22:2-22:14|551-563"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -482,7 +508,7 @@
                   "id": "retorno",
                   "aliased": null,
                   "script": 7,
-                  "location": "567-574|23:3-23:10"
+                  "location": "23:3-23:10|567-574"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -498,7 +524,7 @@
                             "supertype": "Generative",
                             "contents": "Nombre del componente",
                             "script": 23,
-                            "location": "586-609|24:10-24:33"
+                            "location": "24:10-24:33|586-609"
                           }
                         },
                         {
@@ -508,7 +534,7 @@
                             "supertype": "Generative",
                             "properties": [],
                             "script": 9,
-                            "location": "620-629|25:11-25:20"
+                            "location": "25:11-25:20|620-629"
                           }
                         },
                         {
@@ -522,7 +548,7 @@
                               "id": "función donde",
                               "aliased": null,
                               "script": 13,
-                              "location": "639-652|26:10-26:23"
+                              "location": "26:10-26:23|639-652"
                             },
                             "parameters": {
                               "type": "Function_call_appendix_for_list_parameter",
@@ -536,7 +562,7 @@
                                     "id": "retorno",
                                     "aliased": null,
                                     "script": 7,
-                                    "location": "660-667|27:7-27:14"
+                                    "location": "27:7-27:14|660-667"
                                   },
                                   "parameters": {
                                     "type": "Function_call_appendix_for_list_parameter",
@@ -552,26 +578,26 @@
                                               "supertype": "Generative",
                                               "contents": "hola upl!",
                                               "script": 11,
-                                              "location": "712-723|29:28-29:39"
+                                              "location": "29:28-29:39|712-723"
                                             }
                                           }
                                         ],
                                         "script": 56,
-                                        "location": "677-733|28:9-30:10"
+                                        "location": "28:9-30:10|677-733"
                                       }
                                     ],
                                     "script": 74,
-                                    "location": "667-741|27:14-31:8"
+                                    "location": "27:14-31:8|667-741"
                                   },
                                   "script": 81,
-                                  "location": "660-741|27:7-31:8"
+                                  "location": "27:7-31:8|660-741"
                                 }
                               ],
                               "script": 95,
-                              "location": "652-747|26:23-32:6"
+                              "location": "26:23-32:6|652-747"
                             },
                             "script": 108,
-                            "location": "639-747|26:10-32:6"
+                            "location": "26:10-32:6|639-747"
                           }
                         },
                         {
@@ -591,7 +617,7 @@
                                     "id": "función donde",
                                     "aliased": null,
                                     "script": 13,
-                                    "location": "787-800|34:20-34:33"
+                                    "location": "34:20-34:33|787-800"
                                   },
                                   "parameters": {
                                     "type": "Function_call_appendix_for_list_parameter",
@@ -605,7 +631,7 @@
                                           "id": "retorno",
                                           "aliased": null,
                                           "script": 7,
-                                          "location": "802-809|34:35-34:42"
+                                          "location": "34:35-34:42|802-809"
                                         },
                                         "parameters": {
                                           "type": "Function_call_appendix_for_list_parameter",
@@ -615,45 +641,45 @@
                                               "supertype": "Generative",
                                               "properties": [],
                                               "script": 9,
-                                              "location": "811-820|34:44-34:53"
+                                              "location": "34:44-34:53|811-820"
                                             }
                                           ],
                                           "script": 13,
-                                          "location": "809-822|34:42-34:55"
+                                          "location": "34:42-34:55|809-822"
                                         },
                                         "script": 20,
-                                        "location": "802-822|34:35-34:55"
+                                        "location": "34:35-34:55|802-822"
                                       }
                                     ],
                                     "script": 24,
-                                    "location": "800-824|34:33-34:57"
+                                    "location": "34:33-34:57|800-824"
                                   },
                                   "script": 37,
-                                  "location": "787-824|34:20-34:57"
+                                  "location": "34:20-34:57|787-824"
                                 }
                               }
                             ],
                             "script": 70,
-                            "location": "760-830|33:13-35:6"
+                            "location": "33:13-35:6|760-830"
                           }
                         }
                       ],
                       "script": 259,
-                      "location": "575-834|23:11-36:4"
+                      "location": "23:11-36:4|575-834"
                     }
                   ],
                   "script": 261,
-                  "location": "574-835|23:10-36:5"
+                  "location": "23:10-36:5|574-835"
                 },
                 "script": 268,
-                "location": "567-835|23:3-36:5"
+                "location": "23:3-36:5|567-835"
               }
             ],
             "script": 274,
-            "location": "563-837|22:14-37:2"
+            "location": "22:14-37:2|563-837"
           },
           "script": 286,
-          "location": "551-837|22:2-37:2",
+          "location": "22:2-37:2|551-837",
           "formula": "se construye{$1}"
         },
         {
@@ -663,7 +689,7 @@
             "id": "añade estilos",
             "aliased": null,
             "script": 13,
-            "location": "837-850|37:2-37:15"
+            "location": "37:2-37:15|837-850"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -680,16 +706,24 @@
                       "id": "regla css para",
                       "aliased": null,
                       "script": 14,
-                      "location": "854-868|38:3-38:17"
+                      "location": "38:3-38:17|854-868"
                     },
                     "parameters": {
-                      "type": "Function_call_appendix_for_text_parameter",
-                      "text": " html ",
+                      "type": "Function_call_appendix_for_list_parameter",
+                      "list": [
+                        {
+                          "type": "Text",
+                          "supertype": "Generative",
+                          "contents": "html",
+                          "script": 6,
+                          "location": "38:19-38:25|870-876"
+                        }
+                      ],
                       "script": 10,
-                      "location": "868-878|38:17-38:27"
+                      "location": "38:17-38:27|868-878"
                     },
                     "script": 24,
-                    "location": "854-878|38:3-38:27",
+                    "location": "38:3-38:27|854-878",
                     "formula": "regla css para{$1}"
                   },
                   {
@@ -699,7 +733,7 @@
                       "id": "con",
                       "aliased": null,
                       "script": 3,
-                      "location": "878-881|38:27-38:30"
+                      "location": "38:27-38:30|878-881"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -716,7 +750,7 @@
                                 "id": "estilos",
                                 "aliased": null,
                                 "script": 7,
-                                "location": "887-894|39:5-39:12"
+                                "location": "39:5-39:12|887-894"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -726,14 +760,14 @@
                                     "supertype": "Generative",
                                     "name": "suaves",
                                     "script": 7,
-                                    "location": "896-903|39:14-39:21"
+                                    "location": "39:14-39:21|896-903"
                                   }
                                 ],
                                 "script": 11,
-                                "location": "894-905|39:12-39:23"
+                                "location": "39:12-39:23|894-905"
                               },
                               "script": 18,
-                              "location": "887-905|39:5-39:23",
+                              "location": "39:5-39:23|887-905",
                               "formula": "estilos{$1}"
                             },
                             {
@@ -743,7 +777,7 @@
                                 "id": "que cumplan con",
                                 "aliased": null,
                                 "script": 15,
-                                "location": "905-920|39:23-39:38"
+                                "location": "39:23-39:38|905-920"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -757,36 +791,48 @@
                                       "id": "color de fondo",
                                       "aliased": null,
                                       "script": 14,
-                                      "location": "922-936|39:40-39:54"
+                                      "location": "39:40-39:54|922-936"
                                     },
                                     "parameters": {
-                                      "type": "Function_call_appendix_for_text_parameter",
-                                      "text": " negro ",
-                                      "script": 11,
-                                      "location": "936-947|39:54-39:65"
+                                      "type": "Function_call_appendix_for_list_parameter",
+                                      "list": [
+                                        {
+                                          "type": "Text",
+                                          "supertype": "Generative",
+                                          "contents": "negro }",
+                                          "script": 9,
+                                          "location": "39:56-39:65|938-947"
+                                        }
+                                      ],
+                                      "script": 12,
+                                      "location": "39:54-39:66|936-948"
                                     },
-                                    "script": 25,
-                                    "location": "922-947|39:40-39:65"
+                                    "script": 26,
+                                    "location": "39:40-39:66|922-948"
                                   }
                                 ],
                                 "script": 29,
-                                "location": "920-949|39:38-39:67"
+                                "location": "39:38-39:67|920-949"
                               },
                               "script": 44,
-                              "location": "905-949|39:23-39:67",
+                              "location": "39:23-39:67|905-949",
                               "formula": "que cumplan con{$1}"
                             }
-                          ]
+                          ],
+                          "script": 62,
+                          "location": "39:5-39:67|887-949"
                         }
                       ],
                       "script": 72,
-                      "location": "881-953|38:30-40:4"
+                      "location": "38:30-40:4|881-953"
                     },
                     "script": 75,
-                    "location": "878-953|38:27-40:4",
+                    "location": "38:27-40:4|878-953",
                     "formula": "con{$1}"
                   }
-                ]
+                ],
+                "script": 99,
+                "location": "38:3-40:4|854-953"
               },
               {
                 "type": "Functional_molecule",
@@ -800,16 +846,24 @@
                       "id": "regla css para",
                       "aliased": null,
                       "script": 14,
-                      "location": "956-970|41:3-41:17"
+                      "location": "41:3-41:17|956-970"
                     },
                     "parameters": {
-                      "type": "Function_call_appendix_for_text_parameter",
-                      "text": " button.superior ",
+                      "type": "Function_call_appendix_for_list_parameter",
+                      "list": [
+                        {
+                          "type": "Text",
+                          "supertype": "Generative",
+                          "contents": "button.superior",
+                          "script": 17,
+                          "location": "41:19-41:36|972-989"
+                        }
+                      ],
                       "script": 21,
-                      "location": "970-991|41:17-41:38"
+                      "location": "41:17-41:38|970-991"
                     },
                     "script": 35,
-                    "location": "956-991|41:3-41:38",
+                    "location": "41:3-41:38|956-991",
                     "formula": "regla css para{$1}"
                   },
                   {
@@ -819,7 +873,7 @@
                       "id": "con",
                       "aliased": null,
                       "script": 3,
-                      "location": "991-994|41:38-41:41"
+                      "location": "41:38-41:41|991-994"
                     },
                     "parameters": {
                       "type": "Function_call_appendix_for_list_parameter",
@@ -836,7 +890,7 @@
                                 "id": "estilos",
                                 "aliased": null,
                                 "script": 7,
-                                "location": "1000-1007|42:5-42:12"
+                                "location": "42:5-42:12|1000-1007"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -846,28 +900,28 @@
                                     "supertype": "Generative",
                                     "name": "impactantes",
                                     "script": 12,
-                                    "location": "1009-1021|42:14-42:26"
+                                    "location": "42:14-42:26|1009-1021"
                                   },
                                   {
                                     "type": "Variable",
                                     "supertype": "Generative",
                                     "name": "sencillos",
                                     "script": 10,
-                                    "location": "1022-1032|42:27-42:37"
+                                    "location": "42:27-42:37|1022-1032"
                                   },
                                   {
                                     "type": "Variable",
                                     "supertype": "Generative",
                                     "name": "relacionados",
                                     "script": 13,
-                                    "location": "1033-1046|42:38-42:51"
+                                    "location": "42:38-42:51|1033-1046"
                                   }
                                 ],
                                 "script": 41,
-                                "location": "1007-1048|42:12-42:53"
+                                "location": "42:12-42:53|1007-1048"
                               },
                               "script": 48,
-                              "location": "1000-1048|42:5-42:53",
+                              "location": "42:5-42:53|1000-1048",
                               "formula": "estilos{$1}"
                             },
                             {
@@ -877,7 +931,7 @@
                                 "id": "que cumplan con",
                                 "aliased": null,
                                 "script": 15,
-                                "location": "1048-1063|42:53-42:68"
+                                "location": "42:53-42:68|1048-1063"
                               },
                               "parameters": {
                                 "type": "Function_call_appendix_for_list_parameter",
@@ -891,16 +945,46 @@
                                       "id": "color de fondo",
                                       "aliased": null,
                                       "script": 14,
-                                      "location": "1071-1085|43:7-43:21"
+                                      "location": "43:7-43:21|1071-1085"
                                     },
                                     "parameters": {
-                                      "type": "Function_call_appendix_for_text_parameter",
-                                      "text": " blanco ",
+                                      "type": "Function_call_appendix_for_list_parameter",
+                                      "list": [
+                                        {
+                                          "type": "Covalent_molecule",
+                                          "supertype": "Generative",
+                                          "base": {
+                                            "type": "Function_call_appendix_for_list_parameter",
+                                            "list": [
+                                              {
+                                                "type": "Functional_atom",
+                                                "supertype": "Generative",
+                                                "formula": "blanco{$1}",
+                                                "name": {
+                                                  "type": "Function_name_by_word",
+                                                  "id": "blanco",
+                                                  "aliased": null,
+                                                  "script": 6,
+                                                  "location": "43:24-43:30|1088-1094"
+                                                },
+                                                "parameters": null,
+                                                "script": 6,
+                                                "location": "43:24-43:30|1088-1094"
+                                              }
+                                            ],
+                                            "script": 10,
+                                            "location": "43:22-43:32|1086-1096"
+                                          },
+                                          "atoms": [],
+                                          "script": 10,
+                                          "location": "43:22-43:32|1086-1096"
+                                        }
+                                      ],
                                       "script": 12,
-                                      "location": "1085-1097|43:21-43:33"
+                                      "location": "43:21-43:33|1085-1097"
                                     },
                                     "script": 26,
-                                    "location": "1071-1097|43:7-43:33"
+                                    "location": "43:7-43:33|1071-1097"
                                   },
                                   {
                                     "type": "Functional_atom",
@@ -911,46 +995,82 @@
                                       "id": "color de letra",
                                       "aliased": null,
                                       "script": 14,
-                                      "location": "1104-1118|44:7-44:21"
+                                      "location": "44:7-44:21|1104-1118"
                                     },
                                     "parameters": {
-                                      "type": "Function_call_appendix_for_text_parameter",
-                                      "text": " rojo ",
+                                      "type": "Function_call_appendix_for_list_parameter",
+                                      "list": [
+                                        {
+                                          "type": "Covalent_molecule",
+                                          "supertype": "Generative",
+                                          "base": {
+                                            "type": "Function_call_appendix_for_list_parameter",
+                                            "list": [
+                                              {
+                                                "type": "Functional_atom",
+                                                "supertype": "Generative",
+                                                "formula": "rojo{$1}",
+                                                "name": {
+                                                  "type": "Function_name_by_word",
+                                                  "id": "rojo",
+                                                  "aliased": null,
+                                                  "script": 4,
+                                                  "location": "44:24-44:28|1121-1125"
+                                                },
+                                                "parameters": null,
+                                                "script": 4,
+                                                "location": "44:24-44:28|1121-1125"
+                                              }
+                                            ],
+                                            "script": 8,
+                                            "location": "44:22-44:30|1119-1127"
+                                          },
+                                          "atoms": [],
+                                          "script": 8,
+                                          "location": "44:22-44:30|1119-1127"
+                                        }
+                                      ],
                                       "script": 10,
-                                      "location": "1118-1128|44:21-44:31"
+                                      "location": "44:21-44:31|1118-1128"
                                     },
                                     "script": 24,
-                                    "location": "1104-1128|44:7-44:31"
+                                    "location": "44:7-44:31|1104-1128"
                                   }
                                 ],
                                 "script": 71,
-                                "location": "1063-1134|42:68-45:6"
+                                "location": "42:68-45:6|1063-1134"
                               },
                               "script": 86,
-                              "location": "1048-1134|42:53-45:6",
+                              "location": "42:53-45:6|1048-1134",
                               "formula": "que cumplan con{$1}"
                             }
-                          ]
+                          ],
+                          "script": 134,
+                          "location": "42:5-45:6|1000-1134"
                         }
                       ],
                       "script": 144,
-                      "location": "994-1138|41:41-46:4"
+                      "location": "41:41-46:4|994-1138"
                     },
                     "script": 147,
-                    "location": "991-1138|41:38-46:4",
+                    "location": "41:38-46:4|991-1138",
                     "formula": "con{$1}"
                   }
-                ]
+                ],
+                "script": 182,
+                "location": "41:3-46:4|956-1138"
               }
             ],
             "script": 290,
-            "location": "850-1140|37:15-47:2"
+            "location": "37:15-47:2|850-1140"
           },
           "script": 303,
-          "location": "837-1140|37:2-47:2",
+          "location": "37:2-47:2|837-1140",
           "formula": "añade estilos{$1}"
         }
-      ]
+      ],
+      "script": 969,
+      "location": "6:1-47:2|171-1140"
     },
     {
       "type": "Functional_atom",
@@ -961,13 +1081,13 @@
         "id": "nuevo usuario con",
         "aliased": null,
         "script": 17,
-        "location": "1141-1158|48:1-48:18"
+        "location": "48:1-48:18|1141-1158"
       },
       "parameters": {
         "type": "Function_call_appendix_for_list_parameter",
         "list": [
           {
-            "type": "Covalent_molecule_type",
+            "type": "Covalent_molecule",
             "supertype": "Generative",
             "base": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -981,15 +1101,15 @@
                     "id": "Carlos",
                     "aliased": null,
                     "script": 6,
-                    "location": "1163-1169|49:4-49:10"
+                    "location": "49:4-49:10|1163-1169"
                   },
                   "parameters": null,
                   "script": 6,
-                  "location": "1163-1169|49:4-49:10"
+                  "location": "49:4-49:10|1163-1169"
                 }
               ],
               "script": 8,
-              "location": "1162-1170|49:3-49:11"
+              "location": "49:3-49:11|1162-1170"
             },
             "atoms": [
               {
@@ -999,7 +1119,7 @@
                   "id": "como",
                   "aliased": null,
                   "script": 4,
-                  "location": "1170-1174|49:11-49:15"
+                  "location": "49:11-49:15|1170-1174"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1013,25 +1133,25 @@
                         "id": "nombre",
                         "aliased": null,
                         "script": 6,
-                        "location": "1175-1181|49:16-49:22"
+                        "location": "49:16-49:22|1175-1181"
                       },
                       "parameters": null,
                       "script": 6,
-                      "location": "1175-1181|49:16-49:22"
+                      "location": "49:16-49:22|1175-1181"
                     }
                   ],
                   "script": 8,
-                  "location": "1174-1182|49:15-49:23"
+                  "location": "49:15-49:23|1174-1182"
                 },
                 "script": 12,
-                "location": "1170-1182|49:11-49:23"
+                "location": "49:11-49:23|1170-1182"
               }
             ],
             "script": 20,
-            "location": "1162-1182|49:3-49:23"
+            "location": "49:3-49:23|1162-1182"
           },
           {
-            "type": "Covalent_molecule_type",
+            "type": "Covalent_molecule",
             "supertype": "Generative",
             "base": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -1045,15 +1165,15 @@
                     "id": "Jimeno Hernández",
                     "aliased": null,
                     "script": 16,
-                    "location": "1186-1202|50:4-50:20"
+                    "location": "50:4-50:20|1186-1202"
                   },
                   "parameters": null,
                   "script": 16,
-                  "location": "1186-1202|50:4-50:20"
+                  "location": "50:4-50:20|1186-1202"
                 }
               ],
               "script": 18,
-              "location": "1185-1203|50:3-50:21"
+              "location": "50:3-50:21|1185-1203"
             },
             "atoms": [
               {
@@ -1063,7 +1183,7 @@
                   "id": "como",
                   "aliased": null,
                   "script": 4,
-                  "location": "1203-1207|50:21-50:25"
+                  "location": "50:21-50:25|1203-1207"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1077,25 +1197,25 @@
                         "id": "apellidos",
                         "aliased": null,
                         "script": 9,
-                        "location": "1208-1217|50:26-50:35"
+                        "location": "50:26-50:35|1208-1217"
                       },
                       "parameters": null,
                       "script": 9,
-                      "location": "1208-1217|50:26-50:35"
+                      "location": "50:26-50:35|1208-1217"
                     }
                   ],
                   "script": 11,
-                  "location": "1207-1218|50:25-50:36"
+                  "location": "50:25-50:36|1207-1218"
                 },
                 "script": 15,
-                "location": "1203-1218|50:21-50:36"
+                "location": "50:21-50:36|1203-1218"
               }
             ],
             "script": 33,
-            "location": "1185-1218|50:3-50:36"
+            "location": "50:3-50:36|1185-1218"
           },
           {
-            "type": "Covalent_molecule_type",
+            "type": "Covalent_molecule",
             "supertype": "Generative",
             "base": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -1105,11 +1225,11 @@
                   "supertype": "Generative",
                   "value": 34,
                   "script": 2,
-                  "location": "1222-1224|51:4-51:6"
+                  "location": "51:4-51:6|1222-1224"
                 }
               ],
               "script": 4,
-              "location": "1221-1225|51:3-51:7"
+              "location": "51:3-51:7|1221-1225"
             },
             "atoms": [
               {
@@ -1119,7 +1239,7 @@
                   "id": "como",
                   "aliased": null,
                   "script": 4,
-                  "location": "1225-1229|51:7-51:11"
+                  "location": "51:7-51:11|1225-1229"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1133,25 +1253,25 @@
                         "id": "edad",
                         "aliased": null,
                         "script": 4,
-                        "location": "1230-1234|51:12-51:16"
+                        "location": "51:12-51:16|1230-1234"
                       },
                       "parameters": null,
                       "script": 4,
-                      "location": "1230-1234|51:12-51:16"
+                      "location": "51:12-51:16|1230-1234"
                     }
                   ],
                   "script": 6,
-                  "location": "1229-1235|51:11-51:17"
+                  "location": "51:11-51:17|1229-1235"
                 },
                 "script": 10,
-                "location": "1225-1235|51:7-51:17"
+                "location": "51:7-51:17|1225-1235"
               }
             ],
             "script": 14,
-            "location": "1221-1235|51:3-51:17"
+            "location": "51:3-51:17|1221-1235"
           },
           {
-            "type": "Covalent_molecule_type",
+            "type": "Covalent_molecule",
             "supertype": "Generative",
             "base": {
               "type": "Function_call_appendix_for_list_parameter",
@@ -1165,15 +1285,15 @@
                     "id": "Bonastre",
                     "aliased": null,
                     "script": 8,
-                    "location": "1239-1247|52:4-52:12"
+                    "location": "52:4-52:12|1239-1247"
                   },
                   "parameters": null,
                   "script": 8,
-                  "location": "1239-1247|52:4-52:12"
+                  "location": "52:4-52:12|1239-1247"
                 }
               ],
               "script": 10,
-              "location": "1238-1248|52:3-52:13"
+              "location": "52:3-52:13|1238-1248"
             },
             "atoms": [
               {
@@ -1183,7 +1303,7 @@
                   "id": "como",
                   "aliased": null,
                   "script": 4,
-                  "location": "1248-1252|52:13-52:17"
+                  "location": "52:13-52:17|1248-1252"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1197,29 +1317,29 @@
                         "id": "municipio",
                         "aliased": null,
                         "script": 9,
-                        "location": "1253-1262|52:18-52:27"
+                        "location": "52:18-52:27|1253-1262"
                       },
                       "parameters": null,
                       "script": 9,
-                      "location": "1253-1262|52:18-52:27"
+                      "location": "52:18-52:27|1253-1262"
                     }
                   ],
                   "script": 11,
-                  "location": "1252-1263|52:17-52:28"
+                  "location": "52:17-52:28|1252-1263"
                 },
                 "script": 15,
-                "location": "1248-1263|52:13-52:28"
+                "location": "52:13-52:28|1248-1263"
               }
             ],
             "script": 25,
-            "location": "1238-1263|52:3-52:28"
+            "location": "52:3-52:28|1238-1263"
           }
         ],
         "script": 107,
-        "location": "1158-1265|48:18-53:2"
+        "location": "48:18-53:2|1158-1265"
       },
       "script": 124,
-      "location": "1141-1265|48:1-53:2"
+      "location": "48:1-53:2|1141-1265"
     },
     {
       "type": "Functional_molecule",
@@ -1233,7 +1353,7 @@
             "id": "creo",
             "aliased": null,
             "script": 4,
-            "location": "1268-1272|56:1-56:5"
+            "location": "56:1-56:5|1268-1272"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1247,18 +1367,18 @@
                   "id": "usuario",
                   "aliased": null,
                   "script": 7,
-                  "location": "1273-1280|56:6-56:13"
+                  "location": "56:6-56:13|1273-1280"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1273-1280|56:6-56:13"
+                "location": "56:6-56:13|1273-1280"
               }
             ],
             "script": 9,
-            "location": "1272-1281|56:5-56:14"
+            "location": "56:5-56:14|1272-1281"
           },
           "script": 13,
-          "location": "1268-1281|56:1-56:14",
+          "location": "56:1-56:14|1268-1281",
           "formula": "creo{$1}"
         },
         {
@@ -1268,7 +1388,7 @@
             "id": "como",
             "aliased": null,
             "script": 4,
-            "location": "1281-1285|56:14-56:18"
+            "location": "56:14-56:18|1281-1285"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1282,25 +1402,27 @@
                   "id": "objeto",
                   "aliased": null,
                   "script": 6,
-                  "location": "1286-1292|56:19-56:25"
+                  "location": "56:19-56:25|1286-1292"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_empty_parameter",
                   "script": 1,
-                  "location": "1292-1293|56:25-56:26"
+                  "location": "56:25-56:26|1292-1293"
                 },
                 "script": 7,
-                "location": "1286-1293|56:19-56:26"
+                "location": "56:19-56:26|1286-1293"
               }
             ],
             "script": 9,
-            "location": "1285-1294|56:18-56:27"
+            "location": "56:18-56:27|1285-1294"
           },
           "script": 13,
-          "location": "1281-1294|56:14-56:27",
+          "location": "56:14-56:27|1281-1294",
           "formula": "como{$1}"
         }
-      ]
+      ],
+      "script": 26,
+      "location": "56:1-56:27|1268-1294"
     },
     {
       "type": "Functional_molecule",
@@ -1314,7 +1436,7 @@
             "id": "pongo",
             "aliased": null,
             "script": 5,
-            "location": "1295-1300|57:1-57:6"
+            "location": "57:1-57:6|1295-1300"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1328,7 +1450,7 @@
                   "id": "entrada de texto",
                   "aliased": null,
                   "script": 16,
-                  "location": "1301-1317|57:7-57:23"
+                  "location": "57:7-57:23|1301-1317"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1338,21 +1460,21 @@
                       "supertype": "Generative",
                       "contents": "Cómo te llamas?",
                       "script": 17,
-                      "location": "1318-1335|57:24-57:41"
+                      "location": "57:24-57:41|1318-1335"
                     }
                   ],
                   "script": 19,
-                  "location": "1317-1336|57:23-57:42"
+                  "location": "57:23-57:42|1317-1336"
                 },
                 "script": 35,
-                "location": "1301-1336|57:7-57:42"
+                "location": "57:7-57:42|1301-1336"
               }
             ],
             "script": 37,
-            "location": "1300-1337|57:6-57:43"
+            "location": "57:6-57:43|1300-1337"
           },
           "script": 42,
-          "location": "1295-1337|57:1-57:43",
+          "location": "57:1-57:43|1295-1337",
           "formula": "pongo{$1}"
         },
         {
@@ -1362,7 +1484,7 @@
             "id": "en",
             "aliased": null,
             "script": 2,
-            "location": "1337-1339|57:43-57:45"
+            "location": "57:43-57:45|1337-1339"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1376,29 +1498,31 @@
                   "id": "usuario",
                   "aliased": null,
                   "script": 7,
-                  "location": "1340-1347|57:46-57:53"
+                  "location": "57:46-57:53|1340-1347"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1340-1347|57:46-57:53",
+                "location": "57:46-57:53|1340-1347",
                 "extended_by": [
                   {
                     "type": "Access_by_dot_appendix",
                     "access": "nombre",
                     "script": 7,
-                    "location": "1347-1354|57:53-57:60"
+                    "location": "57:53-57:60|1347-1354"
                   }
                 ]
               }
             ],
             "script": 16,
-            "location": "1339-1355|57:45-57:61"
+            "location": "57:45-57:61|1339-1355"
           },
           "script": 18,
-          "location": "1337-1355|57:43-57:61",
+          "location": "57:43-57:61|1337-1355",
           "formula": "en{$1}"
         }
-      ]
+      ],
+      "script": 60,
+      "location": "57:1-57:61|1295-1355"
     },
     {
       "type": "Functional_molecule",
@@ -1412,7 +1536,7 @@
             "id": "pongo",
             "aliased": null,
             "script": 5,
-            "location": "1356-1361|58:1-58:6"
+            "location": "58:1-58:6|1356-1361"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1426,7 +1550,7 @@
                   "id": "entrada de número",
                   "aliased": null,
                   "script": 17,
-                  "location": "1362-1379|58:7-58:24"
+                  "location": "58:7-58:24|1362-1379"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1436,21 +1560,21 @@
                       "supertype": "Generative",
                       "contents": "Qué edad tienes?",
                       "script": 18,
-                      "location": "1380-1398|58:25-58:43"
+                      "location": "58:25-58:43|1380-1398"
                     }
                   ],
                   "script": 20,
-                  "location": "1379-1399|58:24-58:44"
+                  "location": "58:24-58:44|1379-1399"
                 },
                 "script": 37,
-                "location": "1362-1399|58:7-58:44"
+                "location": "58:7-58:44|1362-1399"
               }
             ],
             "script": 39,
-            "location": "1361-1400|58:6-58:45"
+            "location": "58:6-58:45|1361-1400"
           },
           "script": 44,
-          "location": "1356-1400|58:1-58:45",
+          "location": "58:1-58:45|1356-1400",
           "formula": "pongo{$1}"
         },
         {
@@ -1460,7 +1584,7 @@
             "id": "en",
             "aliased": null,
             "script": 2,
-            "location": "1400-1402|58:45-58:47"
+            "location": "58:45-58:47|1400-1402"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1474,29 +1598,31 @@
                   "id": "usuario",
                   "aliased": null,
                   "script": 7,
-                  "location": "1403-1410|58:48-58:55"
+                  "location": "58:48-58:55|1403-1410"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1403-1410|58:48-58:55",
+                "location": "58:48-58:55|1403-1410",
                 "extended_by": [
                   {
                     "type": "Access_by_dot_appendix",
                     "access": "nombre",
                     "script": 7,
-                    "location": "1410-1417|58:55-58:62"
+                    "location": "58:55-58:62|1410-1417"
                   }
                 ]
               }
             ],
             "script": 16,
-            "location": "1402-1418|58:47-58:63"
+            "location": "58:47-58:63|1402-1418"
           },
           "script": 18,
-          "location": "1400-1418|58:45-58:63",
+          "location": "58:45-58:63|1400-1418",
           "formula": "en{$1}"
         }
-      ]
+      ],
+      "script": 62,
+      "location": "58:1-58:63|1356-1418"
     },
     {
       "type": "Functional_molecule",
@@ -1510,7 +1636,7 @@
             "id": "pongo",
             "aliased": null,
             "script": 5,
-            "location": "1419-1424|59:1-59:6"
+            "location": "59:1-59:6|1419-1424"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1524,7 +1650,7 @@
                   "id": "entrada de opción",
                   "aliased": null,
                   "script": 17,
-                  "location": "1425-1442|59:7-59:24"
+                  "location": "59:7-59:24|1425-1442"
                 },
                 "parameters": {
                   "type": "Function_call_appendix_for_list_parameter",
@@ -1534,7 +1660,7 @@
                       "supertype": "Generative",
                       "contents": "Qué prefieres?",
                       "script": 16,
-                      "location": "1443-1459|59:25-59:41"
+                      "location": "59:25-59:41|1443-1459"
                     },
                     {
                       "type": "Functional_atom",
@@ -1545,7 +1671,7 @@
                         "id": "list",
                         "aliased": null,
                         "script": 4,
-                        "location": "1460-1464|59:42-59:46"
+                        "location": "59:42-59:46|1460-1464"
                       },
                       "parameters": {
                         "type": "Function_call_appendix_for_list_parameter",
@@ -1555,42 +1681,42 @@
                             "supertype": "Generative",
                             "contents": "música",
                             "script": 8,
-                            "location": "1465-1473|59:47-59:55"
+                            "location": "59:47-59:55|1465-1473"
                           },
                           {
                             "type": "Text",
                             "supertype": "Generative",
                             "contents": "tecnología",
                             "script": 12,
-                            "location": "1474-1486|59:56-59:68"
+                            "location": "59:56-59:68|1474-1486"
                           },
                           {
                             "type": "Text",
                             "supertype": "Generative",
                             "contents": "drogas",
                             "script": 8,
-                            "location": "1487-1495|59:69-59:77"
+                            "location": "59:69-59:77|1487-1495"
                           }
                         ],
                         "script": 32,
-                        "location": "1464-1496|59:46-59:78"
+                        "location": "59:46-59:78|1464-1496"
                       },
                       "script": 36,
-                      "location": "1460-1496|59:42-59:78"
+                      "location": "59:42-59:78|1460-1496"
                     }
                   ],
                   "script": 55,
-                  "location": "1442-1497|59:24-59:79"
+                  "location": "59:24-59:79|1442-1497"
                 },
                 "script": 72,
-                "location": "1425-1497|59:7-59:79"
+                "location": "59:7-59:79|1425-1497"
               }
             ],
             "script": 74,
-            "location": "1424-1498|59:6-59:80"
+            "location": "59:6-59:80|1424-1498"
           },
           "script": 79,
-          "location": "1419-1498|59:1-59:80",
+          "location": "59:1-59:80|1419-1498",
           "formula": "pongo{$1}"
         },
         {
@@ -1600,7 +1726,7 @@
             "id": "en",
             "aliased": null,
             "script": 2,
-            "location": "1498-1500|59:80-59:82"
+            "location": "59:80-59:82|1498-1500"
           },
           "parameters": {
             "type": "Function_call_appendix_for_list_parameter",
@@ -1614,29 +1740,31 @@
                   "id": "usuario",
                   "aliased": null,
                   "script": 7,
-                  "location": "1501-1508|59:83-59:90"
+                  "location": "59:83-59:90|1501-1508"
                 },
                 "parameters": null,
                 "script": 7,
-                "location": "1501-1508|59:83-59:90",
+                "location": "59:83-59:90|1501-1508",
                 "extended_by": [
                   {
                     "type": "Access_by_dot_appendix",
                     "access": "preferencia",
                     "script": 12,
-                    "location": "1508-1520|59:90-59:102"
+                    "location": "59:90-59:102|1508-1520"
                   }
                 ]
               }
             ],
             "script": 21,
-            "location": "1500-1521|59:82-59:103"
+            "location": "59:82-59:103|1500-1521"
           },
           "script": 23,
-          "location": "1498-1521|59:80-59:103",
+          "location": "59:80-59:103|1498-1521",
           "formula": "en{$1}"
         }
-      ]
+      ],
+      "script": 102,
+      "location": "59:1-59:103|1419-1521"
     }
   ],
   "footer": {
@@ -1672,21 +1800,23 @@
         "información sobre": "pos=21 times=1",
         "se construye": "pos=22 times=1",
         "añade estilos": "pos=23 times=1",
-        "color de letra": "pos=24 times=1",
-        "nuevo usuario con": "pos=25 times=1",
-        "Carlos": "pos=26 times=1",
-        "nombre": "pos=27 times=1",
-        "Jimeno Hernández": "pos=28 times=1",
-        "apellidos": "pos=29 times=1",
-        "edad": "pos=30 times=1",
-        "Bonastre": "pos=31 times=1",
-        "municipio": "pos=32 times=1",
-        "objeto": "pos=33 times=1",
-        "entrada de texto": "pos=34 times=1",
-        "entrada de número": "pos=35 times=1",
-        "entrada de opción": "pos=36 times=1"
+        "blanco": "pos=24 times=1",
+        "color de letra": "pos=25 times=1",
+        "rojo": "pos=26 times=1",
+        "nuevo usuario con": "pos=27 times=1",
+        "Carlos": "pos=28 times=1",
+        "nombre": "pos=29 times=1",
+        "Jimeno Hernández": "pos=30 times=1",
+        "apellidos": "pos=31 times=1",
+        "edad": "pos=32 times=1",
+        "Bonastre": "pos=33 times=1",
+        "municipio": "pos=34 times=1",
+        "objeto": "pos=35 times=1",
+        "entrada de texto": "pos=36 times=1",
+        "entrada de número": "pos=37 times=1",
+        "entrada de opción": "pos=38 times=1"
       }
     }
   },
-  "seed": "creo{ @usuario }como{[\n  nombre=pedir a usuario{{ ¿Cómo te llamas? }}\n  edad=pedir a usuario{{ ¿Qué edad tienes? }}\n  ciudad=pedir a usuario{{ ¿En qué ciudad vives? }}\n]}\ncomponente{ \"Página de inicio\" }pinta{\n  botones{\n    object{ class=\"superior\" }\n    list{ \"Entrada\" \"Sintaxis\" \"Salida\" }\n  }\n  editor de texto{\n    object{ class=\"monoespaciado grande\" }\n    reflejando modelo{ @texto_de_entrada }\n  }\n  panel inferior{\n    información sobre{ @cursor }\n    botones{\n      object{ class=\"inferior\" }\n      list{ \"Formatear\" \"Guardar\" }\n    }\n  }\n}se construye{\n  retorno{[\n    name=\"Nombre del componente\"\n    props=object{ }\n    data=función donde{\n      retorno{\n        object{\n          texto_de_entrada=\"hola upl!\"\n        }\n      }\n    }\n    methods=object{\n      cargar_datos=función donde{ retorno{ object{ } } }\n    }\n  ]}\n}añade estilos{\n  regla css para{{ html }}con{\n    estilos{ @suaves }que cumplan con{ color de fondo{{ negro }} }\n  }\n  regla css para{{ button.superior }}con{\n    estilos{ @impactantes @sencillos @relacionados }que cumplan con{\n      color de fondo{{ blanco }}\n      color de letra{{ rojo }}\n    }\n  }\n}\nnuevo usuario con{\n  {Carlos}como{nombre}\n  {Jimeno Hernández}como{apellidos}\n  {34}como{edad}\n  {Bonastre}como{municipio}\n}\n\n\ncreo{usuario}como{objeto!}\npongo{entrada de texto{\"Cómo te llamas?\"}}en{usuario.nombre}\npongo{entrada de número{\"Qué edad tienes?\"}}en{usuario.nombre}\npongo{entrada de opción{\"Qué prefieres?\" list{\"música\" \"tecnología\" \"drogas\"}}}en{usuario.preferencia}\n\n\n"
+  "seed": "creo{ @usuario }como{[\n  nombre=pedir a usuario{ \"¿Cómo te llamas?\" }\n  edad=pedir a usuario{ \"¿Qué edad tienes?\" }\n  ciudad=pedir a usuario{ \"¿En qué ciudad vives?\" }\n]}\ncomponente{ \"Página de inicio\" }pinta{\n  botones{\n    object{ class=\"superior\" }\n    list{ \"Entrada\" \"Sintaxis\" \"Salida\" }\n  }\n  editor de texto{\n    object{ class=\"monoespaciado grande\" }\n    reflejando modelo{ @texto_de_entrada }\n  }\n  panel inferior{\n    información sobre{ @cursor }\n    botones{\n      object{ class=\"inferior\" }\n      list{ \"Formatear\" \"Guardar\" }\n    }\n  }\n}se construye{\n  retorno{[\n    name=\"Nombre del componente\"\n    props=object{ }\n    data=función donde{\n      retorno{\n        object{\n          texto_de_entrada=\"hola upl!\"\n        }\n      }\n    }\n    methods=object{\n      cargar_datos=función donde{ retorno{ object{ } } }\n    }\n  ]}\n}añade estilos{\n  regla css para{ \"html\" }con{\n    estilos{ @suaves }que cumplan con{ color de fondo{ \"negro }\"}}\n  }\n  regla css para{ \"button.superior\" }con{\n    estilos{ @impactantes @sencillos @relacionados }que cumplan con{\n      color de fondo{{ blanco }}\n      color de letra{{ rojo }}\n    }\n  }\n}\nnuevo usuario con{\n  {Carlos}como{nombre}\n  {Jimeno Hernández}como{apellidos}\n  {34}como{edad}\n  {Bonastre}como{municipio}\n}\n\n\ncreo{usuario}como{objeto!}\npongo{entrada de texto{\"Cómo te llamas?\"}}en{usuario.nombre}\npongo{entrada de número{\"Qué edad tienes?\"}}en{usuario.nombre}\npongo{entrada de opción{\"Qué prefieres?\" list{\"música\" \"tecnología\" \"drogas\"}}}en{usuario.preferencia}\n\n\n"
 }

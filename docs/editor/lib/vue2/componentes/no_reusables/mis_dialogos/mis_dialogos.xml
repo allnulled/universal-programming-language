@@ -36,7 +36,6 @@
             </div>
         </div>
     </dialog>
-    
     <dialog class="dialogo" style="max-width: 400px;" id="dialogo_de_exportar_script_como_url" ref="dialogo_de_exportar_script_como_url">
         <div class="window">
             <div class="title-bar">
@@ -45,10 +44,10 @@
             <div class="window-body">
                 <div class="window-body-main">
                     <div>Para abrir este recurso puedes pegar esta URL:</div>
-                    <pre style="text-wrap:wrap; font-size:10px; margin: 0px; overflow: scroll;">{{ dialogo_de_notificacion_enunciado }}</pre>
+                    <textarea style="text-wrap:wrap; font-size:10px; margin: 0px; overflow: scroll; width: 100%; height: 100%; min-height: 120px;" v-model="dialogo_de_notificacion_enunciado" />
                 </div>
                 <div class="window-body-foot">
-                    <button class="" v-on:click="() => { navigator.clipboard.writeText(dialogo_de_notificacion_enunciado); responder(false).cerrar(); }">Copiar enlace</button>
+                    <button class="" v-on:click="() => { $window.navigator.clipboard.writeText(dialogo_de_notificacion_enunciado); responder(false).cerrar(); }">Copiar enlace</button>
                     <button class="" v-on:click="() => responder(false).cerrar()">Cancelar</button>
                 </div>
             </div>

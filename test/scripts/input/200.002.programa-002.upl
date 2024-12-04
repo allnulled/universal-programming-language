@@ -1,7 +1,7 @@
 creo{ @usuario }como{[
-  nombre=pedir a usuario{{ ¿Cómo te llamas? }}
-  edad=pedir a usuario{{ ¿Qué edad tienes? }}
-  ciudad=pedir a usuario{{ ¿En qué ciudad vives? }}
+  nombre=pedir a usuario{ "¿Cómo te llamas?" }
+  edad=pedir a usuario{ "¿Qué edad tienes?" }
+  ciudad=pedir a usuario{ "¿En qué ciudad vives?" }
 ]}
 componente{ "Página de inicio" }pinta{
   botones{
@@ -35,10 +35,10 @@ componente{ "Página de inicio" }pinta{
     }
   ]}
 }añade estilos{
-  regla css para{{ html }}con{
-    estilos{ @suaves }que cumplan con{ color de fondo{{ negro }} }
+  regla css para{ "html" }con{
+    estilos{ @suaves }que cumplan con{ color de fondo{ "negro }"}}
   }
-  regla css para{{ button.superior }}con{
+  regla css para{ "button.superior" }con{
     estilos{ @impactantes @sencillos @relacionados }que cumplan con{
       color de fondo{{ blanco }}
       color de letra{{ rojo }}
