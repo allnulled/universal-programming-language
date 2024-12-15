@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "upl": "./bin/upl.bin.js"
+  },
   "scripts": {
     "dev": "node build/dev.js",
     "build": "node build/build.js",

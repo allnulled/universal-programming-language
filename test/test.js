@@ -26,7 +26,21 @@ const tests_list = [
       output_format: [],
       output_transpile_path: __dirname + "/scripts/output-transpile",
       output_transpile: [],
+      binary: __dirname + "/scripts/binary",
     };
+    memo.execute_command = function(command, opts = {}) {
+      return new Promise((resolve, reject) => {
+        require("child_process").exec(command, opts, function(error, data, stderr) {
+          if(error) {
+            return reject(error);
+          }
+          if(stderr) {
+            return reject(stderr);
+          }
+          return resolve(data);
+        });
+      });
+    }
   },
   async function (memo) {
     console.log(" [*] Testing: can load upl api");
@@ -57,7 +71,6 @@ const tests_list = [
       }
     } catch (error) {
       console.log("[!] Failed script «" + current_test + "»");
-      console.log(error);
       throw error;
     }
   },
@@ -78,7 +91,6 @@ const tests_list = [
       }
     } catch (error) {
       console.log("[!] Failed script «" + current_test + "»");
-      console.log(error);
       throw error;
     }
   },
@@ -158,6 +170,27 @@ const tests_list = [
           throw error;
         }
       }
+    }
+  },
+  async function (memo) {
+    console.log("[*] Testing: can use binary «upl help»");
+    try {
+      const { unlezz } = memo;
+      const output = await memo.execute_command("upl help");
+      console.log(output);
+      unlezz(output.indexOf('help') !== -1, "«upl help» console command should print «help» somewhere");
+    } catch (error) {
+      throw error;
+    }
+  },
+  async function (memo) {
+    console.log("[*] Testing: can use binary «upl format file.upl»");
+    try {
+      const { unlezz } = memo;
+      const output = await memo.execute_command("upl format example1.upl", { cwd: memo.scripts.binary });
+      unlezz(output.indexOf('format') !== -1, "«upl format *» console command should print «format» somewhere");
+    } catch (error) {
+      throw error;
     }
   }
 ];

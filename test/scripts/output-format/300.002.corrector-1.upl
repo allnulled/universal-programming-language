@@ -1,4 +1,3 @@
 print{ "ok" }
 { algo }
 { algo }y{ otro algo }
-print{{ Hola }}

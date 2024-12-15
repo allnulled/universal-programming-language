@@ -1,3 +1,10 @@
+# 15-12-2024
+
+[ ] Crear binario para poder formatear ficheros.
+  [ ] upl help
+  [ ] upl format index.upl
+  [ ] upl listen/format index.upl
+
 # 02-12-2024
 
 [x] Botón de "Exportar script" como URL.
